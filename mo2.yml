@@ -1,0 +1,1427 @@
+---
+processor: 65816
+platform: snes
+title: Mother 2 (JPN)
+texttables:
+  standardtext:
+    lengths:
+      0x0004: 3
+      0x0006: 7
+      0x0007: 3
+      0x0008: 5
+      0x0009: 10
+      0x000A: 5
+      0x000D: 2
+      0x000E: 2
+      0x0010: 2
+      0x0018: 2
+      0x1801: 3
+      0x0019: 2
+      0x1910: 3
+      0x001B: 2
+      0x1B02: 6
+      0x1B03: 6
+      0x001C: 2
+      0x1C01: 3
+      0x1C02: 3
+      0x1C05: 3
+      0x1C07: 3
+      0x1C0A: 6
+      0x1C13: 3
+      0x001D: 2
+      0x1D03: 3
+      0x1D09: 4
+      0x1D0E: 4
+      0x1D14: 6
+      0x001F: 3
+    replacements:
+      0x0000: ""
+      0x0002: ""
+      0x0003: |2+
+
+      0x0020: ' '
+      0x0025: "\u30FC"
+      0x0028: '!'
+      0x0029: '?'
+      0x002A: "\u03B1"
+      0x002B: "\u03B2"
+      0x002C: "\u03B3"
+      0x002D: "\u03A3"
+      0x002E: "\u03A9"
+      0x002F: /
+      0x0030: 0
+      0x0031: 1
+      0x0032: 2
+      0x0033: 3
+      0x0034: 4
+      0x0035: 5
+      0x0036: 6
+      0x0037: 7
+      0x0038: 8
+      0x0039: 9
+      0x003A: (
+      0x003B: )
+      0x003C: "\u300C"
+      0x003D: "\u300D"
+      0x003E: "\u266A"
+      0x003F: "\u25CB"
+      0x0040: '@'
+      0x0041: A
+      0x0042: B
+      0x0043: C
+      0x0044: D
+      0x0045: E
+      0x0046: F
+      0x0047: G
+      0x0048: H
+      0x0049: I
+      0x004A: J
+      0x004B: K
+      0x004C: L
+      0x004D: M
+      0x004E: false
+      0x004F: O
+      0x0050: P
+      0x0051: Q
+      0x0052: R
+      0x0053: S
+      0x0054: T
+      0x0055: U
+      0x0056: V
+      0x0057: W
+      0x0058: X
+      0x0059: true
+      0x005A: Z
+      0x005B: ':'
+      0x005C: "\u30FB"
+      0x005D: "\u2026"
+      0x005F: .
+      0x0060: "\u3042"
+      0x0061: "\u3041"
+      0x0062: "\u304B"
+      0x0063: "\u304C"
+      0x0064: "\u3055"
+      0x0065: "\u3056"
+      0x0066: "\u305F"
+      0x0067: "\u3060"
+      0x0068: "\u306A"
+      0x0069: "\u306F"
+      0x006A: "\u3070"
+      0x006B: "\u3071"
+      0x006C: "\u307E"
+      0x006D: "\u3084"
+      0x006E: "\u3083"
+      0x006F: "\u3089"
+      0x0070: "\u3044"
+      0x0071: "\u3043"
+      0x0072: "\u304D"
+      0x0073: "\u304E"
+      0x0074: "\u3057"
+      0x0075: "\u3058"
+      0x0076: "\u3061"
+      0x0077: "\u3062"
+      0x0078: "\u306B"
+      0x0079: "\u3072"
+      0x007A: "\u3073"
+      0x007B: "\u3074"
+      0x007C: "\u307F"
+      0x007D: "\u308F"
+      0x007E: "\u3063"
+      0x007F: "\u308A"
+      0x0080: "\u3046"
+      0x0081: "\u3045"
+      0x0082: "\u304F"
+      0x0083: "\u3050"
+      0x0084: "\u3059"
+      0x0085: "\u305A"
+      0x0086: "\u3064"
+      0x0087: "\u3065"
+      0x0088: "\u306C"
+      0x0089: "\u3075"
+      0x008A: "\u3076"
+      0x008B: "\u3077"
+      0x008C: "\u3080"
+      0x008D: "\u3086"
+      0x008E: "\u3085"
+      0x008F: "\u308B"
+      0x0090: "\u3048"
+      0x0091: "\u3047"
+      0x0092: "\u3051"
+      0x0093: "\u3052"
+      0x0094: "\u305B"
+      0x0095: "\u305C"
+      0x0096: "\u3066"
+      0x0097: "\u3067"
+      0x0098: "\u306D"
+      0x0099: "\u3078"
+      0x009A: "\u3079"
+      0x009B: "\u307A"
+      0x009C: "\u3081"
+      0x009D: "\u3093"
+      0x009E: "\u3092"
+      0x009F: "\u308C"
+      0x00A0: "\u304A"
+      0x00A1: "\u3049"
+      0x00A2: "\u3053"
+      0x00A3: "\u3054"
+      0x00A4: "\u305D"
+      0x00A5: "\u305E"
+      0x00A6: "\u3068"
+      0x00A7: "\u3069"
+      0x00A8: "\u306E"
+      0x00A9: "\u307B"
+      0x00AA: "\u307C"
+      0x00AB: "\u307D"
+      0x00AC: "\u3082"
+      0x00AD: "\u3088"
+      0x00AE: "\u3087"
+      0x00AF: "\u308D"
+      0x00B0: "\u30A2"
+      0x00B1: "\u30A1"
+      0x00B2: "\u30AB"
+      0x00B3: "\u30AC"
+      0x00B4: "\u30B5"
+      0x00B5: "\u30B6"
+      0x00B6: "\u30BF"
+      0x00B7: "\u30C0"
+      0x00B8: "\u30CA"
+      0x00B9: "\u30CF"
+      0x00BA: "\u30D0"
+      0x00BB: "\u30D1"
+      0x00BC: "\u30DE"
+      0x00BD: "\u30E4"
+      0x00BE: "\u30E3"
+      0x00BF: "\u30E9"
+      0x00C0: "\u30A4"
+      0x00C1: "\u30A3"
+      0x00C2: "\u30AD"
+      0x00C3: "\u30AE"
+      0x00C4: "\u30B7"
+      0x00C5: "\u30B8"
+      0x00C6: "\u30C1"
+      0x00C7: "\u30C2"
+      0x00C8: "\u30CB"
+      0x00C9: "\u30D2"
+      0x00CA: "\u30D3"
+      0x00CB: "\u30D4"
+      0x00CC: "\u30DF"
+      0x00CD: "\u30EF"
+      0x00CE: "\u30C3"
+      0x00CF: "\u30EA"
+      0x00D0: "\u30A6"
+      0x00D1: "\u30A5"
+      0x00D2: "\u30AF"
+      0x00D3: "\u30B0"
+      0x00D4: "\u30B9"
+      0x00D5: "\u30BA"
+      0x00D6: "\u30C4"
+      0x00D7: "\u30C5"
+      0x00D8: "\u30CC"
+      0x00D9: "\u30D5"
+      0x00DA: "\u30D6"
+      0x00DB: "\u30D7"
+      0x00DC: "\u30E0"
+      0x00DD: "\u30E6"
+      0x00DE: "\u30E5"
+      0x00DF: "\u30EB"
+      0x00E0: "\u30A8"
+      0x00E1: "\u30A7"
+      0x00E2: "\u30B1"
+      0x00E3: "\u30B2"
+      0x00E4: "\u30BB"
+      0x00E5: "\u30BC"
+      0x00E6: "\u30C6"
+      0x00E7: "\u30C7"
+      0x00E8: "\u30CD"
+      0x00E9: "\u30D8"
+      0x00EA: "\u30D9"
+      0x00EB: "\u30DA"
+      0x00EC: "\u30E1"
+      0x00ED: "\u30F3"
+      0x00EF: "\u30EC"
+      0x00F0: "\u30AA"
+      0x00F1: "\u30A9"
+      0x00F2: "\u30B3"
+      0x00F3: "\u30B4"
+      0x00F4: "\u30BD"
+      0x00F5: "\u30BE"
+      0x00F6: "\u30C8"
+      0x00F7: "\u30C9"
+      0x00F8: "\u30CE"
+      0x00F9: "\u30DB"
+      0x00FA: "\u30DC"
+      0x00FB: "\u30DD"
+      0x00FC: "\u30E2"
+      0x00FD: "\u30E8"
+      0x00FE: "\u30E7"
+      0x00FF: "\u30ED"
+      0x1C0108: "\u30CD\u30B9"
+...
+---
+0x008143:
+  name: RESET_VECTOR
+  description: Execution Entry Point
+  size: 3
+  type: assembly
+0x00FAA4:
+  type: assembly
+  size: 92
+  labels:
+    0xFAD8: UNKNOWN0
+    0xFAE7: UNKNOWN1
+    0xFAF2: UNKNOWN2
+0x7E0065:
+  name: PAD_1_STATE
+  description: Controller 1 state
+0x7E2C9C:
+  name: UNKNOWN_30x2_TABLE_24
+0x7E305C:
+  name: UNKNOWN_30x2_TABLE_41
+0x7E46F2:
+  description: 1 if debugging is enabled, 0 otherwise
+  name: DEBUG
+0x7E4E12:
+  name: CURRENT_BATTLE_GROUP
+0x7E5148:
+  description: Battle Debugging Flag
+  name: BATTLE_DEBUG
+0x7E60E6:
+  description: Battle Swirl Countdown
+  name: BATTLE_SWIRL_COUNTDOWN
+0x7E89C2:
+  description: Window Statistics Table
+  name: WINDOW_STATS_TABLE
+0x7E8C26:
+  description: Window Existence Table
+  name: WINDOW_EXISTENCE_TABLE
+0x7E8C96:
+  description: Current window with focus
+  name: CURRENT_FOCUS_WINDOW
+0x7E993B:
+  description: Battle Mode Flag
+  name: BATTLE_MODE_FLAG
+0x7E9B34:
+  description: Current Walking Style
+  name: WALKING_STYLE
+0x7E9B55:
+  name: PC_PARTY_MEMBER_COUNT
+  description: Number of player-controlled party members
+0x7E9B62:
+  name: AUTO_FIGHT_ENABLE
+  description: Auto Fight Flag
+0x7EA031:
+  description: Indicates if a DMA transfer is in progress
+  name: DMA_TRANSFER_FLAG
+0x7EA18C:
+  name: ENEMIES_IN_BATTLE
+  description: Number of enemies in battle
+0x7EAB72:
+  name: CURRENT_ATTACKER
+  description: Current Attacker (Pointer to 7E???? battler entry)
+0x7EAB76:
+  name: BATTLE_EXP_SCRATCH
+  description: Scratch space for battle-end experience calculations
+0x7EAB7C:
+  name: GIYGAS_PHASE
+  description: Current Giygas phase
+0x7EABE5:
+  name: ITEM_DROPPED
+  description: Item received at end of battle
+0x7EABE7:
+  name: MIRROR_ENEMY
+  description: Enemy being mirrored by Poo
+0x7EB70A:
+  name: DEBUG_MODE_NUMBER
+  description: Option selected in debug menu
+0xC0781C:
+  description: Dad's Phone Handler
+  name: DAD_PHONE
+  type: assembly
+  size: 205
+  labels:
+    0x7884: UNKNOWN0
+    0x7891: UNKNOWN1
+    0x78C4: UNKNOWN2
+    0x78D0: UNKNOWN3
+    0x78DE: UNKNOWN4
+0xC08000:
+  description: SNES Initialization
+  name: RESET
+  accumsize: 8
+  indexsize: 8
+  size: 322
+  type: assembly
+0xC0814F:
+  description: IRQ Handler
+  name: IRQ
+  type: assembly
+  size: 578
+  labels:
+    0x8183: UNKNOWN0
+    0x81B5: UNKNOWN1
+    0x81C8: UNKNOWN2
+    0x81F7: UNKNOWN3
+    0x8215: UNKNOWN4
+    0x821B: UNKNOWN5
+    0x821D: UNKNOWN6
+    0x821F: UNKNOWN7
+    0x8240: UNKNOWN8
+    0x8272: UNKNOWN9
+    0x8281: UNKNOWN10
+    0x82D6: UNKNOWN11
+    0x8334: UNKNOWN12
+    0x834B: UNKNOWN13
+    0x836D: UNKNOWN14
+    0x8377: UNKNOWN15
+    0x838A: UNKNOWN16
+0xC08170:
+  description: NMI Handler
+  name: NMI
+  type: assembly
+  size: 545
+  labels:
+    0x81B5: UNKNOWN0
+    0x81C8: UNKNOWN1
+    0x81F7: UNKNOWN2
+    0x8215: UNKNOWN3
+    0x821B: UNKNOWN4
+    0x821D: UNKNOWN5
+    0x821F: UNKNOWN6
+    0x8240: UNKNOWN7
+    0x8272: UNKNOWN8
+    0x8281: UNKNOWN9
+    0x82D6: UNKNOWN10
+    0x8334: UNKNOWN11
+    0x834B: UNKNOWN12
+    0x836D: UNKNOWN13
+    0x8377: UNKNOWN14
+    0x838A: UNKNOWN15
+0xC0865F:
+  description: Decompress to VRAM
+  name: DECOMP_VRAM
+  type: assembly
+  size: 120
+  labels:
+    0x8671: UNKNOWN0
+    0x8677: UNKNOWN1
+    0x869D: UNKNOWN2
+    0x86A1: UNKNOWN3
+    0x86A5: UNKNOWN4
+    0x86D2: UNKNOWN5
+0xC0870E:
+  description: Enable NMI+Joypad
+  name: ENABLE_NMI_JOYPAD
+  type: assembly
+  size: 17
+0xC0874C:
+  description: Reads gamepad state into memory
+  name: READ_JOYPAD
+  type: assembly
+  size: 53
+  labels:
+    0x8755: UNKNOWN0
+    0x875F: UNKNOWN1
+    0x8765: UNKNOWN2
+    0x876B: UNKNOWN3
+0xC08EED:
+  description: Overwrite Memory
+  name: MEMSET
+  arguments:
+    A: Destination
+    X: Size*2
+    $0E: Value to overwrite data with
+  type: assembly
+  size: 25
+  labels:
+    0x8EFD: UNKNOWN0
+    0x8F02: UNKNOWN1
+0xC08F06:
+  name: MEMSET2
+  description: Overwrite $7E0000+[$0E] to $7E0000+[$0E]+X with A
+  type: assembly
+  size: 13
+  labels:
+    0x8F09: UNKNOWN0
+    0x8F10: UNKNOWN1
+0xC08FDB:
+  description: Multiply low byte of Y by A
+  name: EIGHT_BIT_MULT_YxA
+  final processor state:
+    accum: 16
+    index: 16
+  size: 59
+  type: assembly
+  labels:
+    0x9022: UNKNOWN0
+0xC09014:
+  description: Multiply Y by A
+  name: MULT_YxA
+  type: assembly
+  size: 84
+0xC0A0FB:
+  description: Check if the game is running on an NTSC SNES
+  name: CHECK_HARDWARE
+  type: assembly
+  size: 54
+  labels:
+    0xA11A: UNKNOWN0
+0xC0AAE5:
+  description: Send Music Data to SPC-700
+  name: LOAD_SPC700_DATA
+  type: assembly
+  size: 162
+  labels:
+    0xAB06: UNKNOWN0
+    0xAB18: UNKNOWN1
+    0xAB20: UNKNOWN2
+    0xAB25: UNKNOWN3
+    0xAB2B: UNKNOWN4
+    0xAB35: UNKNOWN5
+    0xAB3A: UNKNOWN6
+    0xAB3E: UNKNOWN7
+    0xAB4B: UNKNOWN8
+    0xAB52: UNKNOWN9
+    0xAB66: UNKNOWN10
+    0xAB6F: UNKNOWN11
+0xC0B504:
+  description: File Select Screen Initialization
+  name: FILE_SELECT_INIT
+  type: assembly
+  size: 171
+  labels:
+    0xB550: UNKNOWN0
+0xC0B652:
+  type: assembly
+  size: 197
+0xC0B717:
+  description: Battle Initialization
+  name: BATTLE_INIT
+  type: assembly
+  size: 167
+  labels:
+    0xB727: UNKNOWN0
+    0xB735: UNKNOWN1
+    0xB747: UNKNOWN2
+    0xB76C: UNKNOWN3
+    0xB77A: UNKNOWN4
+    0xB77E: UNKNOWN5
+    0xB785: UNKNOWN6
+    0xB7A4: UNKNOWN7
+    0xB7BC: UNKNOWN8
+0xC0B7BE:
+  description: Main Loop
+  name: MAIN_LOOP
+  type: assembly
+  size: 439
+  labels:
+    0xB825: UNKNOWN0
+    0xB830: UNKNOWN1
+    0xB83B: UNKNOWN2
+    0xB843: UNKNOWN3
+    0xB851: UNKNOWN4
+    0xB86D: UNKNOWN5
+    0xB889: UNKNOWN6
+    0xB895: UNKNOWN7
+    0xB8A1: UNKNOWN8
+    0xB8A9: UNKNOWN9
+    0xB8B1: UNKNOWN10
+    0xB8C9: UNKNOWN11
+    0xB8DF: UNKNOWN12
+    0xB8ED: UNKNOWN13
+    0xB8FB: UNKNOWN14
+    0xB8FE: UNKNOWN15
+    0xB907: UNKNOWN16
+    0xB91B: UNKNOWN17
+    0xB934: UNKNOWN18
+    0xB939: UNKNOWN19
+    0xB955: UNKNOWN20
+    0xB95D: UNKNOWN21
+    0xB968: UNKNOWN22
+    0xB973: UNKNOWN23
+0xC0B975:
+  description: Game initialization?
+  name: GAME_INIT
+  type: assembly
+  size: 34
+0xC0DD1B:
+  final processor state:
+    accum: 16
+  size: 38
+  type: assembly
+0xC0EF31:
+  description: Loads and displays logo screen specified by A
+  name: LOGO_SCREEN
+  type: assembly
+  size: 377
+  labels:
+    0xEF69: UNKNOWN0
+    0xEF6C: UNKNOWN1
+    0xEFC4: UNKNOWN2
+    0xF010: UNKNOWN3
+    0xF070: UNKNOWN4
+0xC0F19B:
+  description: Loads and displays the gas station screen
+  name: GAS_STATION
+  type: assembly
+  size: 260
+0xC0F5BF:
+  type: assembly
+  size: 31
+  labels:
+    0xF5CE: UNKNOWN0
+    0xF5D7: UNKNOWN1
+0xC0FAA4:
+  description: SRAM Integrity Check
+  name: CHECK_SRAM_INTEGRITY
+  type: assembly
+  size: 92
+  labels:
+    0xFAD8: GOOD_SRAM
+    0xFAE7: LOOP_BEGINNING
+    0xFAF2: LOOP_ENTRY
+0xC10032:
+  description: Set blinking triangle prompt to A
+  name: ENABLE_BLINKING_TRIANGLE
+  size: 6
+  type: assembly
+0xC10504:
+  description: |
+    Get the root address of the current active window
+  name: GET_ACTIVE_WINDOW_ADDRESS
+  type: assembly
+  size: 35
+  labels:
+    0x0513: UNKNOWN0
+    0x0526: UNKNOWN1
+0xC106E4:
+  description: Create Window
+  name: CREATE_WINDOW
+  type: assembly
+  size: 656
+  labels:
+    0x0725: UNKNOWN0
+    0x0732: UNKNOWN1
+    0x075C: UNKNOWN2
+    0x0774: UNKNOWN3
+    0x0781: UNKNOWN4
+    0x0796: UNKNOWN5
+    0x07AC: UNKNOWN6
+    0x07B7: UNKNOWN7
+    0x092F: UNKNOWN8
+    0x0940: UNKNOWN9
+    0x0959: UNKNOWN10
+0xC13A85:
+  description: (A) Open Menu
+  name: OPEN_MENU_BUTTON
+  type: assembly
+  size: 1561
+  labels:
+    0x3AB8: UNKNOWN0
+    0x3AEA: UNKNOWN1
+    0x3AEF: UNKNOWN2
+    0x3AF2: UNKNOWN3
+    0x3B58: UNKNOWN4
+    0x3B82: UNKNOWN5
+    0x3B8A: UNKNOWN6
+    0x3B92: UNKNOWN7
+    0x3B9A: UNKNOWN8
+    0x3B9D: UNKNOWN9
+    0x3BB5: UNKNOWN10
+    0x3BC1: UNKNOWN11
+    0x3BD0: UNKNOWN12
+    0x3BF8: UNKNOWN13
+    0x3C27: UNKNOWN14
+    0x3C56: UNKNOWN15
+    0x3C6A: UNKNOWN16
+    0x3C78: UNKNOWN17
+    0x3C89: UNKNOWN18
+    0x3CB2: UNKNOWN19
+    0x3CCE: UNKNOWN20
+    0x3CD7: UNKNOWN21
+    0x3D07: UNKNOWN22
+    0x3D09: UNKNOWN23
+    0x3D0E: UNKNOWN24
+    0x3D11: UNKNOWN25
+    0x3D1D: UNKNOWN26
+    0x3D50: UNKNOWN27
+    0x3D61: UNKNOWN28
+    0x3D8A: UNKNOWN29
+    0x3D92: UNKNOWN30
+    0x3D95: UNKNOWN31
+    0x3DA4: UNKNOWN32
+    0x3DBE: UNKNOWN33
+    0x3E5A: UNKNOWN34
+    0x3E72: UNKNOWN35
+    0x3ECE: UNKNOWN36
+    0x3F18: UNKNOWN37
+    0x3F35: UNKNOWN38
+    0x3F66: UNKNOWN39
+    0x3F7F: UNKNOWN40
+    0x3FFF: UNKNOWN41
+    0x4007: UNKNOWN42
+    0x401A: UNKNOWN43
+    0x403B: UNKNOWN44
+    0x4060: UNKNOWN45
+    0x406C: UNKNOWN46
+    0x4083: UNKNOWN47
+    0x408C: UNKNOWN48
+0xC1409E:
+  description: (L) Talk/Check
+  name: CHECKTALK_BUTTON
+  type: assembly
+  size: 110
+  labels:
+    0x40C9: UNKNOWN0
+    0x40D9: UNKNOWN1
+    0x40E5: UNKNOWN2
+    0x40FA: UNKNOWN3
+0xC1410C:
+  description: (B/Select) Open HP/PP Display
+  name: OPEN_HPPP_DISPLAY
+  type: assembly
+  size: 67
+  labels:
+    0x411C: UNKNOWN0
+    0x412E: UNKNOWN1
+    0x414E: UNKNOWN2
+0xC1414F:
+  description: (X) Display Town Map
+  name: SHOW_TOWN_MAP
+  type: assembly
+  size: 30
+  labels:
+    0x416C: UNKNOWN0
+0xC18913:
+  description: Display Text at ($0E+10)
+  name: DISPLAY_TEXT
+  type: assembly
+  labels:
+    0x893C: UNKNOWN0
+    0x8949: UNKNOWN1
+    0x896E: UNKNOWN2
+    0x89B1: UNKNOWN3
+    0x89BB: UNKNOWN4
+    0x89C6: UNKNOWN5
+    0x89CE: UNKNOWN6
+    0x89D6: UNKNOWN7
+    0x89DE: UNKNOWN8
+    0x89E6: UNKNOWN9
+    0x89EE: UNKNOWN10
+    0x89F6: UNKNOWN11
+    0x89FE: UNKNOWN12
+    0x8A06: UNKNOWN13
+    0x8A0E: UNKNOWN14
+    0x8A16: UNKNOWN15
+    0x8A1E: UNKNOWN16
+    0x8A26: UNKNOWN17
+    0x8A2E: UNKNOWN18
+    0x8A36: UNKNOWN19
+    0x8A3E: UNKNOWN20
+    0x8A46: UNKNOWN21
+    0x8A4E: UNKNOWN22
+    0x8A56: UNKNOWN23
+    0x8A5E: UNKNOWN24
+    0x8A66: UNKNOWN25
+    0x8A6E: UNKNOWN26
+    0x8A76: UNKNOWN27
+    0x8A7E: UNKNOWN28
+    0x8A86: UNKNOWN29
+    0x8A8E: UNKNOWN30
+    0x8A96: UNKNOWN31
+    0x8A9E: UNKNOWN32
+    0x8AA6: UNKNOWN33
+    0x8ABA: UNKNOWN34
+  size: 696
+0xC1D9FF:
+  description: Display In-Battle Text at ($0E+10)
+  name: DISPLAY_IN_BATTLE_TEXT
+  size: 74
+  type: assembly
+  labels:
+    0xDA2D: UNKNOWN
+    0xDA38: UNKNOWN2
+0xC1DA49:
+  name: DISPLAY_TEXT_WAIT
+  description: Display text and wait
+  type: assembly
+  size: 93
+  labels:
+    0xDA7F: UNKNOWN0
+    0xDA95: UNKNOWN1
+0xC1DB59:
+  description: Redirect to C1ABB4
+  name: REDIRECT_C1ABB4
+  final processor state:
+    accum: 16
+    index: 16
+  size: 6
+  type: assembly
+0xC246EE:
+  name: BATTLE_ROUTINE
+  description: Handles Mother 2's Battles
+  type: assembly
+  size: 6599
+  labels:
+    0x4761: UNKNOWN0
+    0x4772: UNKNOWN1
+    0x480F: UNKNOWN2
+    0x482D: UNKNOWN3
+    0x485D: UNKNOWN4
+    0x4873: UNKNOWN5
+    0x48DF: UNKNOWN6
+    0x48ED: UNKNOWN7
+    0x48F8: UNKNOWN8
+    0x491A: UNKNOWN9
+    0x4966: UNKNOWN10
+    0x4996: UNKNOWN11
+    0x49AC: UNKNOWN12
+    0x49B8: UNKNOWN13
+    0x4A3C: UNKNOWN14
+    0x4A4B: UNKNOWN15
+    0x4A52: UNKNOWN16
+    0x4AE6: UNKNOWN17
+    0x4B0E: UNKNOWN18
+    0x4B12: UNKNOWN19
+    0x4B1D: UNKNOWN20
+    0x4B3B: UNKNOWN21
+    0x4B5F: UNKNOWN22
+    0x4B6F: UNKNOWN23
+    0x4B89: UNKNOWN24
+    0x4BA5: UNKNOWN25
+    0x4BC1: UNKNOWN26
+    0x4BDD: UNKNOWN27
+    0x4BE6: UNKNOWN28
+    0x4BF7: UNKNOWN29
+    0x4C42: UNKNOWN30
+    0x4C4B: UNKNOWN31
+    0x4C67: UNKNOWN32
+    0x4C94: UNKNOWN33
+    0x4C99: UNKNOWN34
+    0x4C9E: UNKNOWN35
+    0x4D0F: UNKNOWN36
+    0x4D1D: UNKNOWN37
+    0x4D21: UNKNOWN38
+    0x4D2B: UNKNOWN39
+    0x4D39: UNKNOWN40
+    0x4D47: UNKNOWN41
+    0x4D55: UNKNOWN42
+    0x4D63: UNKNOWN43
+    0x4D6F: UNKNOWN44
+    0x4D77: UNKNOWN45
+    0x4D85: UNKNOWN46
+    0x4DE7: UNKNOWN47
+    0x4DEC: UNKNOWN48
+    0x4DF6: UNKNOWN49
+    0x4E00: UNKNOWN50
+    0x4E13: UNKNOWN51
+    0x4E1A: UNKNOWN52
+    0x4E1F: UNKNOWN53
+    0x4E80: UNKNOWN54
+    0x4E87: UNKNOWN55
+    0x4EB5: UNKNOWN56
+    0x4ECE: UNKNOWN57
+    0x4EEA: UNKNOWN58
+    0x4EEF: UNKNOWN59
+    0x4F14: UNKNOWN60
+    0x4F43: UNKNOWN61
+    0x4F52: UNKNOWN62
+    0x4F5E: UNKNOWN63
+    0x4F72: UNKNOWN64
+    0x4F9C: UNKNOWN65
+    0x4FB4: UNKNOWN66
+    0x4FC0: UNKNOWN67
+    0x4FE1: UNKNOWN68
+    0x5011: UNKNOWN69
+    0x501E: UNKNOWN70
+    0x5048: UNKNOWN71
+    0x5062: UNKNOWN72
+    0x5067: UNKNOWN73
+    0x5082: UNKNOWN74
+    0x5090: UNKNOWN75
+    0x50A9: UNKNOWN76
+    0x50C5: UNKNOWN77
+    0x50D0: UNKNOWN78
+    0x50DA: UNKNOWN79
+    0x50F7: UNKNOWN80
+    0x5102: UNKNOWN81
+    0x513D: UNKNOWN82
+    0x5174: UNKNOWN83
+    0x5179: UNKNOWN84
+    0x517E: UNKNOWN85
+    0x519B: UNKNOWN86
+    0x51B0: UNKNOWN87
+    0x51C0: UNKNOWN88
+    0x51E4: UNKNOWN89
+    0x51F8: UNKNOWN90
+    0x5200: UNKNOWN91
+    0x520E: UNKNOWN92
+    0x5223: UNKNOWN93
+    0x523C: UNKNOWN94
+    0x5268: UNKNOWN95
+    0x5280: UNKNOWN96
+    0x52A0: UNKNOWN97
+    0x52AE: UNKNOWN98
+    0x52C8: UNKNOWN99
+    0x52D1: UNKNOWN100
+    0x52DA: UNKNOWN101
+    0x52E3: UNKNOWN102
+    0x52EC: UNKNOWN103
+    0x530F: UNKNOWN104
+    0x5342: UNKNOWN105
+    0x53AE: UNKNOWN106
+    0x53BB: UNKNOWN107
+    0x53D2: UNKNOWN108
+    0x53E7: UNKNOWN109
+    0x53EE: UNKNOWN110
+    0x540D: UNKNOWN111
+    0x5429: UNKNOWN112
+    0x5430: UNKNOWN113
+    0x5479: UNKNOWN114
+    0x54B6: UNKNOWN115
+    0x54C1: UNKNOWN116
+    0x54D7: UNKNOWN117
+    0x5510: UNKNOWN118
+    0x5523: UNKNOWN119
+    0x554B: UNKNOWN120
+    0x555A: UNKNOWN121
+    0x556B: UNKNOWN122
+    0x5599: UNKNOWN123
+    0x559E: UNKNOWN124
+    0x55AD: UNKNOWN125
+    0x55DD: UNKNOWN126
+    0x55E5: UNKNOWN127
+    0x55FB: UNKNOWN128
+    0x567A: UNKNOWN129
+    0x5682: UNKNOWN130
+    0x568A: UNKNOWN131
+    0x56B4: UNKNOWN132
+    0x56E4: UNKNOWN133
+    0x5721: UNKNOWN134
+    0x5751: UNKNOWN135
+    0x57C2: UNKNOWN136
+    0x57E4: UNKNOWN137
+    0x581A: UNKNOWN138
+    0x5840: UNKNOWN139
+    0x5866: UNKNOWN140
+    0x588C: UNKNOWN141
+    0x58B0: UNKNOWN142
+    0x58D7: UNKNOWN143
+    0x58E6: UNKNOWN144
+    0x58E9: UNKNOWN145
+    0x5915: UNKNOWN146
+    0x5960: UNKNOWN147
+    0x5974: UNKNOWN148
+    0x5992: UNKNOWN149
+    0x59A0: UNKNOWN150
+    0x59BD: UNKNOWN151
+    0x59E0: UNKNOWN152
+    0x59E2: UNKNOWN153
+    0x5A07: UNKNOWN154
+    0x5A38: UNKNOWN155
+    0x5A3F: UNKNOWN156
+    0x5A60: UNKNOWN157
+    0x5A65: UNKNOWN158
+    0x5A6A: UNKNOWN159
+    0x5AA2: UNKNOWN160
+    0x5AAA: UNKNOWN161
+    0x5AE7: UNKNOWN162
+    0x5AF0: UNKNOWN163
+    0x5AF9: UNKNOWN164
+    0x5B00: UNKNOWN165
+    0x5B11: UNKNOWN166
+    0x5B1A: UNKNOWN167
+    0x5B1F: UNKNOWN168
+    0x5B41: UNKNOWN169
+    0x5B5D: UNKNOWN170
+    0x5BA2: UNKNOWN171
+    0x5BA4: UNKNOWN172
+    0x5BA8: UNKNOWN173
+    0x5BC6: UNKNOWN174
+    0x5BF0: UNKNOWN175
+    0x5BFD: UNKNOWN176
+    0x5C17: UNKNOWN177
+    0x5C57: UNKNOWN178
+    0x5C8E: UNKNOWN179
+    0x5C95: UNKNOWN180
+    0x5CA9: UNKNOWN181
+    0x5CAE: UNKNOWN182
+    0x5CB5: UNKNOWN183
+    0x5CBD: UNKNOWN184
+    0x5CC1: UNKNOWN185
+    0x5CC6: UNKNOWN186
+    0x5CD5: UNKNOWN187
+    0x5D40: UNKNOWN188
+    0x5D44: UNKNOWN189
+    0x5D6C: UNKNOWN190
+    0x5D8D: UNKNOWN191
+    0x5DB0: UNKNOWN192
+    0x5DC6: UNKNOWN193
+    0x5DFB: UNKNOWN194
+    0x5E05: UNKNOWN195
+    0x5E16: UNKNOWN196
+    0x5E4B: UNKNOWN197
+    0x5E5A: UNKNOWN198
+    0x5F12: UNKNOWN199
+    0x5F28: UNKNOWN200
+    0x5F44: UNKNOWN201
+    0x5F50: UNKNOWN202
+    0x5F95: UNKNOWN203
+    0x5FA1: UNKNOWN204
+    0x5FB4: UNKNOWN205
+    0x5FBF: UNKNOWN206
+    0x5FC3: UNKNOWN207
+    0x5FD8: UNKNOWN208
+    0x605A: UNKNOWN209
+    0x6071: UNKNOWN210
+    0x6087: UNKNOWN211
+    0x6091: UNKNOWN212
+    0x6099: UNKNOWN213
+0xC260E9:
+  name: INSTANT_WIN_HANDLER
+  description: Instant Win Handler
+  type: assembly
+  size: 919
+  labels:
+    0x6106: UNKNOWN0
+    0x611D: UNKNOWN1
+    0x6154: UNKNOWN2
+    0x6161: UNKNOWN3
+    0x617F: UNKNOWN4
+    0x61A0: UNKNOWN5
+    0x61EF: UNKNOWN6
+    0x620D: UNKNOWN7
+    0x6219: UNKNOWN8
+    0x6230: UNKNOWN9
+    0x6243: UNKNOWN10
+    0x6248: UNKNOWN11
+    0x6260: UNKNOWN12
+    0x62B3: UNKNOWN13
+    0x6320: UNKNOWN14
+    0x6365: UNKNOWN15
+    0x6371: UNKNOWN16
+    0x63E5: UNKNOWN17
+    0x63F3: UNKNOWN18
+    0x6401: UNKNOWN19
+    0x640F: UNKNOWN20
+    0x641D: UNKNOWN21
+    0x642B: UNKNOWN22
+    0x6439: UNKNOWN23
+    0x6445: UNKNOWN24
+    0x6461: UNKNOWN25
+    0x6476: UNKNOWN26
+    0x647A: UNKNOWN27
+0xC2656D:
+  name: INSTANT_WIN_CHECK
+  description: Instant Win Check
+  type: assembly
+  size: 861
+  labels:
+    0x6583: UNKNOWN0
+    0x65B3: UNKNOWN1
+    0x65BD: UNKNOWN2
+    0x65D3: UNKNOWN3
+    0x65ED: UNKNOWN4
+    0x665A: UNKNOWN5
+    0x6669: UNKNOWN6
+    0x6678: UNKNOWN7
+    0x6680: UNKNOWN8
+    0x6687: UNKNOWN9
+    0x66A8: UNKNOWN10
+    0x66AD: UNKNOWN11
+    0x66BE: UNKNOWN12
+    0x66C5: UNKNOWN13
+    0x671B: UNKNOWN14
+    0x6720: UNKNOWN15
+    0x6732: UNKNOWN16
+    0x6787: UNKNOWN17
+    0x678C: UNKNOWN18
+    0x6796: UNKNOWN19
+    0x679C: UNKNOWN20
+    0x67CE: UNKNOWN21
+    0x67D3: UNKNOWN22
+    0x67DC: UNKNOWN23
+    0x67EB: UNKNOWN24
+    0x67F7: UNKNOWN25
+    0x67FC: UNKNOWN26
+    0x6844: UNKNOWN27
+    0x6845: UNKNOWN28
+    0x684C: UNKNOWN29
+    0x6866: UNKNOWN30
+    0x68AD: UNKNOWN31
+    0x68BC: UNKNOWN32
+    0x68C1: UNKNOWN33
+    0x68C8: UNKNOWN34
+0xC293C6:
+  name: PSI_SHIELD_NULLIFY
+  description: PSI Shield Handler
+  type: assembly
+  size: 177
+0xC29A29:
+  name: PSI_STARSTORM_COMMON
+  description: PSI Starstorm General
+  type: assembly
+  size: 38
+  labels:
+    0x9A4D: RETURN
+0xC2AAC7:
+  name: BOSS_BATTLE_CHECK
+  description: Checks if a boss is currently in the battle
+  type: assembly
+  size: 93
+  labels:
+    0xAADB: NEXT_ENEMY
+    0xAB0B: NOT_BOSS
+    0xAB1A: BEGIN_LOOP
+    0xAB22: RETURN
+0xC2AB24:
+  name: BTLACT_TELEPORT_BOX
+  description: 'Battle Action: Teleport Box'
+  type: assembly
+  size: 186
+  labels:
+    0xAB3E: UNKNOWN0
+    0xAB83: UNKNOWN1
+    0xABBE: TELEPORT_BOX_FAILURE
+    0xABDC: RETURN
+0xC2ABDE:
+  type: assembly
+  size: 20
+0xC419EA:
+  description: Decompress ($0E+10) to ($12+14)
+  name: DECOMP
+  type: assembly
+  size: 792
+  labels:
+    0x1A17: UNKNOWN0
+    0x1A39: UNKNOWN1
+    0x1A44: UNKNOWN2
+    0x1A4A: UNKNOWN3
+    0x1A56: UNKNOWN4
+    0x1A68: UNKNOWN5
+    0x1A6E: UNKNOWN6
+    0x1A79: UNKNOWN7
+    0x1A82: UNKNOWN8
+    0x1A90: UNKNOWN9
+    0x1A96: UNKNOWN10
+    0x1AC0: UNKNOWN11
+    0x1AD4: UNKNOWN12
+    0x1B02: UNKNOWN13
+    0x1B2E: UNKNOWN14
+    0x1B38: UNKNOWN15
+    0x1B70: UNKNOWN16
+    0x1B96: UNKNOWN17
+    0x1B99: UNKNOWN18
+    0x1BC4: UNKNOWN19
+    0x1BC7: UNKNOWN20
+    0x1BF2: UNKNOWN21
+    0x1BF5: UNKNOWN22
+    0x1C20: UNKNOWN23
+    0x1C23: UNKNOWN24
+    0x1C49: UNKNOWN25
+    0x1C4C: UNKNOWN26
+    0x1C85: UNKNOWN27
+    0x1C88: UNKNOWN28
+    0x1CC5: UNKNOWN29
+0xC4ADB2:
+  description: Initializes Intro
+  name: INIT_INTRO
+  type: assembly
+  size: 341
+  labels:
+    0xAE04: UNKNOWN0
+    0xAE0C: UNKNOWN1
+    0xAE14: UNKNOWN2
+    0xAE1C: UNKNOWN3
+    0xAE24: UNKNOWN4
+    0xAE27: UNKNOWN5
+    0xAE31: UNKNOWN6
+    0xAE42: UNKNOWN7
+    0xAE55: UNKNOWN8
+    0xAE68: UNKNOWN9
+    0xAE74: UNKNOWN10
+    0xAEC1: UNKNOWN11
+    0xAECD: UNKNOWN12
+    0xAEEC: UNKNOWN13
+0xC4CEF7:
+  description: Initialize SPC-700
+  name: INITIALIZE_SPC700
+  type: assembly
+  size: 101
+0xC4CF5C:
+  description: Change music to A
+  name: CHANGE_MUSIC
+  type: assembly
+  size: 347
+  labels:
+    0xCF71: UNKNOWN0
+    0xCF7A: UNKNOWN1
+    0xCF88: UNKNOWN2
+    0xCF93: UNKNOWN3
+    0xCFF3: UNKNOWN4
+    0xD052: UNKNOWN5
+    0xD0AD: UNKNOWN6
+0xC50284:
+  description: Text Data
+  name: TEXT_DATA
+  type: data
+  size: 320144
+  entries:
+  - name: Text
+    type: standardtext
+    terminator: 2
+0xCBD89A:
+  type: data
+  description: Battle Group BG Association Table
+  name: GROUP_BATTLEBG_TABLE
+  size: 1936
+  entries:
+  - name: Unknown
+    size: 2
+  - name: Unknown2
+    size: 2
+0xD0C60D:
+  type: data
+  description: Battle Entry Pointer Table
+  name: BTL_ENTRY_PTR_TABLE
+  size: 3872
+  entries:
+  - name: Pointer
+    size: 4
+    type: pointer
+  - name: Fear event flag
+    size: 2
+    type: hexint
+  - name: Fear mode
+    size: 1
+    values:
+    - Run away if flag is unset
+    - Run away if flag is set
+  - name: Battle Letterboxing?
+    size: 1
+0xD57000:
+  type: data
+  description: Item Data
+  name: ITEM_DATA
+  size: 6096
+  entries:
+  - name: Name
+    size: 10
+    type: standardtext
+  - name: Type
+    size: 1
+  - name: Cost
+    size: 2
+  - name: Misc Flags
+    size: 1
+    bitvalues:
+    - Ness can use
+    - Paula can use
+    - Jeff can use
+    - Poo can use
+    - Item can change
+    - Cannot be given away
+    - Unknown
+    - Item disappears when used
+  - name: Effect
+    size: 2
+  - name: Argument
+    size: 4
+    type: hexint
+  - name: Help Text Pointer
+    size: 4
+    type: pointer
+0xD58B1E:
+  type: data
+  description: Battle Action Table
+  name: BATTLE_ACTION_TABLE
+  size: 3816
+  entries:
+  - name: Direction
+    size: 1
+    values:
+    - party
+    - enemy
+  - name: Target
+    size: 1
+    values:
+    - none
+    - one
+    - random
+    - row
+    - all
+  - name: Action type
+    size: 1
+    values:
+    - nothing
+    - physical (affected by shields and defending)
+    - physical (unaffected by shields and defending)
+    - PSI
+    - item
+    - other
+  - name: PP Cost
+    size: 1
+  - name: Text Address
+    size: 4
+    type: pointer
+  - name: Code Address
+    size: 4
+    type: pointer
+0xD5A440:
+  type: data
+  description: Enemy Configuration Table
+  name: ENEMY_CONFIGURATION_TABLE
+  size: 17787
+  entries:
+  - name: Name
+    size: 10
+    type: standardtext
+  - name: Type
+    size: 1
+    values:
+    - Normal
+    - Insect
+    - Metal
+  - name: Battle Sprite
+    size: 2
+  - name: Overworld Sprite
+    size: 2
+  - name: Run Flag
+    size: 1
+  - name: HP
+    size: 2
+  - name: PP
+    size: 2
+  - name: Experience points
+    size: 4
+  - name: Money
+    size: 2
+  - name: Movement pattern
+    size: 2
+  - name: Encounter Text Pointer
+    size: 4
+    type: pointer
+  - name: Death Text Pointer
+    size: 4
+    type: pointer
+  - name: Battle Sprite Palette
+    size: 1
+  - name: Level
+    size: 1
+  - name: Music
+    size: 1
+  - name: Offense
+    size: 2
+  - name: Defense
+    size: 2
+  - name: Speed
+    size: 1
+  - name: Guts
+    size: 1
+  - name: Luck
+    size: 1
+  - name: Fire vulnerability
+    size: 1
+    values:
+    - 100%
+    - 70%
+    - 40%
+    - 5%
+  - name: Freeze vulnerability
+    size: 1
+    values:
+    - 100%
+    - 70%
+    - 40%
+    - 5%
+  - name: Flash vulnerability
+    size: 1
+    values:
+    - 100%
+    - 70%
+    - 40%
+    - 5%
+  - name: Paralysis vulnerability
+    size: 1
+    values:
+    - 100%
+    - 70%
+    - 40%
+    - 5%
+  - name: Hypnosis/Brainshock vulnerability
+    size: 1
+    values:
+    - 100%
+    - 70%
+    - 40%
+    - 5%
+  - name: Miss Rate
+    size: 1
+  - name: Action Order
+    size: 1
+  - name: Action 1
+    size: 2
+  - name: Action 2
+    size: 2
+  - name: Action 3
+    size: 2
+  - name: Action 4
+    size: 2
+  - name: Final Action
+    size: 2
+  - name: Action 1 Argument
+    size: 1
+  - name: Action 2 Argument
+    size: 1
+  - name: Action 3 Argument
+    size: 1
+  - name: Action 4 Argument
+    size: 1
+  - name: Final Action Argument
+    size: 1
+  - name: Unknown
+    size: 1
+  - name: Boss Flag
+    size: 1
+  - name: Item Rarity
+    size: 1
+  - name: Item Dropped
+    size: 1
+  - name: Initial Status
+    size: 1
+    values:
+    - Normal
+    - PSI Shield Alpha
+    - PSI Shield Beta
+    - Shield Alpha
+    - Shield Beta
+    - Asleep
+    - Cannot Concentrate
+    - Feeling Strange
+  - name: Death Sound
+    size: 1
+    values:
+    - Normal
+    - Boss
+  - name: Row
+    size: 1
+  - name: Max Call
+    size: 1
+  - name: Mirror Success Rate
+    size: 1
+0xEFD02B:
+  type: assembly
+  size: 62
+  labels:
+    0xD042: UNKNOWN0
+    0xD046: UNKNOWN1
+    0xD058: UNKNOWN2
+    0xD065: UNKNOWN3
+0xEFD069:
+  name: DEBUG_CHECK_VIEW_CHARACTER_MODE
+  description: Check if in view character mode
+  type: assembly
+  size: 19
+  labels:
+    0xD078: UNKNOWN0
+    0xD07B: UNKNOWN1
+...
