@@ -2,146 +2,209 @@
 processor: 65816
 platform: snes
 title: Mother 2 (JPN)
+localvars: directpage
+defaulttext: standardtext
 texttables:
+  stafftext:
+    lengths:
+      3: 2
+    replacements:
+      0: ""
+      64: ' '
+      66: a
+      67: c
+      68: e
+      70: g
+      72: ''''
+      74: i
+      75: k
+      76: m
+      77: o
+      79: s
+      82: b
+      83: d
+      84: f
+      86: h
+      91: l
+      92: "n"
+      93: p
+      94: r
+      95: t
+      106: u
+      107: w
+      109: .
+      108: "y"
+      110: u
+      111: '?'
+      122: v
+      123: x
+      128: '-'
+      129: A
+      130: B
+      131: C
+      132: D
+      133: E
+      134: F
+      135: G
+      136: H
+      137: I
+      138: J
+      139: K
+      140: L
+      141: M
+      142: "N"
+      143: O
+      160: P
+      161: Q
+      162: R
+      163: S
+      164: T
+      165: U
+      166: V
+      167: W
+      168: X
+      169: "Y"
+      170: Z
+      174: .
   standardtext:
     lengths:
-      0x04: 3
-      0x05: 3
-      0x06: 7
-      0x07: 3
-      0x08: 5
-      0x09: 6
-      0x0A: 5
-      0x0B: 2
-      0x0C: 2
-      0x0D: 2
-      0x0E: 2
-      0x10: 2
-      0x18:
+      4: 3
+      5: 3
+      6: 7
+      7: 3
+      8: 5
+      9: 6
+      10: 5
+      11: 2
+      12: 2
+      13: 2
+      14: 2
+      16: 2
+      24:
         default: 2
-        0x01: 3
-        0x03: 3
-        0x05: 4
-        0x07: 7
-        0x0D: 4
-      0x19:
+        1: 3
+        3: 3
+        5: 4
+        7: 7
+        13: 4
+      25:
         default: 2
-        0x05: 5
-        0x10: 3
-        0x11: 3
-        0x16: 4
-        0x18: 3
-        0x19: 4
-        0x1A: 3
-        0x1B: 3
-        0x1C: 4
-        0x1D: 4
-        0x21: 3
-        0x22: 7
-        0x23: 7
-        0x24: 7
-        0x25: 3
-        0x26: 3
-        0x27: 3
-        0x28: 3
-      0x1A:
+        5: 5
+        16: 3
+        17: 3
+        22: 4
+        24: 3
+        25: 4
+        26: 3
+        27: 3
+        28: 4
+        29: 4
+        33: 3
+        34: 7
+        35: 7
+        36: 7
+        37: 3
+        38: 3
+        39: 3
+        40: 3
+      26:
         default: 2
-        0x06: 3
-      0x1B: 
+        6: 3
+      27:
         default: 2
-        0x02: 6
-        0x03: 6
-      0x1C:
+        2: 6
+        3: 6
+      28:
         default: 3
-        0x04: 2
-        0x0A: 6
-        0x0B: 6
-        0x0D: 2
-        0x0E: 2
-        0x0F: 2
-        0x13: 4
-      0x001D:
+        4: 2
+        10: 6
+        11: 6
+        13: 2
+        14: 2
+        15: 2
+        19: 4
+      29:
         default: 2
-        0x00: 4
-        0x01: 4
-        0x02: 3
-        0x03: 3
-        0x04: 4
-        0x05: 4
-        0x06: 6
-        0x07: 6
-        0x08: 4
-        0x09: 4
-        0x0E: 4
-        0x0F: 4
-        0x10: 4
-        0x11: 4
-        0x12: 4
-        0x13: 4
-        0x14: 6
-        0x15: 4
-        0x17: 6
-        0x18: 3
-        0x19: 3
-        0x21: 3
-        0x23: 3
-        0x24: 3
-      0x1E:
+        0: 4
+        1: 4
+        2: 3
+        3: 3
+        4: 4
+        5: 4
+        6: 6
+        7: 6
+        8: 4
+        9: 4
+        14: 4
+        15: 4
+        16: 4
+        17: 4
+        18: 4
+        19: 4
+        20: 6
+        21: 4
+        23: 6
+        24: 3
+        25: 3
+        33: 3
+        35: 3
+        36: 3
+      30:
         default: 4
-        0x09: 6
-      0x1F:
+        9: 6
+      31:
         default: 3
-        0x00: 4
-        0x03: 2
-        0x05: 2
-        0x06: 2
-        0x13: 4
-        0x15: 7
-        0x16: 5
-        0x17: 7
-        0x18: 9
-        0x19: 9
-        0x1A: 5
-        0x1C: 4
-        0x1E: 5
-        0x1F: 5
-        0x20: 4
-        0x30: 2
-        0x31: 2
-        0x40: 4
-        0x50: 2
-        0x51: 2
-        0x61: 2
-        0x63: 6
-        0x64: 2
-        0x65: 2
-        0x66: 8
-        0x68: 2
-        0x69: 2
-        0x71: 4
-        0x81: 4
-        0x83: 4
-        0x90: 2
-        0xA0: 2
-        0xA1: 2
-        0xA2: 2
-        0xB0: 2
-        0xC0: 7
-        0xD1: 2
-        0xE1: 5
-        0xE4: 5
-        0xE6: 4
-        0xE7: 4
-        0xE9: 4
-        0xEA: 4
-        0xEB: 4
-        0xEC: 4
-        0xED: 2
-        0xEE: 4
-        0xEF: 4
-        0xF1: 6
-        0xF2: 6
-        0xF3: 5
+        0: 4
+        3: 2
+        5: 2
+        6: 2
+        19: 4
+        21: 7
+        22: 5
+        23: 7
+        24: 9
+        25: 9
+        26: 5
+        28: 4
+        30: 5
+        31: 5
+        32: 4
+        48: 2
+        49: 2
+        64: 4
+        80: 2
+        81: 2
+        97: 2
+        99: 6
+        100: 2
+        101: 2
+        102: 8
+        104: 2
+        105: 2
+        113: 4
+        129: 4
+        131: 4
+        144: 2
+        160: 2
+        161: 2
+        162: 2
+        176: 2
+        192: 7
+        209: 2
+        225: 5
+        228: 5
+        230: 4
+        231: 4
+        233: 4
+        234: 4
+        235: 4
+        236: 4
+        237: 2
+        238: 4
+        239: 4
+        241: 6
+        242: 6
+        243: 5
     replacements:
       0: ""
       2: ""
@@ -187,7 +250,7 @@ texttables:
       75: K
       76: L
       77: M
-      78: 'N'
+      78: "N"
       79: O
       80: P
       81: Q
@@ -198,7 +261,7 @@ texttables:
       86: V
       87: W
       88: X
-      89: 'Y'
+      89: "Y"
       90: Z
       91: ':'
       92: ・
@@ -370,6 +433,7 @@ texttables:
   description: Execution Entry Point
   size: 3
   type: assembly
+  ignore: true
 0x7E0065:
   name: PAD_1_STATE
   description: Controller 1 state
@@ -433,6 +497,95 @@ texttables:
 0x7EB70A:
   name: DEBUG_MODE_NUMBER
   description: Option selected in debug menu
+0xC00000:
+  description: Clear Unknown_30x2_Table23
+  name: CLEAR_UNKNOWN_30X2_TABLE23
+  type: assembly
+  size: 19
+0xC00013:
+  description: Set VRAM Locations?
+  type: assembly
+  size: 56
+0xC0004B:
+  type: assembly
+  size: 58
+0xC00085:
+  type: assembly
+  size: 237
+  labels:
+    198: UNKNOWN0
+    276: UNKNOWN1
+    363: UNKNOWN2
+    368: UNKNOWN3
+0xC00172:
+  type: assembly
+  size: 205
+  labels:
+    388: UNKNOWN0
+    407: UNKNOWN1
+    445: UNKNOWN2
+    551: UNKNOWN3
+    561: UNKNOWN4
+    573: UNKNOWN5
+0xC0023F:
+  type: assembly
+  size: 216
+  labels:
+    594: UNKNOWN0
+    642: UNKNOWN1
+    691: UNKNOWN2
+    705: UNKNOWN3
+    733: UNKNOWN4
+    754: UNKNOWN5
+    789: UNKNOWN6
+0xC00317:
+  type: assembly
+  size: 84
+  labels:
+    835: UNKNOWN0
+    873: UNKNOWN1
+0xC0036B:
+  type: assembly
+  size: 54
+0xC003A1:
+  type: assembly
+  size: 163
+  labels:
+    968: UNKNOWN0
+    1040: UNKNOWN1
+    1045: UNKNOWN2
+0xC00444:
+  type: assembly
+  size: 76
+  labels:
+    1114: UNKNOWN0
+    1138: UNKNOWN1
+    1142: UNKNOWN2
+    1164: UNKNOWN3
+    1166: UNKNOWN4
+0xC00490:
+  type: assembly
+  size: 359
+  labels:
+    1259: UNKNOWN0
+    1271: UNKNOWN1
+    1283: UNKNOWN2
+    1291: UNKNOWN3
+    1394: UNKNOWN4
+    1426: UNKNOWN5
+    1513: UNKNOWN6
+    1525: UNKNOWN7
+0xC005F7:
+  type: assembly
+  size: 67
+0xC0063A:
+  description: Load Tile Collision Data
+  name: LOAD_TILE_COLLISION
+  type: assembly
+  size: 84
+  labels:
+    1654: UNKNOWN0
+    1671: UNKNOWN1
 0xC0781C:
   description: Dad's Phone Handler
   name: DAD_PHONE
@@ -444,12 +597,128 @@ texttables:
     30916: UNKNOWN2
     30928: UNKNOWN3
     30942: UNKNOWN4
+0xC078E9:
+  type: assembly
+  size: 44
+  labels:
+    30975: UNKNOWN0
+    30988: UNKNOWN1
+0xC07915:
+  type: assembly
+  size: 78
+  labels:
+    31038: UNKNOWN0
+    31051: UNKNOWN1
+    31073: UNKNOWN2
+0xC07963:
+  type: assembly
+  size: 103
+  labels:
+    31176: UNKNOWN0
+0xC079CA:
+  type: assembly
+  size: 16
+0xC079DA:
+  type: assembly
+  size: 133
+  labels:
+    31228: UNKNOWN0
+    31262: UNKNOWN1
+    31325: UNKNOWN2
+0xC07A5F:
+  type: assembly
+  size: 477
+  labels:
+    31371: UNKNOWN0
+    31385: UNKNOWN1
+    31410: UNKNOWN2
+    31416: UNKNOWN3
+    31441: UNKNOWN4
+    31446: UNKNOWN5
+    31460: UNKNOWN6
+    31466: UNKNOWN7
+    31490: UNKNOWN8
+    31510: UNKNOWN9
+    31536: UNKNOWN10
+    31539: UNKNOWN11
+    31554: UNKNOWN12
+    31560: UNKNOWN13
+    31573: UNKNOWN14
+    31609: UNKNOWN15
+    31614: UNKNOWN16
+    31619: UNKNOWN17
+    31624: UNKNOWN18
+    31627: UNKNOWN19
+    31648: UNKNOWN20
+    31664: UNKNOWN21
+    31687: UNKNOWN22
+    31712: UNKNOWN23
+    31737: UNKNOWN24
+    31755: UNKNOWN25
+    31761: UNKNOWN26
+    31784: UNKNOWN27
+    31802: UNKNOWN28
+0xC07C3C:
+  type: assembly
+  size: 69
+  labels:
+    31829: UNKNOWN0
+    31841: UNKNOWN1
+    31871: UNKNOWN2
+0xC07C81:
+  type: assembly
+  size: 37
+  labels:
+    31908: UNKNOWN0
+0xC07CA6:
+  type: assembly
+  size: 252
+  labels:
+    31963: UNKNOWN0
+    32085: UNKNOWN1
+    32118: UNKNOWN2
+    32135: UNKNOWN3
+    32160: UNKNOWN4
+0xC07DA2:
+  type: assembly
+  size: 265
+  labels:
+    32183: UNKNOWN0
+    32203: UNKNOWN1
+    32253: UNKNOWN2
+    32313: UNKNOWN3
+    32381: UNKNOWN4
+    32411: UNKNOWN5
+    32413: UNKNOWN6
+    32425: UNKNOWN7
+0xC07EAB:
+  type: assembly
+  size: 47
+  labels:
+    32447: UNKNOWN0
+    32467: UNKNOWN1
+    32472: UNKNOWN2
+0xC07EDA:
+  type: empty
+  size: 294
 0xC08000:
   description: SNES Initialization
   name: RESET
   accumsize: 8
   indexsize: 8
-  size: 322
+  size: 321
+  type: assembly
+0xC08141:
+  size: 6
+  type: assembly
+  name: RESET_VECTOR
+0xC08147:
+  size: 4
+  type: assembly
+  name: NMI_VECTOR
+0xC0814B:
+  size: 4
+  name: IRQ_VECTOR
   type: assembly
 0xC0814F:
   description: IRQ Handler
@@ -477,6 +746,7 @@ texttables:
 0xC08170:
   description: NMI Handler
   name: NMI
+  ignore: true
   type: assembly
   size: 545
   labels:
@@ -496,6 +766,94 @@ texttables:
     33645: UNKNOWN13
     33655: UNKNOWN14
     33674: UNKNOWN15
+0xC08391:
+  type: assembly
+  size: 39
+  labels:
+    33714: UNKNOWN0
+0xC083B8:
+  type: assembly
+  size: 9
+0xC083C1:
+  type: assembly
+  size: 34
+0xC083E3:
+  type: assembly
+  size: 56
+  labels:
+    33720: UNKNOWN0
+    33818: UNKNOWN1
+0xC0841B:
+  type: assembly
+  size: 59
+  labels:
+    33860: UNKNOWN0
+    33867: UNKNOWN1
+    33877: UNKNOWN2
+0xC08456:
+  type: assembly
+  size: 64
+  labels:
+    33905: UNKNOWN0
+    33941: UNKNOWN1
+0xC08496:
+  type: assembly
+  size: 107
+  labels:
+    33944: UNKNOWN0
+    33961: UNKNOWN1
+    33996: UNKNOWN2
+    34006: UNKNOWN3
+    34013: UNKNOWN4
+    34041: UNKNOWN5
+    34048: UNKNOWN6
+0xC08501:
+  type: assembly
+  size: 23
+  labels:
+    34069: UNKNOWN0
+0xC08518:
+  type: assembly
+  size: 4
+0xC0851C:
+  type: assembly
+  size: 6
+0xC08522:
+  type: assembly
+  size: 7
+0xC08529:
+  type: assembly
+  size: 66
+  labels:
+    34126: UNKNOWN0
+    34133: UNKNOWN1
+0xC0856B:
+  type: assembly
+  size: 8
+0xC08573:
+  type: assembly
+  size: 68
+  labels:
+    34192: UNKNOWN0
+    34215: UNKNOWN1
+0xC085B7:
+  type: assembly
+  size: 95
+  labels:
+    34236: UNKNOWN0
+    34265: UNKNOWN1
+    34270: UNKNOWN2
+    34308: UNKNOWN3
+    34311: UNKNOWN4
+    34320: UNKNOWN5
+0xC08616:
+  type: assembly
+  size: 69
+  labels:
+    34371: UNKNOWN0
+0xC0865B:
+  type: assembly
+  size: 4
 0xC0865F:
   description: Decompress to VRAM
   name: DECOMP_VRAM
@@ -556,7 +914,7 @@ texttables:
   final processor state:
     accum: 16
     index: 16
-  size: 59
+  size: 57
   type: assembly
   labels:
     36898: UNKNOWN0
@@ -650,6 +1008,553 @@ texttables:
   name: GAME_INIT
   type: assembly
   size: 34
+0xC0B997:
+  type: assembly
+  size: 125
+  labels:
+    47538: UNKNOWN0
+    47628: UNKNOWN1
+0xC0BA14:
+  type: assembly
+  size: 575
+  labels:
+    47694: UNKNOWN0
+    47701: UNKNOWN1
+    47755: UNKNOWN2
+    47765: UNKNOWN3
+    47770: UNKNOWN4
+    47782: UNKNOWN5
+    47802: UNKNOWN6
+    47818: UNKNOWN7
+    47831: UNKNOWN8
+    47970: UNKNOWN9
+    47975: UNKNOWN10
+    47983: UNKNOWN11
+    48062: UNKNOWN12
+    48073: UNKNOWN13
+    48084: UNKNOWN14
+    48100: UNKNOWN15
+    48105: UNKNOWN16
+    48115: UNKNOWN17
+    48122: UNKNOWN18
+    48183: UNKNOWN19
+    48193: UNKNOWN20
+    48198: UNKNOWN21
+    48209: UNKNOWN22
+0xC0BC53:
+  type: assembly
+  size: 293
+0xC0BD78:
+  type: assembly
+  size: 476
+  labels:
+    48822: UNKNOWN0
+    48978: UNKNOWN1
+0xC0BF54:
+  type: assembly
+  size: 322
+0xC0C096:
+  type: assembly
+  size: 231
+  labels:
+    49345: UNKNOWN0
+    49384: UNKNOWN1
+    49430: UNKNOWN2
+    49467: UNKNOWN3
+    49513: UNKNOWN4
+    49523: UNKNOWN5
+    49528: UNKNOWN6
+    49531: UNKNOWN7
+0xC0C17D:
+  type: assembly
+  size: 182
+  labels:
+    49576: UNKNOWN0
+    49657: UNKNOWN1
+    49695: UNKNOWN2
+    49705: UNKNOWN3
+    49710: UNKNOWN4
+    49713: UNKNOWN5
+0xC0C233:
+  type: assembly
+  size: 187
+  labels:
+    49758: UNKNOWN0
+    49836: UNKNOWN1
+    49882: UNKNOWN2
+    49892: UNKNOWN3
+    49897: UNKNOWN4
+    49900: UNKNOWN5
+0xC0C2EE:
+  type: assembly
+  size: 71
+  labels:
+    49956: UNKNOWN0
+    49964: UNKNOWN1
+0xC0C335:
+  type: assembly
+  size: 10
+0xC0C33F:
+  type: assembly
+  size: 6
+0xC0C345:
+  type: assembly
+  size: 150
+  labels:
+    50034: UNKNOWN0
+    50036: UNKNOWN1
+    50046: UNKNOWN2
+    50050: UNKNOWN3
+    50062: UNKNOWN4
+    50064: UNKNOWN5
+    50072: UNKNOWN6
+    50074: UNKNOWN7
+    50089: UNKNOWN8
+    50091: UNKNOWN9
+    50096: UNKNOWN10
+    50108: UNKNOWN11
+    50110: UNKNOWN12
+    50115: UNKNOWN13
+    50127: UNKNOWN14
+    50129: UNKNOWN15
+    50134: UNKNOWN16
+    50137: UNKNOWN17
+0xC0C3DB:
+  type: assembly
+  size: 150
+  labels:
+    50184: UNKNOWN0
+    50186: UNKNOWN1
+    50196: UNKNOWN2
+    50200: UNKNOWN3
+    50212: UNKNOWN4
+    50214: UNKNOWN5
+    50222: UNKNOWN6
+    50224: UNKNOWN7
+    50239: UNKNOWN8
+    50241: UNKNOWN9
+    50246: UNKNOWN10
+    50258: UNKNOWN11
+    50260: UNKNOWN12
+    50265: UNKNOWN13
+    50277: UNKNOWN14
+    50279: UNKNOWN15
+    50284: UNKNOWN16
+    50287: UNKNOWN17
+0xC0C471:
+  type: assembly
+  size: 32
+  labels:
+    50306: UNKNOWN0
+    50317: UNKNOWN1
+    50320: UNKNOWN2
+0xC0C491:
+  type: assembly
+  size: 32
+  labels:
+    50338: UNKNOWN0
+    50349: UNKNOWN1
+    50352: UNKNOWN2
+0xC0C4D9:
+  type: assembly
+  size: 45
+0xC0C506:
+  type: assembly
+  size: 228
+  labels:
+    50536: UNKNOWN0
+    50597: UNKNOWN1
+    50626: UNKNOWN2
+    50661: UNKNOWN3
+    50664: UNKNOWN4
+0xC0C5EA:
+  type: assembly
+  size: 13
+0xC0C5F7:
+  type: assembly
+  size: 22
+  labels:
+    50696: UNKNOWN0
+    50700: UNKNOWN1
+0xC0C60D:
+  type: assembly
+  size: 87
+  labels:
+    50746: UNKNOWN0
+0xC0C664:
+  type: assembly
+  size: 28
+0xC0C680:
+  type: assembly
+  size: 24
+  labels:
+    50832: UNKNOWN0
+    50835: UNKNOWN1
+0xC0C698:
+  type: assembly
+  size: 91
+  labels:
+    50861: UNKNOWN0
+    50911: UNKNOWN1
+    50921: UNKNOWN2
+    50926: UNKNOWN3
+    50929: UNKNOWN4
+0xC0C6F3:
+  type: assembly
+  size: 79
+  labels:
+    51005: UNKNOWN0
+    51008: UNKNOWN1
+0xC0C742:
+  type: assembly
+  size: 76
+  labels:
+    51081: UNKNOWN0
+    51084: UNKNOWN1
+0xC0C78E:
+  type: assembly
+  size: 47
+  labels:
+    51131: UNKNOWN0
+0xC0C7BD:
+  type: assembly
+  size: 45
+0xC0C7EA:
+  type: assembly
+  size: 51
+0xC0C81D:
+  type: assembly
+  size: 531
+  labels:
+    51296: UNKNOWN0
+    51308: UNKNOWN1
+    51345: UNKNOWN2
+    51355: UNKNOWN3
+    51372: UNKNOWN4
+    51380: UNKNOWN5
+    51388: UNKNOWN6
+    51396: UNKNOWN7
+    51404: UNKNOWN8
+    51412: UNKNOWN9
+    51415: UNKNOWN10
+    51459: UNKNOWN11
+    51509: UNKNOWN12
+    51538: UNKNOWN13
+    51573: UNKNOWN14
+    51602: UNKNOWN15
+    51651: UNKNOWN16
+    51694: UNKNOWN17
+    51733: UNKNOWN18
+0xC0CA30:
+  type: assembly
+  size: 389
+  labels:
+    51829: UNKNOWN0
+    51831: UNKNOWN1
+    51864: UNKNOWN2
+    51880: UNKNOWN3
+    51913: UNKNOWN4
+    51915: UNKNOWN5
+    51940: UNKNOWN6
+    51948: UNKNOWN7
+    51971: UNKNOWN8
+    51973: UNKNOWN9
+    52006: UNKNOWN10
+    52008: UNKNOWN11
+    52033: UNKNOWN12
+    52043: UNKNOWN13
+    52076: UNKNOWN14
+    52078: UNKNOWN15
+    52103: UNKNOWN16
+    52111: UNKNOWN17
+0xC0CBB5:
+  type: assembly
+  size: 62
+0xC0CBF3:
+  type: assembly
+  size: 187
+  labels:
+    52249: UNKNOWN0
+    52251: UNKNOWN1
+    52259: UNKNOWN2
+    52261: UNKNOWN3
+    52289: UNKNOWN4
+    52291: UNKNOWN5
+    52299: UNKNOWN6
+    52301: UNKNOWN7
+    52329: UNKNOWN8
+    52347: UNKNOWN9
+    52386: UNKNOWN10
+0xC0CCAE:
+  type: assembly
+  size: 132
+  labels:
+    52490: UNKNOWN0
+    52498: UNKNOWN1
+    52516: UNKNOWN2
+    52522: UNKNOWN3
+0xC0CD32:
+  type: assembly
+  size: 342
+  labels:
+    52563: UNKNOWN0
+    52572: UNKNOWN1
+    52636: UNKNOWN2
+    52670: UNKNOWN3
+    52864: UNKNOWN4
+    52870: UNKNOWN5
+0xC0CE88:
+  type: assembly
+  size: 154
+  labels:
+    52923: UNKNOWN0
+    52928: UNKNOWN1
+    52945: UNKNOWN2
+    52948: UNKNOWN3
+    52960: UNKNOWN4
+    52968: UNKNOWN5
+    52992: UNKNOWN6
+    53022: UNKNOWN7
+0xC0CF61:
+  type: assembly
+  size: 322
+  labels:
+    53208: UNKNOWN0
+    53257: UNKNOWN1
+    53290: UNKNOWN2
+    53306: UNKNOWN3
+    53314: UNKNOWN4
+    53331: UNKNOWN5
+    53337: UNKNOWN6
+    53339: UNKNOWN7
+    53348: UNKNOWN8
+    53353: UNKNOWN9
+    53409: UNKNOWN10
+0xC0D0A3:
+  type: assembly
+  size: 13
+0xC0D0B0:
+  type: assembly
+  size: 118
+  labels:
+    53472: UNKNOWN0
+    53521: UNKNOWN1
+    53540: UNKNOWN2
+0xC0D126:
+  type: assembly
+  size: 57
+  labels:
+    53557: UNKNOWN0
+    53570: UNKNOWN1
+    53585: UNKNOWN2
+    53590: UNKNOWN3
+    53595: UNKNOWN4
+    53598: UNKNOWN5
+0xC0D15F:
+  type: assembly
+  size: 6
+0xC0D165:
+  type: assembly
+  size: 833
+  labels:
+    53650: UNKNOWN0
+    53720: UNKNOWN1
+    53725: UNKNOWN2
+    53728: UNKNOWN3
+    53749: UNKNOWN4
+    53754: UNKNOWN5
+    53757: UNKNOWN6
+    53776: UNKNOWN7
+    53792: UNKNOWN8
+    53857: UNKNOWN9
+    53913: UNKNOWN10
+    53924: UNKNOWN11
+    53946: UNKNOWN12
+    53951: UNKNOWN13
+    53956: UNKNOWN14
+    53966: UNKNOWN15
+    53972: UNKNOWN16
+    53987: UNKNOWN17
+    53997: UNKNOWN18
+    54057: UNKNOWN19
+    54081: UNKNOWN20
+    54089: UNKNOWN21
+    54104: UNKNOWN22
+    54114: UNKNOWN23
+    54146: UNKNOWN24
+    54149: UNKNOWN25
+    54170: UNKNOWN26
+    54182: UNKNOWN27
+    54199: UNKNOWN28
+    54251: UNKNOWN29
+    54256: UNKNOWN30
+    54310: UNKNOWN31
+    54331: UNKNOWN32
+    54339: UNKNOWN33
+    54341: UNKNOWN34
+    54351: UNKNOWN35
+    54358: UNKNOWN36
+    54389: UNKNOWN37
+    54404: UNKNOWN38
+    54409: UNKNOWN39
+0xC0D4A6:
+  type: assembly
+  size: 189
+  labels:
+    54493: UNKNOWN0
+    54606: UNKNOWN1
+    54618: UNKNOWN2
+0xC0D563:
+  type: assembly
+  size: 21
+  labels:
+    54639: UNKNOWN0
+    54644: UNKNOWN1
+    54647: UNKNOWN2
+0xC0D578:
+  type: assembly
+  size: 463
+  labels:
+    54667: UNKNOWN0
+    54678: UNKNOWN1
+    54695: UNKNOWN2
+    54709: UNKNOWN3
+    54723: UNKNOWN4
+    54737: UNKNOWN5
+    54748: UNKNOWN6
+    54762: UNKNOWN7
+    54777: UNKNOWN8
+    54805: UNKNOWN9
+    54840: UNKNOWN10
+    54850: UNKNOWN11
+    54862: UNKNOWN12
+    54882: UNKNOWN13
+    54887: UNKNOWN14
+    54902: UNKNOWN15
+    54922: UNKNOWN16
+    54952: UNKNOWN17
+    54967: UNKNOWN18
+    55030: UNKNOWN19
+    55045: UNKNOWN20
+    55071: UNKNOWN21
+    55091: UNKNOWN22
+    55096: UNKNOWN23
+    55107: UNKNOWN24
+    55109: UNKNOWN25
+0xC0D747:
+  type: assembly
+  size: 52
+  labels:
+    55126: UNKNOWN0
+    55151: UNKNOWN1
+    55156: UNKNOWN2
+0xC0D77B:
+  type: assembly
+  size: 20
+0xC0D78F:
+  type: assembly
+  size: 25
+0xC0D7A8:
+  type: assembly
+  size: 23
+  labels:
+    55230: UNKNOWN0
+0xC0D7BF:
+  type: assembly
+  size: 408
+  labels:
+    55257: UNKNOWN0
+    55375: UNKNOWN1
+    55377: UNKNOWN2
+    55385: UNKNOWN3
+    55387: UNKNOWN4
+    55402: UNKNOWN5
+    55407: UNKNOWN6
+    55428: UNKNOWN7
+    55430: UNKNOWN8
+    55438: UNKNOWN9
+    55440: UNKNOWN10
+    55454: UNKNOWN11
+    55456: UNKNOWN12
+    55575: UNKNOWN13
+    55616: UNKNOWN14
+    55637: UNKNOWN15
+0xC0D957:
+  type: assembly
+  size: 162
+  labels:
+    55671: UNKNOWN0
+    55799: UNKNOWN1
+0xC0D9F9:
+  type: assembly
+  size: 222
+  labels:
+    55818: UNKNOWN0
+    55828: UNKNOWN1
+    55868: UNKNOWN2
+    55872: UNKNOWN3
+    55877: UNKNOWN4
+    55898: UNKNOWN5
+    55905: UNKNOWN6
+    55910: UNKNOWN7
+    55932: UNKNOWN8
+    55962: UNKNOWN9
+    56005: UNKNOWN10
+    56021: UNKNOWN11
+0xC0DAD7:
+  type: assembly
+  size: 215
+  labels:
+    56045: UNKNOWN0
+    56057: UNKNOWN1
+    56074: UNKNOWN2
+    56091: UNKNOWN3
+    56116: UNKNOWN4
+    56121: UNKNOWN5
+    56132: UNKNOWN6
+    56138: UNKNOWN7
+    56165: UNKNOWN8
+    56183: UNKNOWN9
+    56191: UNKNOWN10
+    56222: UNKNOWN11
+    56231: UNKNOWN12
+    56236: UNKNOWN13
+0xC0DBAE:
+  type: assembly
+  size: 82
+  labels:
+    56269: UNKNOWN0
+    56288: UNKNOWN1
+    56293: UNKNOWN2
+0xC0DC00:
+  type: assembly
+  size: 22
+0xC0DC16:
+  type: assembly
+  size: 120
+  labels:
+    56366: UNKNOWN0
+    56401: UNKNOWN1
+    56441: UNKNOWN2
+    56453: UNKNOWN3
+    56460: UNKNOWN4
+0xC0DC8E:
+  type: assembly
+  size: 73
+  labels:
+    56533: UNKNOWN0
+0xC0DCD7:
+  type: assembly
+  size: 29
+  labels:
+    56539: UNKNOWN0
+    56555: UNKNOWN1
+0xC0DCF4:
+  type: assembly
+  size: 39
+  labels:
+    56578: UNKNOWN0
+    56599: UNKNOWN1
 0xC0DD1B:
   final processor state:
     accum: 16
@@ -1202,6 +2107,28 @@ texttables:
 0xC2ABDE:
   type: assembly
   size: 20
+0xC3F02E:
+  name: PLAYABLE_CHAR_GFX_TABLE
+  description: Playable Character Graphics Control Table
+  type: data
+  size: 272
+  entries:
+  - name: Default Sprite Group
+    size: 2
+  - name: Dead Sprite Group
+    size: 2
+  - name: Ladder Sprite Group
+    size: 2
+  - name: Rope Sprite Group
+    size: 2
+  - name: Tiny Sprite Group
+    size: 2
+  - name: Tiny Dead Sprite Group
+    size: 2
+  - name: Robot Sprite Group
+    size: 2
+  - name: Unknown
+    size: 2
 0xC419EA:
   description: Decompress ($0E+10) to ($12+14)
   name: DECOMP
@@ -1282,6 +2209,38 @@ texttables:
     44737: UNKNOWN11
     44749: UNKNOWN12
     44780: UNKNOWN13
+0xC4CAA5:
+  type: data
+  size: 573
+  description: Music Dataset Table
+  name: MUSIC_DATASET_TABLE
+  entries:
+  - name: Sample Set 1
+    type: int
+    values:
+      255: None
+    size: 1
+  - name: Sample Set 2
+    type: int
+    values:
+      255: None
+    size: 1
+  - name: Sequence Set
+    type: int
+    values:
+      255: None
+    size: 1
+0xC4CCE2:
+  type: data
+  size: 507
+  description: Music Pack Pointer Table
+  name: MUSIC_PACK_POINTER_TABLE
+  entries:
+  - name: Unknown
+    type: pointer
+    endianness: m
+    size: 3
+    base: 14811136
 0xC4CEF7:
   description: Initialize SPC-700
   name: INITIALIZE_SPC700
@@ -1309,6 +2268,148 @@ texttables:
   - name: Text
     type: standardtext
     terminator: 2
+0xC9E514:
+  type: empty
+  size: 6892
+0xCA0000:
+  type: data
+  size: 55201
+  description: 'Battle BGs: Primary Data Group'
+  name: BATTLEBG_PRIMARY_DATA_GROUP
+0xCAD7A1:
+  type: data
+  description: 'Battle BGs: Graphics Pointer Table'
+  name: BATTLEBG_GFX_POINTERS
+  size: 412
+  entries:
+  - name: Pointer
+    size: 4
+    type: pointer
+0xCAD93D:
+  type: data
+  description: 'Battle BGs: Arrangement Pointer Table'
+  name: BATTLEBG_ARR_POINTERS
+  size: 412
+  entries:
+  - name: Pointer
+    size: 4
+    type: pointer
+0xCADAD9:
+  type: data
+  size: 456
+  description: 'Battle BGs: Palette Pointer Table'
+  name: BATTLEBG_PALETTE_POINTERS
+  entries:
+  - name: Pointer
+    size: 4
+    type: pointer
+0xCADCA1:
+  type: data
+  description: 'Battle BGs: Rendering Data'
+  name: BG_DATA_TABLE
+  size: 5559
+  entries:
+  - name: Graphics and Arrangement
+    size: 1
+  - name: Palette
+    size: 1
+  - name: Colour depth
+    size: 1
+  - name: Palette Cycle
+    size: 1
+    values:
+    - None
+    - 1
+    - 1 + 2
+    - 1 (Reverse)
+  - name: Palette Cycle 1 Begin
+    size: 1
+  - name: Palette Cycle 1 End
+    size: 1
+  - name: Palette Cycle 2 Begin
+    size: 1
+  - name: Palette Cycle 2 End
+    size: 1
+  - name: Palette-changing speed
+    size: 1
+  - name: Scrolling Movement 1
+    size: 1
+  - name: Scrolling Movement 2
+    size: 1
+  - name: Scrolling Movement 3
+    size: 1
+  - name: Scrolling Movement 4
+    size: 1
+  - name: Distortion 1
+    size: 1
+  - name: Distortion 2
+    size: 1
+  - name: Distortion 3
+    size: 1
+  - name: Distortion 4
+    size: 1
+0xCAF258:
+  type: data
+  description: Battle Background Scrolling Movement Table
+  name: BG_SCROLLING_TABLE
+  size: 1200
+  entries:
+  - name: Duration
+    size: 2
+  - name: Horizontal Movement
+    size: 2
+    signed: true
+  - name: Vertical Movement
+    size: 2
+    signed: true
+  - name: Horizontal Acceleration
+    size: 2
+    signed: true
+  - name: Vertical Acceleration
+    size: 2
+    signed: true
+0xCAF708:
+  type: data
+  description: Battle Background Distortion Table
+  name: BG_DISTORTION_TABLE
+  size: 2295
+  entries:
+  - name: Unknown A
+    size: 2
+  - name: Type
+    size: 1
+    values:
+    - Unknown Type 0
+    - Horizontal, Smooth
+    - Horizontal, Interlaced
+    - Vertical, Smooth
+    - Unknown Type 4
+  - name: Ripple Frequency
+    size: 2
+  - name: Ripple Amplitude
+    size: 2
+  - name: Unknown B
+    size: 1
+  - name: Unknown C
+    size: 2
+  - name: Ripple Frequency Acceleration
+    size: 2
+    signed: true
+  - name: Ripple Amplitude Acceleration
+    size: 2
+    signed: true
+  - name: Speed
+    size: 1
+  - name: Unknown D
+    size: 2
+0xCAFFFF:
+  type: empty
+  size: 1
+0xCB0000:
+  type: data
+  size: 55450
+  description: Battle Background Secondary Data Group
+  name: BATTLEBGS_SECONDARY_DATA
 0xCBD89A:
   type: data
   description: Battle Group BG Association Table
@@ -1319,6 +2420,1045 @@ texttables:
     size: 2
   - name: Unknown2
     size: 2
+0xCBE02A:
+  type: empty
+  size: 8150
+0xCC0000:
+  type: data
+  size: 6091
+  name: ANIMATIONDATA_CARPAINTER_LIGHTNING_REFLECT
+  description: 'Animation Data: Carpainter''s Lightning - Reflected'
+0xCC17CB:
+  type: data
+  size: 1937
+  name: ANIMATIONDATA_CARPAINTER_LIGHTNING_STRIKE
+  description: 'Animation Data: Carpainter''s Lightning - Strike'
+0xCC1F5C:
+  type: data
+  size: 892
+  name: ANIMATIONDATA_STARMAN_JR_TELEPORT
+  description: 'Animation Data: Starman Junior''s Teleport'
+0xCC22D8:
+  type: data
+  size: 2481
+  name: ANIMATIONDATA_BOOM
+  description: 'Animation Data: ''BOOM!'''
+0xCC2C89:
+  type: data
+  size: 88
+  name: ANIMATIONDATA_ZOMBIES
+  description: 'Animation Data: Zombie Attack'
+0xCC2CE1:
+  type: data
+  size: 535
+  name: ANIMATIONDATA_THE_END
+  description: 'Animation Data: ''The End?'''
+0xCC2EF8:
+  type: data
+  size: 56
+  description: Animation Sequence Data Pointers
+  name: ANIMATION_SEQUENCE_POINTERS
+  entries:
+  - name: Pointer
+    size: 4
+    type: pointer
+  - name: Unknown
+    type: bytearray
+    size: 4
+0xCC2F30:
+  type: data
+  description: PSI Animation Arrangement 20
+  name: PSI_ARRANGEMENT_20
+  size: 4670
+0xCC416E:
+  type: data
+  size: 3324
+  description: PSI Animation Arrangement 31
+  name: PSI_ARRANGEMENT_31
+0xCC4E6A:
+  type: data
+  size: 3112
+  description: PSI Animation Arrangement 19
+  name: PSI_ARRANGEMENT_19
+0xCC5A92:
+  type: data
+  size: 2581
+  description: PSI Animation Arrangement 21
+  name: PSI_ARRANGEMENT_21
+0xCC64A7:
+  type: data
+  size: 2535
+  description: PSI Animation Arrangement 13
+  name: PSI_ARRANGEMENT_13
+0xCC6E8E:
+  type: data
+  size: 2196
+  description: PSI Animation Arrangement 23
+  name: PSI_ARRANGEMENT_23
+0xCC7722:
+  type: data
+  size: 2195
+  description: PSI Animation Arrangement 18
+  name: PSI_ARRANGEMENT_18
+0xCC7FB5:
+  type: data
+  size: 1931
+  description: PSI Animation Arrangement 8
+  name: PSI_ARRANGEMENT_8
+0xCC8740:
+  type: data
+  size: 1885
+  description: PSI Animation Arrangement 30
+  name: PSI_ARRANGEMENT_30
+0xCC8E9D:
+  type: data
+  size: 1881
+  description: PSI Animation Arrangement 29
+  name: PSI_ARRANGEMENT_29
+0xCC95F6:
+  type: data
+  size: 1638
+  description: PSI Animation Arrangement 28
+  name: PSI_ARRANGEMENT_28
+0xCC9C5C:
+  type: data
+  size: 1511
+  description: PSI Animation Arrangement 25
+  name: PSI_ARRANGEMENT_25
+0xCCA243:
+  type: data
+  size: 1421
+  description: PSI Animation Arrangement 26
+  name: PSI_ARRANGEMENT_26
+0xCCA7D0:
+  type: data
+  size: 1388
+  description: PSI Animation Arrangement 9
+  name: PSI_ARRANGEMENT_9
+0xCCAD3C:
+  type: data
+  description: PSI Animation Graphics Set 1
+  name: PSI_ANIM_GFX_SET1
+  size: 1290
+0xCCB246:
+  type: data
+  size: 1252
+  description: PSI Animation Arrangement 5
+  name: PSI_ARRANGEMENT_5
+0xCCB72A:
+  type: data
+  size: 1204
+  description: PSI Animation Graphics Set 2
+  name: PSI_ANIM_GFX_SET2
+0xCCBBDE:
+  type: data
+  size: 1126
+  description: PSI Animation Arrangement 3
+  name: PSI_ARRANGEMENT_3
+0xCCC044:
+  type: data
+  size: 1026
+  description: PSI Animation Arrangement 7
+  name: PSI_ARRANGEMENT_7
+0xCCC446:
+  type: data
+  size: 978
+  description: PSI Animation Arrangement 0
+  name: PSI_ARRANGEMENT_0
+0xCCC818:
+  type: data
+  size: 940
+  description: PSI Animation Arrangement 6
+  name: PSI_ARRANGEMENT_6
+0xCCCBC4:
+  type: data
+  size: 938
+  description: PSI Animation Arrangement 17
+  name: PSI_ARRANGEMENT_17
+0xCCCF6E:
+  type: data
+  size: 880
+  description: PSI Animation Arrangement 33
+  name: PSI_ARRANGEMENT_33
+0xCCD2DE:
+  type: data
+  size: 820
+  description: PSI Animation Arrangement 22
+  name: PSI_ARRANGEMENT_22
+0xCCD612:
+  type: data
+  size: 805
+  description: PSI Animation Arrangement 12
+  name: PSI_ARRANGEMENT_12
+0xCCD937:
+  type: data
+  size: 775
+  description: PSI Animation Arrangement 2
+  name: PSI_ARRANGEMENT_2
+0xCCDC3E:
+  type: data
+  size: 722
+  description: PSI Animation Graphics Set 3
+  name: PSI_ANIM_GFX_SET3
+0xCCDF10:
+  type: data
+  size: 680
+  description: PSI Animation Arrangement 1
+  name: PSI_ARRANGEMENT_1
+0xCCE1B8:
+  type: data
+  size: 636
+  description: PSI Animation Arrangement 24
+  name: PSI_ARRANGEMENT_24
+0xCCE434:
+  type: data
+  size: 592
+  description: PSI Animation Graphics Set 4
+  name: PSI_ANIM_GFX_SET4
+0xCCE684:
+  type: data
+  size: 542
+  description: PSI Animation Arrangement 16
+  name: PSI_ARRANGEMENT_16
+0xCCE8A2:
+  type: data
+  size: 481
+  description: PSI Animation Arrangement 15
+  name: PSI_ARRANGEMENT_15
+0xCCEA83:
+  type: data
+  size: 467
+  description: PSI Animation Arrangement 11
+  name: PSI_ARRANGEMENT_11
+0xCCEC56:
+  type: data
+  size: 463
+  description: PSI Animation Arrangement 14
+  name: PSI_ARRANGEMENT_14
+0xCCEE25:
+  type: data
+  size: 422
+  description: PSI Animation Arrangement 32
+  name: PSI_ARRANGEMENT_32
+0xCCEFCB:
+  type: data
+  size: 409
+  description: PSI Animation Arrangement 27
+  name: PSI_ARRANGEMENT_27
+0xCCF164:
+  type: data
+  size: 408
+  description: PSI Animation Configuration Data
+  name: PSI_ANIM_CFG
+  entries:
+  - name: Short pointer to tileset
+    type: pointer
+    size: 2
+    base: 13369344
+  - name: Frame duration (1/60th seconds)
+    size: 1
+  - name: Palette duration (1/60th seconds)
+    size: 1
+  - name: unknown
+    type: bytearray
+    size: 2
+  - name: Frame count
+    size: 1
+  - name: unknown 2
+    type: bytearray
+    size: 2
+  - name: Duration of enemy colour change
+    size: 1
+  - name: Enemy colour
+    type: palette
+    size: 2
+0xCCF2FC:
+  type: data
+  size: 371
+  description: PSI Animation Arrangement 4
+  name: PSI_ARRANGEMENT_4
+0xCCF46F:
+  type: data
+  size: 295
+  description: PSI Animation Arrangement 10
+  name: PSI_ARRANGEMENT_10
+0xCCF596:
+  type: data
+  size: 272
+  description: PSI Animation Palettes
+  name: PSI_ANIM_PALETTES
+  entries:
+  - name: Palette
+    size: 16
+    type: palette
+0xCCF6A6:
+  type: data
+  size: 136
+  description: PSI Animation Pointers
+  name: PSI_ANIM_POINTERS
+  entries:
+  - name: Pointer
+    type: pointer
+    size: 4
+0xCCF72E:
+  type: empty
+  size: 2258
+0xCD0000:
+  type: data
+  description: Enemy Battle Sprites
+  name: BATTLE_SPRITES
+  size: 90862
+0xCE62EE:
+  type: data
+  description: Battle Sprites Pointer Table
+  name: BATTLE_SPRITES_POINTERS
+  size: 550
+  entries:
+  - name: Pointer
+    size: 4
+    type: pointer
+  - name: Sprite Size
+    size: 1
+    values:
+    - 0
+    - 32x32
+    - 64x32
+    - 32x64
+    - 64x64
+    - 128x64
+    - 128x128
+0xCE6514:
+  type: data
+  description: Battle Sprites Palettes
+  name: BATTLE_SPRITE_PALETTES
+  size: 1024
+  entries:
+  - name: Palette
+    size: 32
+    type: palette
+0xCE6914:
+  type: data
+  size: 29489
+  description: Swirl Animation Data
+  name: SWIRL_DATA
+0xCEDC45:
+  type: data
+  size: 252
+  description: Swirl Animation Pointer Table
+  name: SWIRL_POINTER_TABLE
+  entries:
+  - name: Pointer
+    size: 2
+    type: pointer
+    base: 13500416
+0xCEDD41:
+  type: data
+  size: 28
+  description: Swirl Animation Primary Table
+  name: SWIRL_PRIMARY_TABLE
+0xCEDD5D:
+  type: data
+  size: 6829
+  description: Sound stone graphics
+  name: SOUND_STONE_GFX
+0xCEF80A:
+  type: data
+  size: 192
+  description: Sound stone palette
+  name: SOUND_STONE_PALETTE
+  entries:
+  - name: Palette
+    size: 32
+    type: palette
+0xCEF8CA:
+  type: empty
+  size: 1846
+0xCF0000:
+  type: data
+  size: 1408
+  description: Door Destinations Table (1)
+  name: DOOR_DEST_TABLE_1
+  entries:
+  - name: Pointer
+    size: 4
+    type: pointer
+  - name: Event Flag
+    size: 2
+    type: hexint
+  - name: "Y"
+    size: 2
+  - name: X
+    size: 2
+  - name: Style
+    size: 1
+0xCF0580:
+  type: data
+  size: 44
+  description: Sign Pointers (1)
+  name: SIGN_POINTERS_1
+  entries:
+  - name: Pointer
+    type: pointer
+    size: 4
+0xCF05AC:
+  type: data
+  size: 44
+  description: Door Destinations Table (2)
+  name: DOOR_DEST_TABLE_2
+  entries:
+  - name: Pointer
+    size: 4
+    type: pointer
+  - name: Event Flag
+    size: 2
+    type: hexint
+  - name: "Y"
+    size: 2
+  - name: X
+    size: 2
+  - name: Style
+    size: 1
+0xCF05D8:
+  type: data
+  size: 32
+  description: Sign Pointers (2)
+  name: SIGN_POINTERS_2
+  entries:
+  - name: Pointer
+    type: pointer
+    size: 4
+0xCF05F8:
+  type: data
+  size: 44
+  description: Door Destinations Table (3)
+  name: DOOR_DEST_TABLE_3
+  entries:
+  - name: Pointer
+    size: 4
+    type: pointer
+  - name: Event Flag
+    size: 2
+    type: hexint
+  - name: "Y"
+    size: 2
+  - name: X
+    size: 2
+  - name: Style
+    size: 1
+0xCF0624:
+  type: data
+  size: 36
+  description: Unknown Pointers (1)
+  name: UNKNOWN_DPOINTERS_1
+  entries:
+  - name: Pointer
+    type: pointer
+    size: 4
+0xCF0648:
+  type: data
+  size: 847
+  description: Door Destinations Table (4)
+  name: DOOR_DEST_TABLE_4
+  entries:
+  - name: Pointer
+    size: 4
+    type: pointer
+  - name: Event Flag
+    size: 2
+    type: hexint
+  - name: "Y"
+    size: 2
+  - name: X
+    size: 2
+  - name: Style
+    size: 1
+0xCF0997:
+  type: data
+  size: 32
+  description: Unknown Pointers (2)
+  name: UNKNOWN_DPOINTERS_2
+  entries:
+  - name: Pointer
+    type: pointer
+    size: 4
+0xCF09B7:
+  type: data
+  size: 275
+  description: Door Destinations Table (5)
+  name: DOOR_DEST_TABLE_5
+  entries:
+  - name: Pointer
+    size: 4
+    type: pointer
+  - name: Event Flag
+    size: 2
+    type: hexint
+  - name: "Y"
+    size: 2
+  - name: X
+    size: 2
+  - name: Style
+    size: 1
+0xCF0ACA:
+  type: data
+  size: 8
+  description: Unknown Pointers (3)
+  name: UNKNOWN_DPOINTERS_3
+  entries:
+  - name: Pointer
+    type: pointer
+    size: 4
+0xCF0AD2:
+  type: data
+  size: 781
+  description: Door Destinations Table (6)
+  name: DOOR_DEST_TABLE_6
+  entries:
+  - name: Pointer
+    size: 4
+    type: pointer
+  - name: Event Flag
+    size: 2
+    type: hexint
+  - name: "Y"
+    size: 2
+  - name: X
+    size: 2
+  - name: Style
+    size: 1
+0xCF0DDF:
+  type: data
+  size: 8
+  description: Unknown Pointers (4)
+  name: UNKNOWN_DPOINTERS_4
+  entries:
+  - name: Pointer
+    type: pointer
+    size: 4
+0xCF0DE7:
+  type: data
+  size: 77
+  description: Door Destinations Table (7)
+  name: DOOR_DEST_TABLE_7
+  entries:
+  - name: Pointer
+    size: 4
+    type: pointer
+  - name: Event Flag
+    size: 2
+    type: hexint
+  - name: "Y"
+    size: 2
+  - name: X
+    size: 2
+  - name: Style
+    size: 1
+0xCF0E34:
+  type: data
+  size: 96
+  description: Unknown Pointers (5)
+  name: UNKNOWN_DPOINTERS_5
+  entries:
+  - name: Pointer
+    type: pointer
+    size: 4
+0xCF0E94:
+  type: data
+  size: 154
+  description: Door Destinations Table (8)
+  name: DOOR_DEST_TABLE_8
+  entries:
+  - name: Pointer
+    size: 4
+    type: pointer
+  - name: Event Flag
+    size: 2
+    type: hexint
+  - name: "Y"
+    size: 2
+  - name: X
+    size: 2
+  - name: Style
+    size: 1
+0xCF0F2E:
+  type: data
+  size: 4
+  description: Unknown Pointers (6)
+  name: UNKNOWN_DPOINTERS_6
+  entries:
+  - name: Pointer
+    type: pointer
+    size: 4
+0xCF0F32:
+  type: data
+  size: 891
+  description: Door Destinations Table (9)
+  name: DOOR_DEST_TABLE_9
+  entries:
+  - name: Pointer
+    size: 4
+    type: pointer
+  - name: Event Flag
+    size: 2
+    type: hexint
+  - name: "Y"
+    size: 2
+  - name: X
+    size: 2
+  - name: Style
+    size: 1
+0xCF12AD:
+  type: data
+  size: 4
+  description: Unknown Pointers (7)
+  name: UNKNOWN_DPOINTERS_7
+  entries:
+  - name: Pointer
+    type: pointer
+    size: 4
+0xCF12B1:
+  type: data
+  size: 11
+0xCF12BC:
+  type: data
+  size: 297
+  description: Door Destinations Table (10)
+  name: DOOR_DEST_TABLE_10
+  entries:
+  - name: Pointer
+    size: 4
+    type: pointer
+  - name: Event Flag
+    size: 2
+    type: hexint
+  - name: "Y"
+    size: 2
+  - name: X
+    size: 2
+  - name: Style
+    size: 1
+0xCF13E5:
+  type: data
+  size: 4
+  description: Unknown Pointers (8)
+  name: UNKNOWN_DPOINTERS_8
+  entries:
+  - name: Pointer
+    type: pointer
+    size: 4
+0xCF13E9:
+  type: data
+  size: 1991
+  description: Door Destinations Table (11)
+  name: DOOR_DEST_TABLE_11
+  entries:
+  - name: Pointer
+    size: 4
+    type: pointer
+  - name: Event Flag
+    size: 2
+    type: hexint
+  - name: "Y"
+    size: 2
+  - name: X
+    size: 2
+  - name: Style
+    size: 1
+0xCF1BB0:
+  type: data
+  size: 12
+  description: Unknown Pointers (9)
+  name: UNKNOWN_DPOINTERS_9
+  entries:
+  - name: Pointer
+    type: pointer
+    size: 4
+0xCF1BBC:
+  type: data
+  size: 11
+  description: Door Destinations Table (12)
+  name: DOOR_DEST_TABLE_12
+  entries:
+  - name: Pointer
+    size: 4
+    type: pointer
+  - name: Event Flag
+    size: 2
+    type: hexint
+  - name: "Y"
+    size: 2
+  - name: X
+    size: 2
+  - name: Style
+    size: 1
+0xCF1BC7:
+  type: data
+  size: 24
+  description: Unknown Pointers (10)
+  name: UNKNOWN_DPOINTERS_10
+  entries:
+  - name: Pointer
+    type: pointer
+    size: 4
+0xCF1BDF:
+  type: data
+  size: 528
+  description: Door Destinations Table (13)
+  name: DOOR_DEST_TABLE_13
+  entries:
+  - name: Pointer
+    size: 4
+    type: pointer
+  - name: Event Flag
+    size: 2
+    type: hexint
+  - name: "Y"
+    size: 2
+  - name: X
+    size: 2
+  - name: Style
+    size: 1
+0xCF1DEF:
+  type: data
+  size: 32
+  description: Unknown Pointers (11)
+  name: UNKNOWN_DPOINTERS_11
+  entries:
+  - name: Pointer
+    type: pointer
+    size: 4
+0xCF1E0F:
+  type: data
+  size: 22
+  description: Door Destinations Table (14)
+  name: DOOR_DEST_TABLE_14
+  entries:
+  - name: Pointer
+    size: 4
+    type: pointer
+  - name: Event Flag
+    size: 2
+    type: hexint
+  - name: "Y"
+    size: 2
+  - name: X
+    size: 2
+  - name: Style
+    size: 1
+0xCF1E25:
+  type: data
+  size: 12
+  description: Unknown Pointers (12)
+  name: UNKNOWN_DPOINTERS_12
+  entries:
+  - name: Pointer
+    type: pointer
+    size: 4
+0xCF1E31:
+  type: data
+  size: 341
+  description: Door Destinations Table (15)
+  name: DOOR_DEST_TABLE_15
+  entries:
+  - name: Pointer
+    size: 4
+    type: pointer
+  - name: Event Flag
+    size: 2
+    type: hexint
+  - name: "Y"
+    size: 2
+  - name: X
+    size: 2
+  - name: Style
+    size: 1
+0xCF1F86:
+  type: data
+  size: 34
+  description: Unknown Pointers (13)
+  name: UNKNOWN_DPOINTERS_13
+0xCF1FA8:
+  type: data
+  size: 374
+  description: Door Destinations Table (16)
+  name: DOOR_DEST_TABLE_16
+  entries:
+  - name: Pointer
+    size: 4
+    type: pointer
+  - name: Event Flag
+    size: 2
+    type: hexint
+  - name: "Y"
+    size: 2
+  - name: X
+    size: 2
+  - name: Style
+    size: 1
+0xCF211E:
+  type: data
+  size: 21
+  description: Unknown Pointers (14)
+  name: UNKNOWN_DPOINTERS_14
+0xCF2133:
+  type: data
+  size: 242
+  description: Door Destinations Table (17)
+  name: DOOR_DEST_TABLE_17
+  entries:
+  - name: Pointer
+    size: 4
+    type: pointer
+  - name: Event Flag
+    size: 2
+    type: hexint
+  - name: "Y"
+    size: 2
+  - name: X
+    size: 2
+  - name: Style
+    size: 1
+0xCF2225:
+  type: data
+  size: 176
+  description: Dungeon Man Sign Pointers
+  name: DUNGEON_MAN_SIGN_POINTERS
+  entries:
+  - name: Pointer
+    type: pointer
+    size: 4
+0xCF22D5:
+  type: data
+  size: 286
+  description: Door Destinations Table (18)
+  name: DOOR_DEST_TABLE_18
+  entries:
+  - name: Pointer
+    size: 4
+    type: pointer
+  - name: Event Flag
+    size: 2
+    type: hexint
+  - name: "Y"
+    size: 2
+  - name: X
+    size: 2
+  - name: Style
+    size: 1
+0xCF23F3:
+  type: data
+  size: 12
+  description: Unknown Pointers (15)
+  name: UNKNOWN_DPOINTERS_15
+  entries:
+  - name: Pointer
+    type: pointer
+    size: 4
+0xCF23FF:
+  type: data
+  size: 484
+  description: Door Destinations Table (19)
+  name: DOOR_DEST_TABLE_19
+  entries:
+  - name: Pointer
+    size: 4
+    type: pointer
+  - name: Event Flag
+    size: 2
+    type: hexint
+  - name: "Y"
+    size: 2
+  - name: X
+    size: 2
+  - name: Style
+    size: 1
+0xCF25E3:
+  type: data
+  size: 24
+  description: Unknown Pointers (16)
+  name: UNKNOWN_DPOINTERS_16
+  entries:
+  - name: Pointer
+    type: pointer
+    size: 4
+0xCF25FB:
+  type: data
+  size: 143
+  description: Door Destinations Table (20)
+  name: DOOR_DEST_TABLE_20
+  entries:
+  - name: Pointer
+    size: 4
+    type: pointer
+  - name: Event Flag
+    size: 2
+    type: hexint
+  - name: "Y"
+    size: 2
+  - name: X
+    size: 2
+  - name: Style
+    size: 1
+0xCF268A:
+  type: data
+  size: 1
+0xCF268B:
+  type: data
+  size: 12960
+  description: Door Configuration Table
+  name: DOOR_CONFIG_TABLE
+0xCF592B:
+  type: data
+  description: Overworld Event Music Pointer Table
+  name: OVERWORLD_EVENT_MUSIC_PTR_TABLE
+  size: 330
+  entries:
+  - name: Pointer
+    size: 2
+    type: pointer
+    base: 13565952
+0xCF5A75:
+  type: data
+  size: 1966
+  description: Overworld Event Music Table
+  name: OVERWORLD_EVENT_MUSIC_TABLE
+0xCF6223:
+  type: data
+  size: 2560
+  description: Sprite Placement Pointer Table
+  name: SPRITE_PLACEMENT_PTR_TABLE
+  entries:
+  - name: Pointer
+    size: 2
+    type: pointer
+    base: 13565952
+0xCF6C23:
+  type: data
+  size: 7582
+  description: Sprite Placement Entries
+  name: SPRITE_PLACEMENT_TABLE
+0xCF89C1:
+  type: data
+  description: NPC Configuration Table
+  name: NPC_CONFIG_TABLE
+  size: 26928
+  entries:
+  - name: Type
+    size: 1
+    values:
+    - 0
+    - Person
+    - Item
+    - Object
+  - name: Sprite
+    size: 2
+  - name: Direction
+    size: 1
+    values:
+    - Up
+    - Up-Right
+    - Right
+    - Down-Right
+    - Down
+    - Down-Left
+    - Left
+    - Up-Left
+  - name: Movement
+    size: 2
+  - name: Event Flag
+    size: 2
+    type: hexint
+  - name: Show Sprite
+    size: 1
+    values:
+    - Always
+    - When event flag unset
+    - When event flag set
+  - name: Text Pointer 1
+    size: 4
+    type: pointer
+  - name: Text Pointer 2
+    size: 4
+    type: pointer
+0xCFF2F1:
+  type: empty
+  size: 3343
+0xD00000:
+  type: data
+  description: Door Pointer Table
+  name: DOOR_POINTER_TABLE
+  size: 5120
+  entries:
+  - name: Door Pointer
+    size: 4
+    type: pointer
+0xD01400:
+  type: data
+  description: Screen Transition Configuration Table
+  name: SCREEN_TRANSITION_CONFIG_TABLE
+  size: 408
+  entries:
+  - name: Duration
+    size: 1
+  - name: Animation ID
+    size: 1
+  - name: Animation Flags
+    size: 1
+  - name: Fade Style
+    size: 1
+  - name: Direction
+    size: 1
+  - name: Unknown
+    size: 1
+  - name: Slide speed
+    size: 1
+  - name: Initial Sound effect
+    size: 1
+  - name: Secondary Duration
+    size: 1
+  - name: Secondary Animation ID
+    size: 1
+  - name: Secondary Animation Flags
+    size: 1
+  - name: Final Sound effect
+    size: 1
+0xD01598:
+  type: data
+  size: 40
+  description: 'Map Tiles: Event Control Pointer Table'
+  name: EVENT_CONTROL_PTR_TABLE
+  entries:
+  - name: Pointer
+    size: 2
+    type: pointer
+    base: 13631488
+0xD015C0:
+  type: data
+  description: 'Map Tiles: Event Control Table'
+  name: MAP_TILE_EVENT_CONTROL_TABLE
+  size: 704
+0xD01880:
+  type: data
+  description: Enemy Placement Data
+  name: ENEMY_PLACEMENT_DATA
+  size: 40960
+  entries:
+  - name: Enemy Group
+    size: 2
+0xD0B880:
+  type: data
+  description: Enemy Placement groups pointer table
+  name: ENEMY_PLACEMENT_GROUPS_PTR_TABLE
+  size: 812
+  entries:
+  - name: Pointer
+    size: 4
+    type: pointer
+0xD0BBAC:
+  type: data
+  description: Enemy Placement groups data
+  name: ENEMY_PLACEMENT_GROUPS_TABLE
+  size: 2657
 0xD0C60D:
   type: data
   description: Battle Entry Pointer Table
@@ -1338,6 +3478,24 @@ texttables:
     - Run away if flag is set
   - name: Battle Letterboxing?
     size: 1
+0xD0D52D:
+  type: data
+  description: Enemy Battle Groups Table
+  name: ENEMY_BATTLE_GROUPS_TABLE
+  size: 2695
+0xD0DFB4:
+  type: empty
+  size: 8268
+0xD10000:
+  type: data
+  description: Overworld Sprites
+  name: OVERWORLD_SPRITES
+  size: 290816
+  entries:
+  - name: Tile
+    size: 16
+    type: tile
+    bpp: 4
 0xD57000:
   type: data
   description: Item Data
@@ -1368,6 +3526,60 @@ texttables:
     size: 4
     type: hexint
   - name: Help Text Pointer
+    size: 4
+    type: pointer
+0xD587D0:
+  type: data
+  description: Store Data
+  name: STORE_TABLE
+  size: 462
+  entries:
+  - name: Item 1
+    size: 1
+  - name: Item 2
+    size: 1
+  - name: Item 3
+    size: 1
+  - name: Item 4
+    size: 1
+  - name: Item 5
+    size: 1
+  - name: Item 6
+    size: 1
+  - name: Item 7
+    size: 1
+0xD5899E:
+  type: data
+  size: 256
+  description: PSI Teleport Destination Table
+  name: PSI_TELEPORT_DEST_TABLE
+  entries:
+  - name: Name
+    type: standardtext
+    size: 10
+  - name: Event Flag
+    type: hexint
+    size: 2
+  - name: X
+    size: 2
+  - name: true
+    size: 2
+0xD58A9E:
+  type: data
+  size: 32
+0xD58ABE:
+  type: data
+  size: 96
+  description: Telephone Contacts Table
+  name: TELEPHONE_CONTACTS_TABLE
+  entries:
+  - name: Name
+    size: 10
+    type: standardtext
+  - name: Event Flag
+    size: 2
+    type: hexint
+  - name: Text Pointer
     size: 4
     type: pointer
 0xD58B1E:
@@ -1406,6 +3618,273 @@ texttables:
   - name: Code Address
     size: 4
     type: pointer
+0xD59A06:
+  type: data
+  description: PSI Ability Table
+  name: PSI_ABILITY_TABLE
+  size: 810
+  entries:
+  - name: PSI Name
+    size: 1
+    substtable: PSI_NAME_TABLE
+  - name: Strength
+    size: 1
+    values:
+    - "": ~
+    - α
+    - β
+    - γ
+    - Σ
+    - Ω
+  - name: Type
+    size: 1
+    bitvalues:
+    - Offense
+    - Recovery
+    - Assist
+    - Other
+  - name: Target
+    size: 1
+    values:
+    - ???
+    - Nobody
+    - Enemies
+    - Allies
+  - name: Effect
+    size: 2
+  - name: Level learned by Ness
+    size: 1
+  - name: Level learned by Paula
+    size: 1
+  - name: Level learned by Poo
+    size: 1
+  - name: PSI Menu position (X)
+    size: 1
+  - name: PSI Menu position (Y)
+    size: 1
+  - name: Text Address
+    size: 4
+    type: pointer
+0xD59D30:
+  type: data
+  description: PSI Name Table
+  name: PSI_NAME_TABLE
+  size: 170
+  entries:
+  - name: Name
+    size: 10
+    type: standardtext
+0xD59DDA:
+  type: data
+  description: NPC AI Table
+  name: NPC_AI_TABLE
+  size: 38
+0xD59E00:
+  type: data
+  description: Level-up EXP Table
+  name: EXP_TABLE
+  size: 1600
+  entries:
+  - name: Level 00 EXP
+    size: 4
+  - name: Level 01 EXP
+    size: 4
+  - name: Level 02 EXP
+    size: 4
+  - name: Level 03 EXP
+    size: 4
+  - name: Level 04 EXP
+    size: 4
+  - name: Level 05 EXP
+    size: 4
+  - name: Level 06 EXP
+    size: 4
+  - name: Level 07 EXP
+    size: 4
+  - name: Level 08 EXP
+    size: 4
+  - name: Level 09 EXP
+    size: 4
+  - name: Level 10 EXP
+    size: 4
+  - name: Level 11 EXP
+    size: 4
+  - name: Level 12 EXP
+    size: 4
+  - name: Level 13 EXP
+    size: 4
+  - name: Level 14 EXP
+    size: 4
+  - name: Level 15 EXP
+    size: 4
+  - name: Level 16 EXP
+    size: 4
+  - name: Level 17 EXP
+    size: 4
+  - name: Level 18 EXP
+    size: 4
+  - name: Level 19 EXP
+    size: 4
+  - name: Level 20 EXP
+    size: 4
+  - name: Level 21 EXP
+    size: 4
+  - name: Level 22 EXP
+    size: 4
+  - name: Level 23 EXP
+    size: 4
+  - name: Level 24 EXP
+    size: 4
+  - name: Level 25 EXP
+    size: 4
+  - name: Level 26 EXP
+    size: 4
+  - name: Level 27 EXP
+    size: 4
+  - name: Level 28 EXP
+    size: 4
+  - name: Level 29 EXP
+    size: 4
+  - name: Level 30 EXP
+    size: 4
+  - name: Level 31 EXP
+    size: 4
+  - name: Level 32 EXP
+    size: 4
+  - name: Level 33 EXP
+    size: 4
+  - name: Level 34 EXP
+    size: 4
+  - name: Level 35 EXP
+    size: 4
+  - name: Level 36 EXP
+    size: 4
+  - name: Level 37 EXP
+    size: 4
+  - name: Level 38 EXP
+    size: 4
+  - name: Level 39 EXP
+    size: 4
+  - name: Level 40 EXP
+    size: 4
+  - name: Level 41 EXP
+    size: 4
+  - name: Level 42 EXP
+    size: 4
+  - name: Level 43 EXP
+    size: 4
+  - name: Level 44 EXP
+    size: 4
+  - name: Level 45 EXP
+    size: 4
+  - name: Level 46 EXP
+    size: 4
+  - name: Level 47 EXP
+    size: 4
+  - name: Level 48 EXP
+    size: 4
+  - name: Level 49 EXP
+    size: 4
+  - name: Level 50 EXP
+    size: 4
+  - name: Level 51 EXP
+    size: 4
+  - name: Level 52 EXP
+    size: 4
+  - name: Level 53 EXP
+    size: 4
+  - name: Level 54 EXP
+    size: 4
+  - name: Level 55 EXP
+    size: 4
+  - name: Level 56 EXP
+    size: 4
+  - name: Level 57 EXP
+    size: 4
+  - name: Level 58 EXP
+    size: 4
+  - name: Level 59 EXP
+    size: 4
+  - name: Level 60 EXP
+    size: 4
+  - name: Level 61 EXP
+    size: 4
+  - name: Level 62 EXP
+    size: 4
+  - name: Level 63 EXP
+    size: 4
+  - name: Level 64 EXP
+    size: 4
+  - name: Level 65 EXP
+    size: 4
+  - name: Level 66 EXP
+    size: 4
+  - name: Level 67 EXP
+    size: 4
+  - name: Level 68 EXP
+    size: 4
+  - name: Level 69 EXP
+    size: 4
+  - name: Level 70 EXP
+    size: 4
+  - name: Level 71 EXP
+    size: 4
+  - name: Level 72 EXP
+    size: 4
+  - name: Level 73 EXP
+    size: 4
+  - name: Level 74 EXP
+    size: 4
+  - name: Level 75 EXP
+    size: 4
+  - name: Level 76 EXP
+    size: 4
+  - name: Level 77 EXP
+    size: 4
+  - name: Level 78 EXP
+    size: 4
+  - name: Level 79 EXP
+    size: 4
+  - name: Level 80 EXP
+    size: 4
+  - name: Level 81 EXP
+    size: 4
+  - name: Level 82 EXP
+    size: 4
+  - name: Level 83 EXP
+    size: 4
+  - name: Level 84 EXP
+    size: 4
+  - name: Level 85 EXP
+    size: 4
+  - name: Level 86 EXP
+    size: 4
+  - name: Level 87 EXP
+    size: 4
+  - name: Level 88 EXP
+    size: 4
+  - name: Level 89 EXP
+    size: 4
+  - name: Level 90 EXP
+    size: 4
+  - name: Level 91 EXP
+    size: 4
+  - name: Level 92 EXP
+    size: 4
+  - name: Level 93 EXP
+    size: 4
+  - name: Level 94 EXP
+    size: 4
+  - name: Level 95 EXP
+    size: 4
+  - name: Level 96 EXP
+    size: 4
+  - name: Level 97 EXP
+    size: 4
+  - name: Level 98 EXP
+    size: 4
+  - name: Level 99 EXP
+    size: 4
 0xD5A440:
   type: data
   description: Enemy Configuration Table
@@ -1928,7 +4407,7 @@ texttables:
   size: 5103
 0xE00000:
   type: data
-  size: 0x10C2
+  size: 4290
   description: Text Window Graphics
   name: TEXT_WINDOW_GFX
 0xE010C2:
@@ -1940,7 +4419,7 @@ texttables:
   type: data
   description: Normal font
   name: NORMAL_FONT
-  size: 0xE00
+  size: 3584
   entries:
   - name: Tile
     size: 16
@@ -1985,12 +4464,15 @@ texttables:
   type: data
   description: Big font
   name: BIG_FONT
-  size: 0x1000
+  size: 4096
   entries:
   - name: Tile
     size: 16
     bpp: 2
     type: tile
+0xE0309D:
+  type: data
+  size: 72
 0xE030E5:
   type: data
   size: 24
@@ -2033,6 +4515,1123 @@ texttables:
 0xE0FC88:
   type: empty
   size: 888
+0xE10000:
+  type: data
+  size: 9185
+0xE123E1:
+  type: data
+  description: Wandering Photographer Configuration Table
+  name: PHOTOGRAPHER_CFG_TABLE
+  size: 1984
+  entries:
+  - name: Event Flag
+    size: 2
+    type: hexint
+  - name: ???
+    size: 3
+    type: bytearray
+  - name: ????
+    size: 2
+  - name: ?????
+    size: 1
+    type: hexint
+  - name: ??????
+    size: 54
+    type: bytearray
+0xE12BA1:
+  type: data
+  size: 2549
+  description: Compressed Palette Data - Indeterminate Use
+  name: COMPRESSED_PALETTE_UNKNOWN
+0xE13596:
+  type: data
+  size: 3251
+  description: Staff Credits Sequence Text
+  name: STAFF_TEXT
+  entries:
+  - name: Text
+    terminator: 0
+    type: stafftext
+0xE14249:
+  type: assembly
+  size: 206
+  labels:
+    16978: UNKNOWN0
+    17005: UNKNOWN1
+    17007: UNKNOWN2
+    17012: UNKNOWN3
+    17026: UNKNOWN4
+    17028: UNKNOWN5
+    17033: UNKNOWN6
+    17068: UNKNOWN7
+    17087: UNKNOWN8
+    17102: UNKNOWN9
+    17113: UNKNOWN10
+    17138: UNKNOWN11
+    17140: UNKNOWN12
+    17145: UNKNOWN13
+    17159: UNKNOWN14
+    17161: UNKNOWN15
+    17166: UNKNOWN16
+    17173: UNKNOWN17
+0xE14317:
+  type: data
+  size: 105
+  description: '"APE" Logo Arrangement'
+  name: APE_ARRANGEMENT
+0xE14380:
+  type: data
+  size: 518
+  description: '"APE" Logo Graphics'
+  name: APE_GRAPHICS
+0xE14586:
+  type: data
+  size: 68
+  description: '"APE" Logo Palette'
+  name: APE_PALETTE
+0xE145CA:
+  type: data
+  size: 116
+  description: '"HALKEN" Logo Arrangement'
+  name: HALKEN_ARRANGEMENT
+0xE1463E:
+  type: data
+  size: 464
+  description: '"HALKEN" Logo Graphics'
+  name: HALKEN_GRAPHICS
+0xE1480E:
+  type: data
+  size: 157
+  description: '"HALKEN" Logo Palette'
+  name: HALKEN_PALETTE
+0xE148AB:
+  type: data
+  size: 73
+  description: '"Nintendo" Logo Arrangement'
+  name: NINTENDO_ARRANGEMENT
+0xE148F4:
+  type: data
+  size: 241
+  description: '"Nintendo" Logo Graphics'
+  name: NINTENDO_GRAPHICS
+0xE149E5:
+  type: data
+  size: 23
+  description: '"Nintendo" Logo Palette'
+  name: NINTENDO_PALETTE
+0xE149FC:
+  type: data
+  size: 1362
+  description: Gas Station Intro Arrangement
+  name: GAS_STATION_ARRANGEMENT
+0xE14F4E:
+  type: data
+  size: 19819
+  description: Gas Station Intro Graphics
+  name: GAS_STATION_GRAPHICS
+0xE19CB9:
+  type: data
+  size: 166
+  description: Gas Station Intro Palette
+  name: GAS_STATION_PALETTE
+0xE19D5F:
+  type: data
+  size: 130
+  description: Gas Station Intro Palette 2
+  name: GAS_STATION_PALETTE2
+0xE19DE1:
+  type: data
+  size: 25119
+0xE20000:
+  type: data
+  size: 30704
+  name: AUDIO_PACK_108
+  description: Audio Block
+0xE277F0:
+  type: data
+  size: 30012
+  name: AUDIO_PACK_0
+  description: Audio Block
+0xE2ED2C:
+  type: data
+  size: 4062
+  description: Audio Block
+  name: AUDIO_PACK_110
+0xE2FD0A:
+  type: data
+  size: 758
+  description: Audio Block
+  name: AUDIO_PACK_6
+0xE30000:
+  type: data
+  size: 24420
+  name: AUDIO_PACK_3
+  description: Audio Block
+0xE35F64:
+  type: data
+  size: 20886
+  name: AUDIO_PACK_70
+  description: Audio Block
+0xE3B0FA:
+  type: data
+  size: 19666
+  name: AUDIO_PACK_37
+  description: Audio Block
+0xE3FDCC:
+  type: data
+  size: 564
+  name: AUDIO_PACK_32
+  description: Audio Block
+0xE40000:
+  type: data
+  size: 20810
+  name: AUDIO_PACK_64
+  description: Audio Block
+0xE4514A:
+  type: data
+  size: 20712
+  name: AUDIO_PACK_42
+  description: Audio Block
+0xE4A232:
+  type: data
+  size: 19614
+  name: AUDIO_PACK_126
+  description: Audio Block
+0xE4EED0:
+  type: data
+  size: 3932
+  name: AUDIO_PACK_36
+  description: Audio Block
+0xE4FE2C:
+  type: data
+  size: 466
+  name: AUDIO_PACK_128
+  description: Audio Block
+0xE4FFFE:
+  type: empty
+  size: 2
+0xE50000:
+  type: data
+  size: 19530
+  name: AUDIO_PACK_50
+  description: Audio Block
+0xE54C4A:
+  type: data
+  size: 18692
+  name: AUDIO_PACK_92
+  description: Audio Block
+0xE5954E:
+  type: data
+  size: 18404
+  name: AUDIO_PACK_56
+  description: Audio Block
+0xE5DD32:
+  type: data
+  size: 8710
+  name: AUDIO_PACK_122
+  description: Audio Block
+0xE5FF38:
+  type: data
+  size: 200
+  name: AUDIO_PACK_96
+  description: Audio Block
+0xE60000:
+  type: data
+  size: 17880
+  name: AUDIO_PACK_1
+  description: Audio Block
+  terminator: 0
+  entries:
+  - name: Size
+    type: int
+    size: 2
+  - name: Base Address
+    type: hexint
+    size: 2
+  - name: Data
+    type: bytearray
+    size: Size
+0xE645D8:
+  type: data
+  size: 17858
+  name: AUDIO_PACK_74
+  description: Audio Block
+0xE68B9A:
+  type: data
+  size: 17262
+  name: AUDIO_PACK_76
+  description: Audio Block
+0xE6CF08:
+  type: data
+  size: 12304
+  name: AUDIO_PACK_47
+  description: Audio Block
+0xE6FF18:
+  type: data
+  size: 232
+  name: AUDIO_PACK_73
+  description: Audio Block
+0xE70000:
+  type: data
+  size: 17172
+  name: AUDIO_PACK_78
+  description: Audio Block
+0xE74314:
+  type: data
+  size: 16776
+  name: AUDIO_PACK_82
+  description: Audio Block
+0xE7849C:
+  type: data
+  size: 16684
+  name: AUDIO_PACK_8
+  description: Audio Block
+0xE7C5C8:
+  type: data
+  size: 14904
+  name: AUDIO_PACK_24
+  description: Audio Block
+0xE80000:
+  type: data
+  size: 16486
+  name: AUDIO_PACK_84
+  description: Audio Block
+0xE84066:
+  type: data
+  size: 15936
+  name: AUDIO_PACK_60
+  description: Audio Block
+0xE87EA6:
+  type: data
+  size: 15842
+  name: AUDIO_PACK_153
+  description: Audio Block
+0xE8BC88:
+  type: data
+  size: 15338
+  name: AUDIO_PACK_124
+  description: Audio Block
+0xE8F872:
+  type: data
+  size: 1764
+  description: Audio Block
+  name: AUDIO_PACK_102
+0xE8FF56:
+  type: data
+  size: 170
+  name: AUDIO_PACK_166
+  description: Audio Block
+0xE90000:
+  type: data
+  size: 14964
+  name: AUDIO_PACK_27
+  description: Audio Block
+0xE93A74:
+  type: data
+  size: 14562
+  name: AUDIO_PACK_80
+  description: Audio Block
+0xE97356:
+  type: data
+  size: 14544
+  name: AUDIO_PACK_118
+  description: Audio Block
+0xE9AC26:
+  type: data
+  size: 13406
+  name: AUDIO_PACK_131
+  description: Audio Block
+0xE9E084:
+  type: data
+  size: 7864
+  description: Audio Block
+  name: AUDIO_PACK_66
+0xE9FF3C:
+  type: empty
+  size: 196
+0xEA0000:
+  type: data
+  size: 13178
+  name: AUDIO_PACK_54
+  description: Audio Block
+0xEA337A:
+  type: data
+  size: 12826
+  name: AUDIO_PACK_52
+  description: Audio Block
+0xEA6594:
+  type: data
+  size: 12642
+  name: AUDIO_PACK_72
+  description: Audio Block
+0xEA96F6:
+  type: data
+  size: 11930
+  name: AUDIO_PACK_89
+  description: Audio Block
+0xEAC590:
+  type: data
+  size: 11156
+  name: AUDIO_PACK_35
+  description: Audio Block
+0xEAF124:
+  type: data
+  size: 3778
+  name: AUDIO_PACK_125
+  description: Audio Block
+0xEAFFE6:
+  type: empty
+  size: 26
+0xEB0000:
+  type: data
+  size: 10728
+  name: AUDIO_PACK_44
+  description: Audio Block
+0xEB29E8:
+  type: data
+  size: 10276
+  name: AUDIO_PACK_21
+  description: Audio Block
+0xEB520C:
+  type: data
+  size: 9930
+  name: AUDIO_PACK_5
+  description: Audio Block
+0xEB78D6:
+  type: data
+  size: 9912
+  name: AUDIO_PACK_40
+  description: Audio Block
+0xEB9F8E:
+  type: data
+  size: 9562
+  name: AUDIO_PACK_33
+  description: Audio Block
+0xEBC4E8:
+  type: data
+  size: 9468
+  name: AUDIO_PACK_105
+  description: Audio Block
+0xEBE9E4:
+  type: data
+  size: 5182
+  name: AUDIO_PACK_154
+  description: Audio Block
+0xEBFE22:
+  type: data
+  size: 478
+  name: AUDIO_PACK_13
+  description: Audio Block
+0xEC0000:
+  type: data
+  size: 9196
+  name: AUDIO_PACK_114
+  description: Audio Block
+0xEC23EC:
+  type: data
+  size: 8614
+  name: AUDIO_PACK_109
+  description: Audio Block
+0xEC4592:
+  type: data
+  size: 8558
+  name: AUDIO_PACK_107
+  description: Audio Block
+0xEC6700:
+  type: data
+  size: 8548
+  name: AUDIO_PACK_98
+  description: Audio Block
+0xEC8864:
+  type: data
+  description: Audio Block
+  name: AUDIO_PACK_139
+  size: 8180
+0xECA858:
+  type: data
+  size: 6280
+  description: Audio Block
+  name: AUDIO_PACK_156
+0xECC0E0:
+  type: data
+  size: 6152
+  name: AUDIO_PACK_2
+  description: Audio Block
+  terminator: 0
+  entries:
+  - name: Size
+    type: int
+    size: 2
+  - name: Base Address
+    type: hexint
+    size: 2
+  - name: Data
+    type: bytearray
+    size: Size
+0xECD8E8:
+  type: data
+  size: 60
+  name: AUDIO_PACK_UNUSED
+  description: Unused? audio pack
+  terminator: 0
+  entries:
+  - name: Size
+    type: int
+    size: 2
+  - name: Base Address
+    type: hexint
+    size: 2
+  - name: Data
+    type: table
+    entries:
+    - name: Unknown
+      size: 6
+      type: bytearray
+    size: Size
+0xECD924:
+  type: data
+  size: 5032
+  name: AUDIO_PACK_4
+  description: Audio Block
+  terminator: 0
+  entries:
+  - name: Size
+    type: int
+    size: 2
+  - name: Base Address
+    type: hexint
+    size: 2
+  - name: Data
+    type: bytearray
+    size: Size
+0xECECCC:
+  type: data
+  size: 4882
+  name: AUDIO_PACK_165
+  description: Audio Block
+0xECFFDE:
+  type: empty
+  size: 34
+0xED0000:
+  type: data
+  size: 3431
+  name: AUDIO_PACK_140
+  description: Audio Block
+0xED0D67:
+  type: data
+  name: AUDIO_PACK_94
+  description: Audio Block
+  size: 3203
+0xED19EA:
+  type: data
+  size: 3193
+  description: Audio Block
+  name: AUDIO_PACK_65
+0xED2663:
+  type: data
+  size: 3170
+  name: AUDIO_PACK_62
+  description: Audio Block
+0xED32C5:
+  type: data
+  size: 2994
+  name: AUDIO_PACK_58
+  description: Audio Block
+0xED3E77:
+  type: data
+  size: 2974
+  name: AUDIO_PACK_133
+  description: Audio Block
+0xED4A15:
+  type: data
+  size: 2937
+  name: AUDIO_PACK_97
+  description: Audio Block
+0xED558E:
+  type: data
+  size: 2871
+  name: AUDIO_PACK_55
+  description: Audio Block
+0xED60C5:
+  type: data
+  size: 2857
+  name: AUDIO_PACK_106
+  description: Audio Block
+0xED6BEE:
+  type: data
+  size: 2673
+  name: AUDIO_PACK_123
+  description: Audio Block
+0xED765F:
+  type: data
+  size: 2640
+  name: AUDIO_PACK_25
+  description: Audio Block
+0xED80AF:
+  type: data
+  size: 2599
+  name: AUDIO_PACK_15
+  description: Audio Block
+0xED8AD6:
+  type: data
+  size: 2588
+  name: AUDIO_PACK_157
+  description: Audio Block
+0xED94F2:
+  type: data
+  size: 2567
+  name: AUDIO_PACK_121
+  description: Audio Block
+0xED9EF9:
+  type: data
+  size: 2559
+  name: AUDIO_PACK_87
+  description: Audio Block
+0xEDA8F8:
+  type: data
+  size: 2553
+  name: AUDIO_PACK_132
+  description: Audio Block
+0xEDB2F1:
+  type: data
+  size: 2552
+  name: AUDIO_PACK_116
+  description: Audio Block
+0xEDBCE9:
+  type: data
+  size: 2500
+  description: Audio Block
+  name: AUDIO_PACK_71
+  terminator: 0
+  entries:
+  - name: Size
+    type: int
+    size: 2
+  - name: Base Address
+    type: hexint
+    size: 2
+  - name: Data
+    type: bytearray
+    size: Size
+0xEDC6AD:
+  type: data
+  size: 2462
+  name: AUDIO_PACK_34
+  description: Audio Block
+0xEDD04B:
+  type: data
+  size: 2354
+  description: Audio Block
+  name: AUDIO_PACK_61
+0xEDD97D:
+  type: data
+  size: 2311
+  name: AUDIO_PACK_119
+  description: Audio Block
+0xEDE284:
+  type: data
+  size: 2255
+  name: AUDIO_PACK_141
+  description: Audio Block
+0xEDEB53:
+  type: data
+  size: 2108
+  name: AUDIO_PACK_48
+  description: Audio Block
+0xEDF38F:
+  type: data
+  size: 2104
+  name: AUDIO_PACK_39
+  description: Audio Block
+0xEDFBC7:
+  type: data
+  size: 1063
+  name: AUDIO_PACK_127
+  description: Audio Block
+0xEDFFEE:
+  type: empty
+  size: 18
+0xEE0000:
+  type: data
+  size: 2082
+  name: AUDIO_PACK_150
+  description: Audio Block
+0xEE0822:
+  type: data
+  size: 2056
+  name: AUDIO_PACK_120
+  description: Audio Block
+0xEE102A:
+  type: data
+  size: 2045
+  name: AUDIO_PACK_38
+  description: Audio Block
+0xEE1827:
+  type: data
+  size: 2012
+  name: AUDIO_PACK_161
+  description: Audio Block
+0xEE2003:
+  type: data
+  size: 2004
+  name: AUDIO_PACK_68
+  description: Audio Block
+0xEE27D7:
+  type: data
+  size: 2003
+  name: AUDIO_PACK_104
+  description: Audio Block
+0xEE2FAA:
+  type: data
+  size: 1944
+  name: AUDIO_PACK_90
+  description: Audio Block
+0xEE3742:
+  type: data
+  size: 1747
+  description: Audio Block
+  name: AUDIO_PACK_79
+0xEE3E15:
+  type: data
+  size: 1705
+  name: AUDIO_PACK_46
+  description: Audio Block
+0xEE44BE:
+  type: data
+  size: 1693
+  name: AUDIO_PACK_149
+  description: Audio Block
+0xEE4B5B:
+  type: data
+  size: 1678
+  name: AUDIO_PACK_86
+  description: Audio Block
+0xEE51E9:
+  type: data
+  size: 1653
+  name: AUDIO_PACK_100
+  description: Audio Block
+0xEE585E:
+  type: data
+  size: 1647
+  name: AUDIO_PACK_26
+  description: Audio Block
+0xEE5ECD:
+  type: data
+  size: 1604
+  name: AUDIO_PACK_43
+  description: Audio Block
+0xEE6511:
+  type: data
+  size: 1595
+  name: AUDIO_PACK_162
+  description: Audio Block
+0xEE6B4C:
+  type: data
+  size: 1572
+  name: AUDIO_PACK_85
+  description: Audio Block
+0xEE7170:
+  type: data
+  size: 1565
+  name: AUDIO_PACK_99
+  description: Audio Block
+0xEE778D:
+  type: data
+  size: 1549
+  name: AUDIO_PACK_28
+  description: Audio Block
+0xEE7D9A:
+  type: data
+  size: 1548
+  name: AUDIO_PACK_10
+  description: Audio Block
+0xEE83A6:
+  type: data
+  size: 1538
+  name: AUDIO_PACK_117
+  description: Audio Block
+0xEE89A8:
+  type: data
+  size: 1511
+  name: AUDIO_PACK_77
+  description: Audio Block
+0xEE8F8F:
+  type: data
+  size: 1508
+  name: AUDIO_PACK_19
+  description: Audio Block
+0xEE9573:
+  type: data
+  size: 1476
+  name: AUDIO_PACK_57
+  description: Audio Block
+0xEE9B37:
+  type: data
+  size: 1457
+  name: AUDIO_PACK_14
+  description: Audio Block
+0xEEA0E8:
+  type: data
+  size: 1454
+  name: AUDIO_PACK_158
+  description: Audio Block
+0xEEA696:
+  type: data
+  size: 1432
+  name: AUDIO_PACK_30
+  description: Audio Block
+0xEEAC2E:
+  type: data
+  size: 1423
+  name: AUDIO_PACK_134
+  description: Audio Block
+0xEEB1BD:
+  type: data
+  size: 1421
+  name: AUDIO_PACK_113
+  description: Audio Block
+0xEEB74A:
+  type: data
+  size: 1420
+  name: AUDIO_PACK_146
+  description: Audio Block
+0xEEBCD6:
+  type: data
+  size: 1364
+  name: AUDIO_PACK_136
+  description: Audio Block
+0xEEC22A:
+  type: data
+  size: 1335
+  name: AUDIO_PACK_112
+  description: Audio Block
+0xEEC761:
+  type: data
+  size: 1319
+  name: AUDIO_PACK_163
+  description: Audio Block
+0xEECC88:
+  type: data
+  size: 1314
+  name: AUDIO_PACK_115
+  description: Audio Block
+0xEED1AA:
+  type: data
+  size: 1306
+  name: AUDIO_PACK_53
+  description: Audio Block
+0xEED6C4:
+  type: data
+  size: 1296
+  name: AUDIO_PACK_67
+  description: Audio Block
+0xEEDBD4:
+  type: data
+  size: 1283
+  name: AUDIO_PACK_20
+  description: Audio Block
+0xEEE0D7:
+  type: data
+  size: 1277
+  name: AUDIO_PACK_144
+  description: Audio Block
+0xEEE5D4:
+  type: data
+  size: 1255
+  description: Audio Block
+  name: AUDIO_PACK_111
+0xEEEABB:
+  type: data
+  size: 1231
+  name: AUDIO_PACK_63
+  description: Audio Block
+0xEEEF8A:
+  type: data
+  size: 1129
+  name: AUDIO_PACK_138
+  description: Audio Block
+0xEEF3F3:
+  type: data
+  size: 1056
+  name: AUDIO_PACK_16
+  description: Audio Block
+0xEEF813:
+  type: data
+  size: 1055
+  name: AUDIO_PACK_148
+  description: Audio Block
+0xEEFC32:
+  type: data
+  size: 974
+  description: Audio Block
+  name: AUDIO_PACK_45
+0xEF0000:
+  type: data
+  size: 1055
+  name: AUDIO_PACK_23
+  description: Audio Block
+0xEF041F:
+  type: data
+  size: 1043
+  name: AUDIO_PACK_11
+  description: Audio Block
+0xEF0832:
+  type: data
+  size: 1041
+  name: AUDIO_PACK_142
+  description: Audio Block
+0xEF0C43:
+  type: data
+  size: 1035
+  name: AUDIO_PACK_160
+  description: Audio Block
+0xEF104E:
+  type: data
+  size: 1020
+  name: AUDIO_PACK_101
+  description: Audio Block
+0xEF144A:
+  type: data
+  size: 1017
+  name: AUDIO_PACK_103
+  terminator: 0
+  description: Sequence data for tracks "Return to your body", "Boarding School", and "Phase distorter"
+  entries:
+  - name: Size
+    type: int
+    size: 2
+  - name: Base Address
+    type: hexint
+    size: 2
+  - name: Data
+    type: bytearray
+    size: Size
+0xEF1843:
+  type: data
+  size: 954
+  name: AUDIO_PACK_51
+  description: Audio Block
+0xEF1BFD:
+  type: data
+  size: 885
+  name: AUDIO_PACK_18
+  description: Audio Block
+0xEF1F72:
+  type: data
+  size: 866
+  name: AUDIO_PACK_29
+  description: Audio Block
+0xEF22D4:
+  type: data
+  size: 865
+  name: AUDIO_PACK_93
+  description: Audio Block
+0xEF2635:
+  type: data
+  size: 850
+  name: AUDIO_PACK_95
+  description: Audio Block
+0xEF2987:
+  type: data
+  size: 832
+  name: AUDIO_PACK_164
+  description: Audio Block
+0xEF2CC7:
+  type: data
+  size: 811
+  name: AUDIO_PACK_151
+  description: Audio Block
+0xEF2FF2:
+  type: data
+  size: 759
+  description: Audio Block
+  name: AUDIO_PACK_143
+0xEF32E9:
+  type: data
+  size: 718
+  name: AUDIO_PACK_12
+  description: Audio Block
+0xEF35B7:
+  type: data
+  size: 689
+  name: AUDIO_PACK_135
+  description: Audio Block
+0xEF3868:
+  type: data
+  size: 679
+  name: AUDIO_PACK_83
+  description: Audio Block
+0xEF3B0F:
+  type: data
+  size: 663
+  name: AUDIO_PACK_88
+  description: Audio Block
+0xEF3DA6:
+  type: data
+  size: 615
+  name: AUDIO_PACK_155
+  description: Audio Block
+0xEF400D:
+  type: data
+  size: 611
+  name: AUDIO_PACK_31
+  description: Audio Block
+0xEF4270:
+  type: data
+  size: 608
+  name: AUDIO_PACK_129
+  description: Audio Block
+0xEF44D0:
+  type: data
+  size: 599
+  name: AUDIO_PACK_22
+  description: Audio Block
+0xEF4727:
+  type: data
+  size: 593
+  name: AUDIO_PACK_17
+  description: Audio Block
+0xEF4978:
+  type: data
+  size: 586
+  name: AUDIO_PACK_91
+  description: Audio Block
+0xEF4BC2:
+  type: data
+  size: 548
+  name: AUDIO_PACK_81
+  description: Audio Block
+0xEF4DE6:
+  type: data
+  size: 543
+  name: AUDIO_PACK_147
+  description: Audio Block
+0xEF5005:
+  type: data
+  size: 506
+  name: AUDIO_PACK_152
+  description: Audio Block
+0xEF51FF:
+  type: data
+  size: 403
+  name: AUDIO_PACK_159
+  description: Audio Block
+0xEF5392:
+  type: data
+  size: 388
+  name: AUDIO_PACK_49
+  description: Audio Block
+0xEF5516:
+  type: data
+  size: 379
+  name: AUDIO_PACK_9
+  description: Audio Block
+0xEF5691:
+  type: data
+  size: 343
+  name: AUDIO_PACK_145
+  description: Hidden track sequence data
+  entries:
+  - name: Size
+    type: int
+    size: 2
+  - name: Base Address
+    type: hexint
+    size: 2
+  - name: Data
+    type: bytearray
+    size: Size
+0xEF57E8:
+  type: data
+  size: 340
+  name: AUDIO_PACK_69
+  description: Audio Block
+0xEF593C:
+  type: data
+  size: 327
+  name: AUDIO_PACK_167
+  description: Audio Block
+0xEF5A83:
+  type: data
+  size: 317
+  name: AUDIO_PACK_130
+  description: Audio Block
+0xEF5BC0:
+  type: data
+  size: 308
+  name: AUDIO_PACK_168
+  description: Audio Block
+0xEF5CF4:
+  type: data
+  size: 298
+  description: Audio Block
+  name: AUDIO_PACK_75
+0xEF5E1E:
+  type: data
+  size: 297
+  name: AUDIO_PACK_137
+  description: Audio Block
+0xEF5F47:
+  type: data
+  size: 258
+  description: Audio Block
+  name: AUDIO_PACK_59
+0xEF6049:
+  type: data
+  size: 258
+  name: AUDIO_PACK_41
+  description: Audio Block
+0xEF614B:
+  type: data
+  size: 210
+  name: AUDIO_PACK_7
+  description: Audio Block
+0xEF621D:
+  type: data
+  description: 'Map Data: Tileset Table'
+  name: TILESET_TABLE
+  size: 64
+  entries:
+  - name: Tileset
+    size: 2
+    type: hexint
+0xEF625D:
+  type: data
+  description: 'Map Data: Tileset Pointer Table'
+  name: MAP_DATA_TILESET_PTR_TABLE
+  size: 80
+  entries:
+  - name: Pointer
+    size: 4
+    type: pointer
+0xEF62AD:
+  type: data
+  description: 'Map Data: Tile Arrangement Pointer Table'
+  name: MAP_DATA_TILE_ARRANGEMENT_PTR_TABLE
+  size: 80
+  entries:
+  - name: Pointer
+    size: 4
+    type: pointer
+0xEF62FD:
+  type: data
+  description: 'Map Data: Palette Pointer Table'
+  name: MAP_PALETTE_PTR_TABLE
+  size: 128
+  entries:
+  - name: Pointer
+    size: 4
+    type: pointer
+0xEF637D:
+  type: data
+  description: 'Map Data: Tile Collision Pointer Table'
+  name: MAP_DATA_TILE_COLLISION_PTR_TABLE
+  size: 80
+  entries:
+  - name: Pointer
+    size: 4
+    type: pointer
 0xEF63CD:
   type: data
   description: 'Map Data: Tile Animation Pointer Table'
@@ -2042,6 +5641,37 @@ texttables:
   - name: Pointer
     size: 4
     type: pointer
+0xEF641D:
+  type: data
+  description: 'Map Data: Freakish Tile Animation Pointer Table'
+  name: MAP_DATA_WEIRD_TILE_ANIMATION_PTR_TABLE
+  size: 80
+  entries:
+  - name: Pointer
+    size: 4
+    type: pointer
+0xEF646D:
+  type: data
+  description: 'Map Data: Freakish Tile Animation Table'
+  name: MAP_DATA_WEIRD_TILE_ANIMATION_TABLE
+  size: 212
+0xEF6541:
+  type: data
+  description: Sprite Grouping Pointer Table
+  name: SPRITE_GROUPING_PTR_TABLE
+  size: 1856
+  entries:
+  - name: Pointer
+    size: 4
+    type: pointer
+0xEF6C81:
+  type: data
+  description: Sprite Grouping Table
+  name: SPRITE_GROUPING_DATA
+  size: 12225
+0xEF9C42:
+  type: data
+  size: 13289
 0xEFD02B:
   type: assembly
   size: 62
@@ -2058,4 +5688,57 @@ texttables:
   labels:
     53368: UNKNOWN0
     53371: UNKNOWN1
+0xEFD07C:
+  type: assembly
+  size: 24
+  labels:
+    53392: UNKNOWN0
+    53395: UNKNOWN1
+0xEFD094:
+  type: assembly
+  size: 258
+  labels:
+    53416: UNKNOWN0
+    53652: UNKNOWN1
+0xEFD196:
+  type: assembly
+  size: 34
+  labels:
+    53685: UNKNOWN0
+0xEFD1B8:
+  type: assembly
+  size: 50
+  labels:
+    53736: UNKNOWN0
+0xEFD1EA:
+  type: assembly
+  size: 356
+  labels:
+    53758: UNKNOWN0
+    54092: UNKNOWN1
+0xEFD34E:
+  type: assembly
+  size: 39
+  labels:
+    54128: UNKNOWN0
+    54132: UNKNOWN1
+0xEFD375:
+  type: assembly
+  size: 84
+  labels:
+    54215: UNKNOWN0
+0xEFD3C9:
+  type: assembly
+  size: 6
+0xEFD3CF:
+  type: assembly
+  size: 36
+  labels:
+    54241: UNKNOWN0
+0xEFD3F3:
+  type: assembly
+  size: 85
+0xEFD448:
+  type: data
+  size: 11192
 ...
