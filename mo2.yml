@@ -452,6 +452,9 @@ texttables:
 0x7E60E6:
   description: Battle Swirl Countdown
   name: BATTLE_SWIRL_COUNTDOWN
+0x7E6126:
+  description: Mushroomized Walking
+  name: MUSHROOMIZED_WALKING_FLAG
 0x7E89C2:
   description: Window Statistics Table
   name: WINDOW_STATS_TABLE
@@ -586,6 +589,1000 @@ texttables:
   labels:
     1654: UNKNOWN0
     1671: UNKNOWN1
+0xC0068E:
+  type: assembly
+  size: 116
+  labels:
+    1737: UNKNOWN0
+    1750: UNKNOWN1
+0xC00702:
+  type: assembly
+  size: 134
+  labels:
+    1829: UNKNOWN0
+    1863: UNKNOWN1
+    1881: UNKNOWN2
+    1905: UNKNOWN3
+    1912: UNKNOWN4
+    1926: UNKNOWN5
+0xC00788:
+  type: assembly
+  size: 62
+  labels:
+    1963: UNKNOWN0
+    1983: UNKNOWN1
+    1988: UNKNOWN2
+0xC007C6:
+  description: Load Map Palette
+  name: LOAD_MAP_PAL
+  size: 269
+  type: assembly
+  localvars:
+    6: MAPPAL
+  labels:
+    2062: UNKNOWN0
+    2098: UNKNOWN1
+    2125: UNKNOWN2
+    2136: UNKNOWN3
+    2163: UNKNOWN4
+    2257: UNKNOWN5
+0xC008D3:
+  type: assembly
+  size: 480
+  labels:
+    2297: UNKNOWN0
+    2497: UNKNOWN1
+    2535: UNKNOWN2
+    2558: UNKNOWN3
+    2597: UNKNOWN4
+    2613: UNKNOWN5
+    2617: UNKNOWN6
+    2624: UNKNOWN7
+    2693: UNKNOWN8
+    2720: UNKNOWN9
+0xC00AB3:
+  size: 36
+  type: assembly
+  name: LOAD_SECTOR_ATTRS
+  description: Loads sector attributes based on the coordinates given
+  arguments:
+    A: X coordinate
+    X: Y coordinate
+0xC00AD7:
+  type: assembly
+  size: 279
+  labels:
+    2811: UNKNOWN0
+    2818: UNKNOWN1
+    2907: UNKNOWN2
+    2919: UNKNOWN3
+    2959: UNKNOWN4
+    2991: UNKNOWN5
+    3002: UNKNOWN6
+    3019: UNKNOWN7
+    3028: UNKNOWN8
+    3035: UNKNOWN9
+    3047: UNKNOWN10
+    3052: UNKNOWN11
+0xC00BEE:
+  type: assembly
+  size: 279
+  labels:
+    3085: UNKNOWN0
+    3091: UNKNOWN1
+    3176: UNKNOWN2
+    3191: UNKNOWN3
+    3231: UNKNOWN4
+    3263: UNKNOWN5
+    3274: UNKNOWN6
+    3294: UNKNOWN7
+    3303: UNKNOWN8
+    3310: UNKNOWN9
+    3326: UNKNOWN10
+    3331: UNKNOWN11
+0xC00D05:
+  type: assembly
+  size: 139
+  labels:
+    3396: UNKNOWN0
+    3465: UNKNOWN1
+0xC00D90:
+  type: assembly
+  size: 152
+  labels:
+    3522: UNKNOWN0
+    3617: UNKNOWN1
+0xC00E28:
+  type: assembly
+  size: 437
+  labels:
+    3651: UNKNOWN0
+    3749: UNKNOWN1
+    3786: UNKNOWN2
+    3830: UNKNOWN3
+    3832: UNKNOWN4
+    3862: UNKNOWN5
+    3874: UNKNOWN6
+    4059: UNKNOWN7
+0xC00FDD:
+  type: assembly
+  size: 438
+  labels:
+    4088: UNKNOWN0
+    4186: UNKNOWN1
+    4225: UNKNOWN2
+    4262: UNKNOWN3
+    4264: UNKNOWN4
+    4302: UNKNOWN5
+    4314: UNKNOWN6
+    4328: UNKNOWN7
+    4410: UNKNOWN8
+    4497: UNKNOWN9
+0xC01193:
+  type: assembly
+  size: 108
+0xC011FF:
+  type: assembly
+  size: 63
+0xC0123E:
+  type: assembly
+  size: 197
+  labels:
+    4722: UNKNOWN0
+    4791: UNKNOWN1
+    4865: UNKNOWN2
+0xC01303:
+  type: assembly
+  size: 265
+  labels:
+    4965: UNKNOWN0
+    4982: UNKNOWN1
+    4994: UNKNOWN2
+    5016: UNKNOWN3
+    5028: UNKNOWN4
+    5050: UNKNOWN5
+    5062: UNKNOWN6
+    5079: UNKNOWN7
+    5084: UNKNOWN8
+0xC0140C:
+  type: assembly
+  size: 354
+  labels:
+    5203: UNKNOWN0
+    5242: UNKNOWN1
+    5259: UNKNOWN2
+    5271: UNKNOWN3
+    5293: UNKNOWN4
+    5305: UNKNOWN5
+    5327: UNKNOWN6
+    5332: UNKNOWN7
+    5354: UNKNOWN8
+    5367: UNKNOWN9
+    5400: UNKNOWN10
+    5426: UNKNOWN11
+    5438: UNKNOWN12
+    5458: UNKNOWN13
+    5474: UNKNOWN14
+0xC0156E:
+  type: assembly
+  size: 473
+  labels:
+    5537: UNKNOWN0
+    5544: UNKNOWN1
+    5564: UNKNOWN2
+    5574: UNKNOWN3
+    5666: UNKNOWN4
+    5747: UNKNOWN5
+    5758: UNKNOWN6
+    5761: UNKNOWN7
+    5856: UNKNOWN8
+    5936: UNKNOWN9
+    5947: UNKNOWN10
+0xC01747:
+  type: assembly
+  size: 185
+  labels:
+    6007: UNKNOWN0
+    6013: UNKNOWN1
+    6032: UNKNOWN2
+    6041: UNKNOWN3
+    6064: UNKNOWN4
+    6077: UNKNOWN5
+    6087: UNKNOWN6
+    6111: UNKNOWN7
+    6124: UNKNOWN8
+0xC01800:
+  type: assembly
+  size: 265
+  labels:
+    6180: UNKNOWN0
+    6191: UNKNOWN1
+    6200: UNKNOWN2
+    6213: UNKNOWN3
+    6224: UNKNOWN4
+    6240: UNKNOWN5
+    6254: UNKNOWN6
+    6268: UNKNOWN7
+    6289: UNKNOWN8
+    6319: UNKNOWN9
+    6339: UNKNOWN10
+    6395: UNKNOWN11
+0xC01909:
+  type: assembly
+  size: 191
+  labels:
+    6572: UNKNOWN0
+    6576: UNKNOWN1
+    6594: UNKNOWN2
+0xC019C8:
+  type: assembly
+  size: 48
+0xC019F8:
+  type: assembly
+  size: 129
+  labels:
+    6661: UNKNOWN0
+    6678: UNKNOWN1
+    6718: UNKNOWN2
+    6738: UNKNOWN3
+    6750: UNKNOWN4
+    6770: UNKNOWN5
+0xC01A79:
+  type: assembly
+  size: 6
+0xC01A7F:
+  type: assembly
+  size: 29
+  labels:
+    6790: UNKNOWN0
+    6806: UNKNOWN1
+0xC01A9C:
+  type: assembly
+  size: 23
+  labels:
+    6819: UNKNOWN0
+    6827: UNKNOWN1
+0xC01AB3:
+  description: Find free space in 7E4A08 table
+  name: FIND_FREE_7E4A08
+  size: 120
+  type: assembly
+  labels:
+    6859: UNKNOWN0
+    6878: UNKNOWN1
+    6888: UNKNOWN2
+    6902: UNKNOWN3
+    6925: UNKNOWN4
+    6933: UNKNOWN5
+    6950: UNKNOWN6
+    6953: UNKNOWN7
+0xC01BAC:
+  type: assembly
+  size: 123
+  labels:
+    7105: UNKNOWN0
+    7112: UNKNOWN1
+    7132: UNKNOWN2
+    7147: UNKNOWN3
+    7170: UNKNOWN4
+    7181: UNKNOWN5
+    7183: UNKNOWN6
+    7205: UNKNOWN7
+0xC01C27:
+  type: assembly
+  size: 65
+  labels:
+    7225: UNKNOWN0
+    7256: UNKNOWN1
+    7262: UNKNOWN2
+    7263: UNKNOWN3
+0xC01C68:
+  type: assembly
+  size: 230
+  labels:
+    7337: UNKNOWN0
+    7352: UNKNOWN1
+    7358: UNKNOWN2
+    7383: UNKNOWN3
+    7478: UNKNOWN4
+    7498: UNKNOWN5
+    7500: UNKNOWN6
+0xC01D4E:
+  type: assembly
+  size: 181
+  labels:
+    7546: UNKNOWN0
+    7553: UNKNOWN1
+    7658: UNKNOWN2
+    7671: UNKNOWN3
+    7681: UNKNOWN4
+0xC01E03:
+  type: assembly
+  size: 92
+0xC01E5F:
+  type: assembly
+  size: 672
+  labels:
+    7823: UNKNOWN0
+    7883: UNKNOWN1
+    7892: UNKNOWN2
+    7941: UNKNOWN3
+    7950: UNKNOWN4
+    8026: UNKNOWN5
+    8058: UNKNOWN6
+    8252: UNKNOWN7
+    8445: UNKNOWN8
+0xC020FF:
+  type: assembly
+  size: 79
+  labels:
+    8496: UNKNOWN0
+    8511: UNKNOWN1
+0xC0214E:
+  type: assembly
+  size: 84
+  labels:
+    8574: UNKNOWN0
+    8589: UNKNOWN1
+0xC021A2:
+  type: assembly
+  size: 82
+  labels:
+    8634: UNKNOWN0
+    8655: UNKNOWN1
+    8660: UNKNOWN2
+    8672: UNKNOWN3
+    8685: UNKNOWN4
+0xC021F4:
+  type: assembly
+  size: 69
+  labels:
+    8716: UNKNOWN0
+    8742: UNKNOWN1
+    8747: UNKNOWN2
+0xC02239:
+  type: assembly
+  size: 817
+  labels:
+    8787: UNKNOWN0
+    8797: UNKNOWN1
+    8823: UNKNOWN2
+    8863: UNKNOWN3
+    8997: UNKNOWN4
+    9011: UNKNOWN5
+    9077: UNKNOWN6
+    9094: UNKNOWN7
+    9096: UNKNOWN8
+    9119: UNKNOWN9
+    9136: UNKNOWN10
+    9141: UNKNOWN11
+    9158: UNKNOWN12
+    9163: UNKNOWN13
+    9178: UNKNOWN14
+    9183: UNKNOWN15
+    9198: UNKNOWN16
+    9203: UNKNOWN17
+    9247: UNKNOWN18
+    9302: UNKNOWN19
+    9304: UNKNOWN20
+    9345: UNKNOWN21
+    9368: UNKNOWN22
+    9421: UNKNOWN23
+    9436: UNKNOWN24
+    9481: UNKNOWN25
+    9527: UNKNOWN26
+    9565: UNKNOWN27
+    9567: UNKNOWN28
+    9576: UNKNOWN29
+0xC0256A:
+  type: assembly
+  size: 115
+  labels:
+    9625: UNKNOWN0
+    9665: UNKNOWN1
+    9675: UNKNOWN2
+    9691: UNKNOWN3
+0xC025DD:
+  type: assembly
+  size: 110
+  labels:
+    9739: UNKNOWN0
+    9775: UNKNOWN1
+    9785: UNKNOWN2
+    9801: UNKNOWN3
+0xC0264B:
+  type: assembly
+  size: 43
+  labels:
+    9841: UNKNOWN0
+    9844: UNKNOWN1
+0xC02676:
+  type: assembly
+  size: 1029
+  labels:
+    9900: UNKNOWN0
+    9915: UNKNOWN1
+    9983: UNKNOWN2
+    9992: UNKNOWN3
+    10001: UNKNOWN4
+    10010: UNKNOWN5
+    10019: UNKNOWN6
+    10028: UNKNOWN7
+    10035: UNKNOWN8
+    10057: UNKNOWN9
+    10080: UNKNOWN10
+    10087: UNKNOWN11
+    10135: UNKNOWN12
+    10275: UNKNOWN13
+    10311: UNKNOWN14
+    10331: UNKNOWN15
+    10383: UNKNOWN16
+    10444: UNKNOWN17
+    10476: UNKNOWN18
+    10477: UNKNOWN19
+    10485: UNKNOWN20
+    10588: UNKNOWN21
+    10596: UNKNOWN22
+    10611: UNKNOWN23
+    10625: UNKNOWN24
+    10652: UNKNOWN25
+    10736: UNKNOWN26
+    10738: UNKNOWN27
+    10753: UNKNOWN28
+    10826: UNKNOWN29
+    10840: UNKNOWN30
+    10848: UNKNOWN31
+    10873: UNKNOWN32
+0xC02A7B:
+  type: assembly
+  size: 234
+  labels:
+    10905: UNKNOWN0
+    10920: UNKNOWN1
+    10928: UNKNOWN2
+    10939: UNKNOWN3
+    10947: UNKNOWN4
+    10955: UNKNOWN5
+    10970: UNKNOWN6
+    10985: UNKNOWN7
+    10993: UNKNOWN8
+    11011: UNKNOWN9
+    11067: UNKNOWN10
+    11076: UNKNOWN11
+    11090: UNKNOWN12
+    11105: UNKNOWN13
+    11107: UNKNOWN14
+0xC02B65:
+  type: assembly
+  size: 233
+  labels:
+    11140: UNKNOWN0
+    11155: UNKNOWN1
+    11163: UNKNOWN2
+    11174: UNKNOWN3
+    11182: UNKNOWN4
+    11190: UNKNOWN5
+    11203: UNKNOWN6
+    11220: UNKNOWN7
+    11226: UNKNOWN8
+    11244: UNKNOWN9
+    11300: UNKNOWN10
+    11309: UNKNOWN11
+    11323: UNKNOWN12
+    11338: UNKNOWN13
+    11340: UNKNOWN14
+0xC02C4E:
+  type: assembly
+  size: 453
+  labels:
+    11358: UNKNOWN0
+    11783: UNKNOWN1
+    11793: UNKNOWN2
+0xC02E13:
+  type: assembly
+  size: 69
+  labels:
+    11846: UNKNOWN0
+    11860: UNKNOWN1
+    11863: UNKNOWN2
+0xC02E58:
+  description: Reset Mushroomize flag
+  name: RESET_MUSHROOMIZED_WALKING
+  type: assembly
+  size: 6
+0xC02E5E:
+  type: assembly
+  size: 160
+  labels:
+    11905: UNKNOWN0
+    12028: UNKNOWN1
+0xC02EFE:
+  type: assembly
+  size: 108
+  labels:
+    12082: UNKNOWN0
+    12106: UNKNOWN1
+0xC02F6A:
+  type: assembly
+  size: 648
+  labels:
+    12182: UNKNOWN0
+    12185: UNKNOWN1
+    12232: UNKNOWN2
+    12308: UNKNOWN3
+    12340: UNKNOWN4
+    12387: UNKNOWN5
+    12463: UNKNOWN6
+    12495: UNKNOWN7
+    12555: UNKNOWN8
+    12569: UNKNOWN9
+    12579: UNKNOWN10
+    12625: UNKNOWN11
+    12701: UNKNOWN12
+    12732: UNKNOWN13
+    12784: UNKNOWN14
+0xC031F2:
+  type: assembly
+  size: 648
+  labels:
+    12830: UNKNOWN0
+    12833: UNKNOWN1
+    12880: UNKNOWN2
+    12956: UNKNOWN3
+    12988: UNKNOWN4
+    13035: UNKNOWN5
+    13111: UNKNOWN6
+    13143: UNKNOWN7
+    13203: UNKNOWN8
+    13217: UNKNOWN9
+    13227: UNKNOWN10
+    13273: UNKNOWN11
+    13349: UNKNOWN12
+    13380: UNKNOWN13
+    13432: UNKNOWN14
+0xC0347A:
+  type: assembly
+  size: 77
+  labels:
+    13470: UNKNOWN0
+    13504: UNKNOWN1
+0xC034C7:
+  type: assembly
+  size: 512
+  labels:
+    13524: UNKNOWN0
+    13525: UNKNOWN1
+    13556: UNKNOWN2
+    13558: UNKNOWN3
+    13608: UNKNOWN4
+    13697: UNKNOWN5
+    13770: UNKNOWN6
+    13885: UNKNOWN7
+    13948: UNKNOWN8
+    14019: UNKNOWN9
+0xC036C7:
+  type: assembly
+  size: 471
+  labels:
+    14046: UNKNOWN0
+    14080: UNKNOWN1
+    14092: UNKNOWN2
+    14119: UNKNOWN3
+    14161: UNKNOWN4
+    14169: UNKNOWN5
+    14213: UNKNOWN6
+    14222: UNKNOWN7
+    14230: UNKNOWN8
+    14237: UNKNOWN9
+    14337: UNKNOWN10
+    14342: UNKNOWN11
+    14354: UNKNOWN12
+    14370: UNKNOWN13
+    14377: UNKNOWN14
+    14470: UNKNOWN15
+0xC0389E:
+  type: assembly
+  size: 665
+  labels:
+    14517: UNKNOWN0
+    14550: UNKNOWN1
+    14583: UNKNOWN2
+    14585: UNKNOWN3
+    14597: UNKNOWN4
+    14628: UNKNOWN5
+    14651: UNKNOWN6
+    14723: UNKNOWN7
+    14735: UNKNOWN8
+    14805: UNKNOWN9
+    14879: UNKNOWN10
+    14890: UNKNOWN11
+    14919: UNKNOWN12
+    14935: UNKNOWN13
+    14955: UNKNOWN14
+    14958: UNKNOWN15
+    14999: UNKNOWN16
+    15013: UNKNOWN17
+0xC03B37:
+  type: assembly
+  size: 244
+  labels:
+    15176: UNKNOWN0
+    15177: UNKNOWN1
+    15198: UNKNOWN2
+    15206: UNKNOWN3
+    15223: UNKNOWN4
+    15284: UNKNOWN5
+    15341: UNKNOWN6
+    15401: UNKNOWN7
+0xC03C2B:
+  type: assembly
+  size: 73
+  labels:
+    15418: UNKNOWN0
+    15464: UNKNOWN1
+    15469: UNKNOWN2
+0xC03C74:
+  type: assembly
+  size: 122
+  labels:
+    15503: UNKNOWN0
+    15534: UNKNOWN1
+    15552: UNKNOWN2
+    15578: UNKNOWN3
+    15583: UNKNOWN4
+0xC03CEE:
+  type: assembly
+  size: 414
+  labels:
+    15635: UNKNOWN0
+    15643: UNKNOWN1
+    15676: UNKNOWN2
+    15682: UNKNOWN3
+    15698: UNKNOWN4
+    15717: UNKNOWN5
+    15846: UNKNOWN6
+    15906: UNKNOWN7
+    15932: UNKNOWN8
+    15934: UNKNOWN9
+    15946: UNKNOWN10
+    16010: UNKNOWN11
+0xC03E8C:
+  type: assembly
+  size: 38
+  labels:
+    16046: UNKNOWN0
+0xC03EB2:
+  type: assembly
+  size: 19
+0xC03EC5:
+  description: Get on your bicycle if possible
+  name: GET_ON_BICYCLE
+  type: assembly
+  size: 159
+  labels:
+    16091: UNKNOWN0
+    16105: UNKNOWN1
+    16117: UNKNOWN2
+    16226: UNKNOWN3
+0xC03F64:
+  type: assembly
+  size: 165
+  labels:
+    16247: UNKNOWN0
+    16268: UNKNOWN1
+    16308: UNKNOWN2
+    16382: UNKNOWN3
+    16391: UNKNOWN4
+0xC04009:
+  type: assembly
+  size: 123
+  labels:
+    16507: UNKNOWN0
+0xC04084:
+  type: assembly
+  size: 69
+  labels:
+    16536: UNKNOWN0
+    16541: UNKNOWN1
+    16571: UNKNOWN2
+    16583: UNKNOWN3
+0xC040C9:
+  type: assembly
+  size: 81
+  labels:
+    16605: UNKNOWN0
+    16610: UNKNOWN1
+    16640: UNKNOWN2
+    16664: UNKNOWN3
+0xC0411A:
+  type: assembly
+  size: 38
+  labels:
+    16699: UNKNOWN0
+0xC04140:
+  type: assembly
+  size: 91
+  labels:
+    16757: UNKNOWN0
+    16790: UNKNOWN1
+0xC0419B:
+  type: assembly
+  size: 149
+  labels:
+    16812: UNKNOWN0
+    16862: UNKNOWN1
+    16929: UNKNOWN2
+0xC04230:
+  type: assembly
+  size: 101
+  labels:
+    16998: UNKNOWN0
+    17011: UNKNOWN1
+0xC04295:
+  name: CENTER_SCREEN
+  description: Centers screen on coordinates
+  type: assembly
+  size: 29
+0xC042B2:
+  type: assembly
+  size: 30
+0xC042D0:
+  type: assembly
+  size: 6
+0xC042D6:
+  type: assembly
+  size: 199
+  labels:
+    17136: UNKNOWN0
+    17194: UNKNOWN1
+    17208: UNKNOWN2
+    17222: UNKNOWN3
+    17236: UNKNOWN4
+    17250: UNKNOWN5
+    17264: UNKNOWN6
+    17278: UNKNOWN7
+    17292: UNKNOWN8
+    17304: UNKNOWN9
+    17307: UNKNOWN10
+0xC0439D:
+  type: assembly
+  size: 205
+  labels:
+    17354: UNKNOWN0
+    17395: UNKNOWN1
+    17441: UNKNOWN2
+    17444: UNKNOWN3
+    17450: UNKNOWN4
+    17470: UNKNOWN5
+    17473: UNKNOWN6
+    17485: UNKNOWN7
+    17503: UNKNOWN8
+    17509: UNKNOWN9
+0xC0446A:
+  type: assembly
+  size: 150
+  labels:
+    17553: UNKNOWN0
+    17586: UNKNOWN1
+    17621: UNKNOWN2
+    17654: UNKNOWN3
+    17662: UNKNOWN4
+0xC04500:
+  type: assembly
+  size: 73
+  labels:
+    17732: UNKNOWN0
+0xC04549:
+  type: assembly
+  size: 45
+0xC04576:
+  type: assembly
+  size: 205
+  labels:
+    17835: UNKNOWN0
+    17876: UNKNOWN1
+    17918: UNKNOWN2
+    17921: UNKNOWN3
+    17927: UNKNOWN4
+    17943: UNKNOWN5
+    17946: UNKNOWN6
+    17958: UNKNOWN7
+    17976: UNKNOWN8
+    17982: UNKNOWN9
+0xC04643:
+  type: assembly
+  size: 150
+  labels:
+    18026: UNKNOWN0
+    18059: UNKNOWN1
+    18094: UNKNOWN2
+    18127: UNKNOWN3
+    18135: UNKNOWN4
+0xC046D9:
+  type: assembly
+  size: 73
+  labels:
+    18205: UNKNOWN0
+0xC04722:
+  type: assembly
+  size: 722
+  labels:
+    18229: UNKNOWN0
+    18273: UNKNOWN1
+    18282: UNKNOWN2
+    18305: UNKNOWN3
+    18331: UNKNOWN4
+    18340: UNKNOWN5
+    18347: UNKNOWN6
+    18354: UNKNOWN7
+    18367: UNKNOWN8
+    18374: UNKNOWN9
+    18379: UNKNOWN10
+    18394: UNKNOWN11
+    18402: UNKNOWN12
+    18415: UNKNOWN13
+    18665: UNKNOWN14
+    18687: UNKNOWN15
+    18692: UNKNOWN16
+    18726: UNKNOWN17
+    18738: UNKNOWN18
+    18760: UNKNOWN19
+    18773: UNKNOWN20
+    18776: UNKNOWN21
+    18818: UNKNOWN22
+    18821: UNKNOWN23
+    18844: UNKNOWN24
+    18867: UNKNOWN25
+    18880: UNKNOWN26
+    18893: UNKNOWN27
+    18930: UNKNOWN28
+0xC049F4:
+  type: assembly
+  size: 98
+  labels:
+    18991: UNKNOWN0
+    18996: UNKNOWN1
+0xC04A56:
+  type: assembly
+  size: 271
+  labels:
+    19046: UNKNOWN0
+    19057: UNKNOWN1
+    19082: UNKNOWN2
+    19091: UNKNOWN3
+    19100: UNKNOWN4
+    19109: UNKNOWN5
+    19116: UNKNOWN6
+    19159: UNKNOWN7
+    19167: UNKNOWN8
+    19293: UNKNOWN9
+    19299: UNKNOWN10
+0xC04B65:
+  type: assembly
+  size: 396
+  labels:
+    19356: UNKNOWN0
+    19365: UNKNOWN1
+    19380: UNKNOWN2
+    19398: UNKNOWN3
+    19414: UNKNOWN4
+    19428: UNKNOWN5
+    19449: UNKNOWN6
+    19461: UNKNOWN7
+    19655: UNKNOWN8
+    19695: UNKNOWN9
+0xC04CF1:
+  type: assembly
+  size: 13
+0xC04CFE:
+  type: assembly
+  size: 37
+0xC04D23:
+  type: assembly
+  size: 166
+  labels:
+    19767: UNKNOWN0
+    19788: UNKNOWN1
+    19795: UNKNOWN2
+    19887: UNKNOWN3
+    19889: UNKNOWN4
+    19907: UNKNOWN5
+    19911: UNKNOWN6
+0xC04DC9:
+  type: assembly
+  size: 242
+  labels:
+    19938: UNKNOWN0
+    19943: UNKNOWN1
+    19969: UNKNOWN2
+    19977: UNKNOWN3
+    19980: UNKNOWN4
+    20137: UNKNOWN5
+    20145: UNKNOWN6
+    20150: UNKNOWN7
+    20153: UNKNOWN8
+0xC04EBB:
+  type: assembly
+  size: 307
+  labels:
+    20189: UNKNOWN0
+    20216: UNKNOWN1
+    20246: UNKNOWN2
+    20261: UNKNOWN3
+    20266: UNKNOWN4
+    20273: UNKNOWN5
+    20276: UNKNOWN6
+    20390: UNKNOWN7
+    20393: UNKNOWN8
+    20454: UNKNOWN9
+    20460: UNKNOWN10
+0xC04FEE:
+  type: assembly
+  size: 376
+  labels:
+    20481: UNKNOWN0
+    20489: UNKNOWN1
+    20497: UNKNOWN2
+    20505: UNKNOWN3
+    20611: UNKNOWN4
+    20680: UNKNOWN5
+    20687: UNKNOWN6
+    20699: UNKNOWN7
+    20706: UNKNOWN8
+    20713: UNKNOWN9
+    20728: UNKNOWN10
+    20733: UNKNOWN11
+    20802: UNKNOWN12
+    20825: UNKNOWN13
+    20836: UNKNOWN14
+0xC05166:
+  type: assembly
+  size: 25
+0xC0517F:
+  type: assembly
+  size: 63
+  labels:
+    20924: UNKNOWN0
+0xC051BE:
+  type: assembly
+  size: 101
+  labels:
+    21004: UNKNOWN0
+    21017: UNKNOWN1
+    21025: UNKNOWN2
+0xC05223:
+  type: assembly
+  size: 514
+  labels:
+    21049: UNKNOWN0
+    21060: UNKNOWN1
+    21076: UNKNOWN2
+    21108: UNKNOWN3
+    21116: UNKNOWN4
+    21143: UNKNOWN5
+    21189: UNKNOWN6
+    21198: UNKNOWN7
+    21210: UNKNOWN8
+    21224: UNKNOWN9
+    21288: UNKNOWN10
+    21320: UNKNOWN11
+    21327: UNKNOWN12
+    21340: UNKNOWN13
+    21346: UNKNOWN14
+    21359: UNKNOWN15
+    21364: UNKNOWN16
+    21378: UNKNOWN17
+    21397: UNKNOWN18
+    21411: UNKNOWN19
+    21413: UNKNOWN20
+    21455: UNKNOWN21
+    21467: UNKNOWN22
+    21477: UNKNOWN23
+    21506: UNKNOWN24
+    21511: UNKNOWN25
+    21518: UNKNOWN26
+    21537: UNKNOWN27
+    21539: UNKNOWN28
 0xC0781C:
   description: Dad's Phone Handler
   name: DAD_PHONE
@@ -866,11 +1863,22 @@ texttables:
     34465: UNKNOWN3
     34469: UNKNOWN4
     34514: UNKNOWN5
+0xC086D7:
+  type: assembly
+  size: 55
+  labels:
+    34522: UNKNOWN0
+    34547: UNKNOWN1
 0xC0870E:
   description: Enable NMI+Joypad
   name: ENABLE_NMI_JOYPAD
   type: assembly
   size: 17
+0xC0871F:
+  type: assembly
+  size: 27
+  labels:
+    34604: UNKNOWN0
 0xC0874C:
   description: Reads gamepad state into memory
   name: READ_JOYPAD
@@ -1777,6 +2785,16 @@ texttables:
     56548: UNKNOWN2
     56700: UNKNOWN3
     56782: UNKNOWN4
+0xC214D0:
+  description: Check Event Flag, return result
+  name: CHKEVENT
+  arguments:
+    A: Event Flag ID
+  size: 54
+  type: assembly
+  labels:
+    5377: UNKNOWN0
+    5380: UNKNOWN1
 0xC246EE:
   name: BATTLE_ROUTINE
   description: Handles Mother 2's Battles
