@@ -1,7 +1,9 @@
 ---
 processor: 65816
 platform: snes
-title: Mother 2 (JPN)
+title: Mother 2
+country: JP
+series: Mother
 localvars: directpage
 defaulttext: standardtext
 texttables:
