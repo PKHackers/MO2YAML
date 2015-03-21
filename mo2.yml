@@ -1,11 +1,10 @@
 ---
 CPU:
-  Architecture: 65816
+  Default DataBank: 0x7E
 Platform: snes
 Title: Mother 2
 Country: JP
 Series: Mother
-Localvars: directpage
 Default Script: standardtext
 Script Tables:
   stafftext:
