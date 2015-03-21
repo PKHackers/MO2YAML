@@ -429,17 +429,13 @@ Script Tables:
       255: ロ
 ...
 ---
-RESET_VECTOR:
+RESET_VECTOR: !assembly
   Description: Execution Entry Point
   Size: 3
-  Type: assembly
-  ignore: true
   Offset: 0x008143
 SAVE_SLOT_1:
   Offset: 0x206000
-  Name: Slot 1
   Size: 0x500
-  Type: data
   Entries: &SAVE_SLOT
   - Type: script
     Charset: ascii
@@ -861,22 +857,18 @@ DEBUG_UNKNOWN_B716:
   Offset: 0x7EB716
   Size: 2
   Type: data
-CLEAR_UNKNOWN_30X2_TABLE23:
+CLEAR_UNKNOWN_30X2_TABLE23: !assembly
   Description: Clear Unknown_30x2_Table23
-  Type: assembly
   Size: 19
   Offset: 0xC00000
-UNKNOWN_C00013:
+UNKNOWN_C00013: !assembly
   Description: Set VRAM Locations?
-  Type: assembly
   Size: 56
   Offset: 0xC00013
-UNKNOWN_C0004B:
-  Type: assembly
+UNKNOWN_C0004B: !assembly
   Size: 58
   Offset: 0xC0004B
-UNKNOWN_C00085:
-  Type: assembly
+UNKNOWN_C00085: !assembly
   Size: 237
   labels:
     0x00C6: UNKNOWN0
@@ -884,8 +876,7 @@ UNKNOWN_C00085:
     0x016B: UNKNOWN2
     0x0170: UNKNOWN3
   Offset: 0xC00085
-UNKNOWN_C00172:
-  Type: assembly
+UNKNOWN_C00172: !assembly
   Size: 205
   labels:
     0x0184: UNKNOWN0
@@ -895,8 +886,7 @@ UNKNOWN_C00172:
     0x0231: UNKNOWN4
     0x023D: UNKNOWN5
   Offset: 0xC00172
-UNKNOWN_C0023F:
-  Type: assembly
+UNKNOWN_C0023F: !assembly
   Size: 216
   labels:
     0x0252: UNKNOWN0
@@ -907,27 +897,23 @@ UNKNOWN_C0023F:
     0x02F2: UNKNOWN5
     0x0315: UNKNOWN6
   Offset: 0xC0023F
-UNKNOWN_C00317:
-  Type: assembly
+UNKNOWN_C00317: !assembly
   Size: 84
   labels:
     0x0343: UNKNOWN0
     0x0369: UNKNOWN1
   Offset: 0xC00317
-UNKNOWN_C0036B:
-  Type: assembly
+UNKNOWN_C0036B: !assembly
   Size: 54
   Offset: 0xC0036B
-UNKNOWN_C003A1:
-  Type: assembly
+UNKNOWN_C003A1: !assembly
   Size: 163
   labels:
     0x03C8: UNKNOWN0
     0x0410: UNKNOWN1
     0x0415: UNKNOWN2
   Offset: 0xC003A1
-UNKNOWN_C00444:
-  Type: assembly
+UNKNOWN_C00444: !assembly
   Size: 76
   labels:
     0x045A: UNKNOWN0
@@ -936,8 +922,7 @@ UNKNOWN_C00444:
     0x048C: UNKNOWN3
     0x048E: UNKNOWN4
   Offset: 0xC00444
-UNKNOWN_C00490:
-  Type: assembly
+UNKNOWN_C00490: !assembly
   Size: 359
   labels:
     0x04EB: UNKNOWN0
@@ -949,27 +934,23 @@ UNKNOWN_C00490:
     0x05E9: UNKNOWN6
     0x05F5: UNKNOWN7
   Offset: 0xC00490
-UNKNOWN_C005F7:
-  Type: assembly
+UNKNOWN_C005F7: !assembly
   Size: 67
   Offset: 0xC005F7
-LOAD_TILE_COLLISION:
+LOAD_TILE_COLLISION: !assembly
   Description: Load Tile Collision Data
-  Type: assembly
   Size: 84
   labels:
     0x0676: UNKNOWN0
     0x0687: UNKNOWN1
   Offset: 0xC0063A
-UNKNOWN_C0068E:
-  Type: assembly
+UNKNOWN_C0068E: !assembly
   Size: 116
   labels:
     0x06C9: UNKNOWN0
     0x06D6: UNKNOWN1
   Offset: 0xC0068E
-UNKNOWN_C00702:
-  Type: assembly
+UNKNOWN_C00702: !assembly
   Size: 134
   labels:
     0x0725: UNKNOWN0
@@ -979,18 +960,16 @@ UNKNOWN_C00702:
     0x0778: UNKNOWN4
     0x0786: UNKNOWN5
   Offset: 0xC00702
-UNKNOWN_C00788:
-  Type: assembly
+UNKNOWN_C00788: !assembly
   Size: 62
   labels:
     0x07AB: UNKNOWN0
     0x07BF: UNKNOWN1
     0x07C4: UNKNOWN2
   Offset: 0xC00788
-LOAD_MAP_PAL:
+LOAD_MAP_PAL: !assembly
   Description: Load Map Palette
   Size: 269
-  Type: assembly
   localvars:
     0x0006: MAPPAL
   labels:
@@ -1001,8 +980,7 @@ LOAD_MAP_PAL:
     0x0873: UNKNOWN4
     0x08D1: UNKNOWN5
   Offset: 0xC007C6
-UNKNOWN_C008D3:
-  Type: assembly
+UNKNOWN_C008D3: !assembly
   Size: 480
   labels:
     0x08F9: UNKNOWN0
@@ -1016,16 +994,14 @@ UNKNOWN_C008D3:
     0x0A85: UNKNOWN8
     0x0AA0: UNKNOWN9
   Offset: 0xC008D3
-LOAD_SECTOR_ATTRS:
+LOAD_SECTOR_ATTRS: !assembly
   Size: 36
-  Type: assembly
   Description: Loads sector attributes based on the coordinates given
   arguments:
     A: X coordinate
     X: Y coordinate
   Offset: 0xC00AB3
-UNKNOWN_C00AD7:
-  Type: assembly
+UNKNOWN_C00AD7: !assembly
   Size: 279
   labels:
     0x0AFB: UNKNOWN0
@@ -1041,8 +1017,7 @@ UNKNOWN_C00AD7:
     0x0BE7: UNKNOWN10
     0x0BEC: UNKNOWN11
   Offset: 0xC00AD7
-UNKNOWN_C00BEE:
-  Type: assembly
+UNKNOWN_C00BEE: !assembly
   Size: 279
   labels:
     0x0C0D: UNKNOWN0
@@ -1058,22 +1033,19 @@ UNKNOWN_C00BEE:
     0x0CFE: UNKNOWN10
     0x0D03: UNKNOWN11
   Offset: 0xC00BEE
-UNKNOWN_C00D05:
-  Type: assembly
+UNKNOWN_C00D05: !assembly
   Size: 139
   labels:
     0x0D44: UNKNOWN0
     0x0D89: UNKNOWN1
   Offset: 0xC00D05
-UNKNOWN_C00D90:
-  Type: assembly
+UNKNOWN_C00D90: !assembly
   Size: 152
   labels:
     0x0DC2: UNKNOWN0
     0x0E21: UNKNOWN1
   Offset: 0xC00D90
-UNKNOWN_C00E28:
-  Type: assembly
+UNKNOWN_C00E28: !assembly
   Size: 437
   labels:
     0x0E43: UNKNOWN0
@@ -1085,8 +1057,7 @@ UNKNOWN_C00E28:
     0x0F22: UNKNOWN6
     0x0FDB: UNKNOWN7
   Offset: 0xC00E28
-UNKNOWN_C00FDD:
-  Type: assembly
+UNKNOWN_C00FDD: !assembly
   Size: 438
   labels:
     0x0FF8: UNKNOWN0
@@ -1100,24 +1071,20 @@ UNKNOWN_C00FDD:
     0x113A: UNKNOWN8
     0x1191: UNKNOWN9
   Offset: 0xC00FDD
-UNKNOWN_C01193:
-  Type: assembly
+UNKNOWN_C01193: !assembly
   Size: 108
   Offset: 0xC01193
-UNKNOWN_C011FF:
-  Type: assembly
+UNKNOWN_C011FF: !assembly
   Size: 63
   Offset: 0xC011FF
-UNKNOWN_C0123E:
-  Type: assembly
+UNKNOWN_C0123E: !assembly
   Size: 197
   labels:
     0x1272: UNKNOWN0
     0x12B7: UNKNOWN1
     0x1301: UNKNOWN2
   Offset: 0xC0123E
-UNKNOWN_C01303:
-  Type: assembly
+UNKNOWN_C01303: !assembly
   Size: 265
   labels:
     0x1365: UNKNOWN0
@@ -1130,8 +1097,7 @@ UNKNOWN_C01303:
     0x13D7: UNKNOWN7
     0x13DC: UNKNOWN8
   Offset: 0xC01303
-UNKNOWN_C0140C:
-  Type: assembly
+UNKNOWN_C0140C: !assembly
   Size: 354
   labels:
     0x1453: UNKNOWN0
@@ -1150,8 +1116,7 @@ UNKNOWN_C0140C:
     0x1552: UNKNOWN13
     0x1562: UNKNOWN14
   Offset: 0xC0140C
-UNKNOWN_C0156E:
-  Type: assembly
+UNKNOWN_C0156E: !assembly
   Size: 473
   labels:
     0x15A1: UNKNOWN0
@@ -1166,8 +1131,7 @@ UNKNOWN_C0156E:
     0x1730: UNKNOWN9
     0x173B: UNKNOWN10
   Offset: 0xC0156E
-UNKNOWN_C01747:
-  Type: assembly
+UNKNOWN_C01747: !assembly
   Size: 185
   labels:
     0x1777: UNKNOWN0
@@ -1180,8 +1144,7 @@ UNKNOWN_C01747:
     0x17DF: UNKNOWN7
     0x17EC: UNKNOWN8
   Offset: 0xC01747
-UNKNOWN_C01800:
-  Type: assembly
+UNKNOWN_C01800: !assembly
   Size: 265
   labels:
     0x1824: UNKNOWN0
@@ -1197,20 +1160,17 @@ UNKNOWN_C01800:
     0x18C3: UNKNOWN10
     0x18FB: UNKNOWN11
   Offset: 0xC01800
-UNKNOWN_C01909:
-  Type: assembly
+UNKNOWN_C01909: !assembly
   Size: 191
   labels:
     0x19AC: UNKNOWN0
     0x19B0: UNKNOWN1
     0x19C2: UNKNOWN2
   Offset: 0xC01909
-UNKNOWN_C019C8:
-  Type: assembly
+UNKNOWN_C019C8: !assembly
   Size: 48
   Offset: 0xC019C8
-UNKNOWN_C019F8:
-  Type: assembly
+UNKNOWN_C019F8: !assembly
   Size: 129
   labels:
     0x1A05: UNKNOWN0
@@ -1220,28 +1180,24 @@ UNKNOWN_C019F8:
     0x1A5E: UNKNOWN4
     0x1A72: UNKNOWN5
   Offset: 0xC019F8
-UNKNOWN_C01A79:
-  Type: assembly
+UNKNOWN_C01A79: !assembly
   Size: 6
   Offset: 0xC01A79
-UNKNOWN_C01A7F:
-  Type: assembly
+UNKNOWN_C01A7F: !assembly
   Size: 29
   labels:
     0x1A86: UNKNOWN0
     0x1A96: UNKNOWN1
   Offset: 0xC01A7F
-UNKNOWN_C01A9C:
-  Type: assembly
+UNKNOWN_C01A9C: !assembly
   Size: 23
   labels:
     0x1AA3: UNKNOWN0
     0x1AAB: UNKNOWN1
   Offset: 0xC01A9C
-FIND_FREE_7E4A08:
+FIND_FREE_7E4A08: !assembly
   Description: Find free space in 7E4A08 table
   Size: 120
-  Type: assembly
   labels:
     0x1ACB: UNKNOWN0
     0x1ADE: UNKNOWN1
@@ -1252,8 +1208,7 @@ FIND_FREE_7E4A08:
     0x1B26: UNKNOWN6
     0x1B29: UNKNOWN7
   Offset: 0xC01AB3
-UNKNOWN_C01BAC:
-  Type: assembly
+UNKNOWN_C01BAC: !assembly
   Size: 123
   labels:
     0x1BC1: UNKNOWN0
@@ -1265,8 +1220,7 @@ UNKNOWN_C01BAC:
     0x1C0F: UNKNOWN6
     0x1C25: UNKNOWN7
   Offset: 0xC01BAC
-UNKNOWN_C01C27:
-  Type: assembly
+UNKNOWN_C01C27: !assembly
   Size: 65
   labels:
     0x1C39: UNKNOWN0
@@ -1274,8 +1228,7 @@ UNKNOWN_C01C27:
     0x1C5E: UNKNOWN2
     0x1C5F: UNKNOWN3
   Offset: 0xC01C27
-UNKNOWN_C01C68:
-  Type: assembly
+UNKNOWN_C01C68: !assembly
   Size: 230
   labels:
     0x1CA9: UNKNOWN0
@@ -1286,8 +1239,7 @@ UNKNOWN_C01C68:
     0x1D4A: UNKNOWN5
     0x1D4C: UNKNOWN6
   Offset: 0xC01C68
-UNKNOWN_C01D4E:
-  Type: assembly
+UNKNOWN_C01D4E: !assembly
   Size: 181
   labels:
     0x1D7A: UNKNOWN0
@@ -1296,12 +1248,10 @@ UNKNOWN_C01D4E:
     0x1DF7: UNKNOWN3
     0x1E01: UNKNOWN4
   Offset: 0xC01D4E
-UNKNOWN_C01E03:
-  Type: assembly
+UNKNOWN_C01E03: !assembly
   Size: 92
   Offset: 0xC01E03
-UNKNOWN_C01E5F:
-  Type: assembly
+UNKNOWN_C01E5F: !assembly
   Size: 672
   labels:
     0x1E8F: UNKNOWN0
@@ -1314,22 +1264,19 @@ UNKNOWN_C01E5F:
     0x203C: UNKNOWN7
     0x20FD: UNKNOWN8
   Offset: 0xC01E5F
-UNKNOWN_C020FF:
-  Type: assembly
+UNKNOWN_C020FF: !assembly
   Size: 79
   labels:
     0x2130: UNKNOWN0
     0x213F: UNKNOWN1
   Offset: 0xC020FF
-UNKNOWN_C0214E:
-  Type: assembly
+UNKNOWN_C0214E: !assembly
   Size: 84
   labels:
     0x217E: UNKNOWN0
     0x218D: UNKNOWN1
   Offset: 0xC0214E
-UNKNOWN_C021A2:
-  Type: assembly
+UNKNOWN_C021A2: !assembly
   Size: 82
   labels:
     0x21BA: UNKNOWN0
@@ -1338,16 +1285,14 @@ UNKNOWN_C021A2:
     0x21E0: UNKNOWN3
     0x21ED: UNKNOWN4
   Offset: 0xC021A2
-UNKNOWN_C021F4:
-  Type: assembly
+UNKNOWN_C021F4: !assembly
   Size: 69
   labels:
     0x220C: UNKNOWN0
     0x2226: UNKNOWN1
     0x222B: UNKNOWN2
   Offset: 0xC021F4
-UNKNOWN_C02239:
-  Type: assembly
+UNKNOWN_C02239: !assembly
   Size: 817
   labels:
     0x2253: UNKNOWN0
@@ -1381,8 +1326,7 @@ UNKNOWN_C02239:
     0x255F: UNKNOWN28
     0x2568: UNKNOWN29
   Offset: 0xC02239
-UNKNOWN_C0256A:
-  Type: assembly
+UNKNOWN_C0256A: !assembly
   Size: 115
   labels:
     0x2599: UNKNOWN0
@@ -1390,8 +1334,7 @@ UNKNOWN_C0256A:
     0x25CB: UNKNOWN2
     0x25DB: UNKNOWN3
   Offset: 0xC0256A
-UNKNOWN_C025DD:
-  Type: assembly
+UNKNOWN_C025DD: !assembly
   Size: 110
   labels:
     0x260B: UNKNOWN0
@@ -1399,15 +1342,13 @@ UNKNOWN_C025DD:
     0x2639: UNKNOWN2
     0x2649: UNKNOWN3
   Offset: 0xC025DD
-UNKNOWN_C0264B:
-  Type: assembly
+UNKNOWN_C0264B: !assembly
   Size: 43
   labels:
     0x2671: UNKNOWN0
     0x2674: UNKNOWN1
   Offset: 0xC0264B
-UNKNOWN_C02676:
-  Type: assembly
+UNKNOWN_C02676: !assembly
   Size: 1029
   labels:
     0x26AC: UNKNOWN0
@@ -1444,8 +1385,7 @@ UNKNOWN_C02676:
     0x2A60: UNKNOWN31
     0x2A79: UNKNOWN32
   Offset: 0xC02676
-UNKNOWN_C02A7B:
-  Type: assembly
+UNKNOWN_C02A7B: !assembly
   Size: 234
   labels:
     0x2A99: UNKNOWN0
@@ -1464,8 +1404,7 @@ UNKNOWN_C02A7B:
     0x2B61: UNKNOWN13
     0x2B63: UNKNOWN14
   Offset: 0xC02A7B
-UNKNOWN_C02B65:
-  Type: assembly
+UNKNOWN_C02B65: !assembly
   Size: 233
   labels:
     0x2B84: UNKNOWN0
@@ -1484,43 +1423,37 @@ UNKNOWN_C02B65:
     0x2C4A: UNKNOWN13
     0x2C4C: UNKNOWN14
   Offset: 0xC02B65
-UNKNOWN_C02C4E:
-  Type: assembly
+UNKNOWN_C02C4E: !assembly
   Size: 453
   labels:
     0x2C5E: UNKNOWN0
     0x2E07: UNKNOWN1
     0x2E11: UNKNOWN2
   Offset: 0xC02C4E
-UNKNOWN_C02E13:
-  Type: assembly
+UNKNOWN_C02E13: !assembly
   Size: 69
   labels:
     0x2E46: UNKNOWN0
     0x2E54: UNKNOWN1
     0x2E57: UNKNOWN2
   Offset: 0xC02E13
-RESET_MUSHROOMIZED_WALKING:
+RESET_MUSHROOMIZED_WALKING: !assembly
   Description: Reset Mushroomize flag
-  Type: assembly
   Size: 6
   Offset: 0xC02E58
-UNKNOWN_C02E5E:
-  Type: assembly
+UNKNOWN_C02E5E: !assembly
   Size: 160
   labels:
     0x2E81: UNKNOWN0
     0x2EFC: UNKNOWN1
   Offset: 0xC02E5E
-UNKNOWN_C02EFE:
-  Type: assembly
+UNKNOWN_C02EFE: !assembly
   Size: 108
   labels:
     0x2F32: UNKNOWN0
     0x2F4A: UNKNOWN1
   Offset: 0xC02EFE
-UNKNOWN_C02F6A:
-  Type: assembly
+UNKNOWN_C02F6A: !assembly
   Size: 648
   labels:
     0x2F96: UNKNOWN0
@@ -1539,8 +1472,7 @@ UNKNOWN_C02F6A:
     0x31BC: UNKNOWN13
     0x31F0: UNKNOWN14
   Offset: 0xC02F6A
-UNKNOWN_C031F2:
-  Type: assembly
+UNKNOWN_C031F2: !assembly
   Size: 648
   labels:
     0x321E: UNKNOWN0
@@ -1559,15 +1491,13 @@ UNKNOWN_C031F2:
     0x3444: UNKNOWN13
     0x3478: UNKNOWN14
   Offset: 0xC031F2
-UNKNOWN_C0347A:
-  Type: assembly
+UNKNOWN_C0347A: !assembly
   Size: 77
   labels:
     0x349E: UNKNOWN0
     0x34C0: UNKNOWN1
   Offset: 0xC0347A
-UNKNOWN_C034C7:
-  Type: assembly
+UNKNOWN_C034C7: !assembly
   Size: 512
   labels:
     0x34D4: UNKNOWN0
@@ -1581,8 +1511,7 @@ UNKNOWN_C034C7:
     0x367C: UNKNOWN8
     0x36C3: UNKNOWN9
   Offset: 0xC034C7
-UNKNOWN_C036C7:
-  Type: assembly
+UNKNOWN_C036C7: !assembly
   Size: 471
   labels:
     0x36DE: UNKNOWN0
@@ -1602,8 +1531,7 @@ UNKNOWN_C036C7:
     0x3829: UNKNOWN14
     0x3886: UNKNOWN15
   Offset: 0xC036C7
-UNKNOWN_C0389E:
-  Type: assembly
+UNKNOWN_C0389E: !assembly
   Size: 665
   labels:
     0x38B5: UNKNOWN0
@@ -1625,8 +1553,7 @@ UNKNOWN_C0389E:
     0x3A97: UNKNOWN16
     0x3AA5: UNKNOWN17
   Offset: 0xC0389E
-UNKNOWN_C03B37:
-  Type: assembly
+UNKNOWN_C03B37: !assembly
   Size: 244
   labels:
     0x3B48: UNKNOWN0
@@ -1638,16 +1565,14 @@ UNKNOWN_C03B37:
     0x3BED: UNKNOWN6
     0x3C29: UNKNOWN7
   Offset: 0xC03B37
-UNKNOWN_C03C2B:
-  Type: assembly
+UNKNOWN_C03C2B: !assembly
   Size: 73
   labels:
     0x3C3A: UNKNOWN0
     0x3C68: UNKNOWN1
     0x3C6D: UNKNOWN2
   Offset: 0xC03C2B
-UNKNOWN_C03C74:
-  Type: assembly
+UNKNOWN_C03C74: !assembly
   Size: 122
   labels:
     0x3C8F: UNKNOWN0
@@ -1656,8 +1581,7 @@ UNKNOWN_C03C74:
     0x3CDA: UNKNOWN3
     0x3CDF: UNKNOWN4
   Offset: 0xC03C74
-UNKNOWN_C03CEE:
-  Type: assembly
+UNKNOWN_C03CEE: !assembly
   Size: 414
   labels:
     0x3D13: UNKNOWN0
@@ -1673,19 +1597,16 @@ UNKNOWN_C03CEE:
     0x3E4A: UNKNOWN10
     0x3E8A: UNKNOWN11
   Offset: 0xC03CEE
-UNKNOWN_C03E8C:
-  Type: assembly
+UNKNOWN_C03E8C: !assembly
   Size: 38
   labels:
     0x3EAE: UNKNOWN0
   Offset: 0xC03E8C
-UNKNOWN_C03EB2:
-  Type: assembly
+UNKNOWN_C03EB2: !assembly
   Size: 19
   Offset: 0xC03EB2
-GET_ON_BICYCLE:
+GET_ON_BICYCLE: !assembly
   Description: Get on your bicycle if possible
-  Type: assembly
   Size: 159
   labels:
     0x3EDB: UNKNOWN0
@@ -1693,8 +1614,7 @@ GET_ON_BICYCLE:
     0x3EF5: UNKNOWN2
     0x3F62: UNKNOWN3
   Offset: 0xC03EC5
-UNKNOWN_C03F64:
-  Type: assembly
+UNKNOWN_C03F64: !assembly
   Size: 165
   labels:
     0x3F77: UNKNOWN0
@@ -1703,14 +1623,12 @@ UNKNOWN_C03F64:
     0x3FFE: UNKNOWN3
     0x4007: UNKNOWN4
   Offset: 0xC03F64
-UNKNOWN_C04009:
-  Type: assembly
+UNKNOWN_C04009: !assembly
   Size: 123
   labels:
     0x407B: UNKNOWN0
   Offset: 0xC04009
-UNKNOWN_C04084:
-  Type: assembly
+UNKNOWN_C04084: !assembly
   Size: 69
   labels:
     0x4098: UNKNOWN0
@@ -1718,8 +1636,7 @@ UNKNOWN_C04084:
     0x40BB: UNKNOWN2
     0x40C7: UNKNOWN3
   Offset: 0xC04084
-UNKNOWN_C040C9:
-  Type: assembly
+UNKNOWN_C040C9: !assembly
   Size: 81
   labels:
     0x40DD: UNKNOWN0
@@ -1727,49 +1644,41 @@ UNKNOWN_C040C9:
     0x4100: UNKNOWN2
     0x4118: UNKNOWN3
   Offset: 0xC040C9
-UNKNOWN_C0411A:
-  Type: assembly
+UNKNOWN_C0411A: !assembly
   Size: 38
   labels:
     0x413B: UNKNOWN0
   Offset: 0xC0411A
-UNKNOWN_C04140:
-  Type: assembly
+UNKNOWN_C04140: !assembly
   Size: 91
   labels:
     0x4175: UNKNOWN0
     0x4196: UNKNOWN1
   Offset: 0xC04140
-UNKNOWN_C0419B:
-  Type: assembly
+UNKNOWN_C0419B: !assembly
   Size: 149
   labels:
     0x41AC: UNKNOWN0
     0x41DE: UNKNOWN1
     0x4221: UNKNOWN2
   Offset: 0xC0419B
-UNKNOWN_C04230:
-  Type: assembly
+UNKNOWN_C04230: !assembly
   Size: 101
   labels:
     0x4266: UNKNOWN0
     0x4273: UNKNOWN1
   Offset: 0xC04230
-CENTER_SCREEN:
+CENTER_SCREEN: !assembly
   Description: Centers screen on coordinates
-  Type: assembly
   Size: 29
   Offset: 0xC04295
-UNKNOWN_C042B2:
-  Type: assembly
+UNKNOWN_C042B2: !assembly
   Size: 30
   Offset: 0xC042B2
-UNKNOWN_C042D0:
-  Type: assembly
+UNKNOWN_C042D0: !assembly
   Size: 6
   Offset: 0xC042D0
-UNKNOWN_C042D6:
-  Type: assembly
+UNKNOWN_C042D6: !assembly
   Size: 199
   labels:
     0x42F0: UNKNOWN0
@@ -1784,8 +1693,7 @@ UNKNOWN_C042D6:
     0x4398: UNKNOWN9
     0x439B: UNKNOWN10
   Offset: 0xC042D6
-UNKNOWN_C0439D:
-  Type: assembly
+UNKNOWN_C0439D: !assembly
   Size: 205
   labels:
     0x43CA: UNKNOWN0
@@ -1799,8 +1707,7 @@ UNKNOWN_C0439D:
     0x445F: UNKNOWN8
     0x4465: UNKNOWN9
   Offset: 0xC0439D
-UNKNOWN_C0446A:
-  Type: assembly
+UNKNOWN_C0446A: !assembly
   Size: 150
   labels:
     0x4491: UNKNOWN0
@@ -1809,18 +1716,15 @@ UNKNOWN_C0446A:
     0x44F6: UNKNOWN3
     0x44FE: UNKNOWN4
   Offset: 0xC0446A
-UNKNOWN_C04500:
-  Type: assembly
+UNKNOWN_C04500: !assembly
   Size: 73
   labels:
     0x4544: UNKNOWN0
   Offset: 0xC04500
-UNKNOWN_C04549:
-  Type: assembly
+UNKNOWN_C04549: !assembly
   Size: 45
   Offset: 0xC04549
-UNKNOWN_C04576:
-  Type: assembly
+UNKNOWN_C04576: !assembly
   Size: 205
   labels:
     0x45AB: UNKNOWN0
@@ -1834,8 +1738,7 @@ UNKNOWN_C04576:
     0x4638: UNKNOWN8
     0x463E: UNKNOWN9
   Offset: 0xC04576
-UNKNOWN_C04643:
-  Type: assembly
+UNKNOWN_C04643: !assembly
   Size: 150
   labels:
     0x466A: UNKNOWN0
@@ -1844,14 +1747,12 @@ UNKNOWN_C04643:
     0x46CF: UNKNOWN3
     0x46D7: UNKNOWN4
   Offset: 0xC04643
-UNKNOWN_C046D9:
-  Type: assembly
+UNKNOWN_C046D9: !assembly
   Size: 73
   labels:
     0x471D: UNKNOWN0
   Offset: 0xC046D9
-UNKNOWN_C04722:
-  Type: assembly
+UNKNOWN_C04722: !assembly
   Size: 722
   labels:
     0x4735: UNKNOWN0
@@ -1884,15 +1785,13 @@ UNKNOWN_C04722:
     0x49CD: UNKNOWN27
     0x49F2: UNKNOWN28
   Offset: 0xC04722
-UNKNOWN_C049F4:
-  Type: assembly
+UNKNOWN_C049F4: !assembly
   Size: 98
   labels:
     0x4A2F: UNKNOWN0
     0x4A34: UNKNOWN1
   Offset: 0xC049F4
-UNKNOWN_C04A56:
-  Type: assembly
+UNKNOWN_C04A56: !assembly
   Size: 271
   labels:
     0x4A66: UNKNOWN0
@@ -1907,8 +1806,7 @@ UNKNOWN_C04A56:
     0x4B5D: UNKNOWN9
     0x4B63: UNKNOWN10
   Offset: 0xC04A56
-UNKNOWN_C04B65:
-  Type: assembly
+UNKNOWN_C04B65: !assembly
   Size: 396
   labels:
     0x4B9C: UNKNOWN0
@@ -1922,16 +1820,13 @@ UNKNOWN_C04B65:
     0x4CC7: UNKNOWN8
     0x4CEF: UNKNOWN9
   Offset: 0xC04B65
-UNKNOWN_C04CF1:
-  Type: assembly
+UNKNOWN_C04CF1: !assembly
   Size: 13
   Offset: 0xC04CF1
-UNKNOWN_C04CFE:
-  Type: assembly
+UNKNOWN_C04CFE: !assembly
   Size: 37
   Offset: 0xC04CFE
-UNKNOWN_C04D23:
-  Type: assembly
+UNKNOWN_C04D23: !assembly
   Size: 166
   labels:
     0x4D37: UNKNOWN0
@@ -1942,8 +1837,7 @@ UNKNOWN_C04D23:
     0x4DC3: UNKNOWN5
     0x4DC7: UNKNOWN6
   Offset: 0xC04D23
-UNKNOWN_C04DC9:
-  Type: assembly
+UNKNOWN_C04DC9: !assembly
   Size: 242
   labels:
     0x4DE2: UNKNOWN0
@@ -1956,8 +1850,7 @@ UNKNOWN_C04DC9:
     0x4EB6: UNKNOWN7
     0x4EB9: UNKNOWN8
   Offset: 0xC04DC9
-UNKNOWN_C04EBB:
-  Type: assembly
+UNKNOWN_C04EBB: !assembly
   Size: 307
   labels:
     0x4EDD: UNKNOWN0
@@ -1972,8 +1865,7 @@ UNKNOWN_C04EBB:
     0x4FE6: UNKNOWN9
     0x4FEC: UNKNOWN10
   Offset: 0xC04EBB
-UNKNOWN_C04FEE:
-  Type: assembly
+UNKNOWN_C04FEE: !assembly
   Size: 376
   labels:
     0x5001: UNKNOWN0
@@ -1992,26 +1884,22 @@ UNKNOWN_C04FEE:
     0x5159: UNKNOWN13
     0x5164: UNKNOWN14
   Offset: 0xC04FEE
-UNKNOWN_C05166:
-  Type: assembly
+UNKNOWN_C05166: !assembly
   Size: 25
   Offset: 0xC05166
-UNKNOWN_C0517F:
-  Type: assembly
+UNKNOWN_C0517F: !assembly
   Size: 63
   labels:
     0x51BC: UNKNOWN0
   Offset: 0xC0517F
-UNKNOWN_C051BE:
-  Type: assembly
+UNKNOWN_C051BE: !assembly
   Size: 101
   labels:
     0x520C: UNKNOWN0
     0x5219: UNKNOWN1
     0x5221: UNKNOWN2
   Offset: 0xC051BE
-UNKNOWN_C05223:
-  Type: assembly
+UNKNOWN_C05223: !assembly
   Size: 514
   labels:
     0x5239: UNKNOWN0
@@ -2044,9 +1932,8 @@ UNKNOWN_C05223:
     0x5421: UNKNOWN27
     0x5423: UNKNOWN28
   Offset: 0xC05223
-DAD_PHONE:
+DAD_PHONE: !assembly
   Description: Dad's Phone Handler
-  Type: assembly
   Size: 205
   labels:
     0x7884: UNKNOWN0
@@ -2055,41 +1942,35 @@ DAD_PHONE:
     0x78D0: UNKNOWN3
     0x78DE: UNKNOWN4
   Offset: 0xC0781C
-UNKNOWN_C078E9:
-  Type: assembly
+UNKNOWN_C078E9: !assembly
   Size: 44
   labels:
     0x78FF: UNKNOWN0
     0x790C: UNKNOWN1
   Offset: 0xC078E9
-UNKNOWN_C07915:
-  Type: assembly
+UNKNOWN_C07915: !assembly
   Size: 78
   labels:
     0x793E: UNKNOWN0
     0x794B: UNKNOWN1
     0x7961: UNKNOWN2
   Offset: 0xC07915
-UNKNOWN_C07963:
-  Type: assembly
+UNKNOWN_C07963: !assembly
   Size: 103
   labels:
     0x79C8: UNKNOWN0
   Offset: 0xC07963
-UNKNOWN_C079CA:
-  Type: assembly
+UNKNOWN_C079CA: !assembly
   Size: 16
   Offset: 0xC079CA
-UNKNOWN_C079DA:
-  Type: assembly
+UNKNOWN_C079DA: !assembly
   Size: 133
   labels:
     0x79FC: UNKNOWN0
     0x7A1E: UNKNOWN1
     0x7A5D: UNKNOWN2
   Offset: 0xC079DA
-UNKNOWN_C07A5F:
-  Type: assembly
+UNKNOWN_C07A5F: !assembly
   Size: 477
   labels:
     0x7A8B: UNKNOWN0
@@ -2122,22 +2003,19 @@ UNKNOWN_C07A5F:
     0x7C28: UNKNOWN27
     0x7C3A: UNKNOWN28
   Offset: 0xC07A5F
-UNKNOWN_C07C3C:
-  Type: assembly
+UNKNOWN_C07C3C: !assembly
   Size: 69
   labels:
     0x7C55: UNKNOWN0
     0x7C61: UNKNOWN1
     0x7C7F: UNKNOWN2
   Offset: 0xC07C3C
-UNKNOWN_C07C81:
-  Type: assembly
+UNKNOWN_C07C81: !assembly
   Size: 37
   labels:
     0x7CA4: UNKNOWN0
   Offset: 0xC07C81
-UNKNOWN_C07CA6:
-  Type: assembly
+UNKNOWN_C07CA6: !assembly
   Size: 252
   labels:
     0x7CDB: UNKNOWN0
@@ -2146,8 +2024,7 @@ UNKNOWN_C07CA6:
     0x7D87: UNKNOWN3
     0x7DA0: UNKNOWN4
   Offset: 0xC07CA6
-UNKNOWN_C07DA2:
-  Type: assembly
+UNKNOWN_C07DA2: !assembly
   Size: 265
   labels:
     0x7DB7: UNKNOWN0
@@ -2159,40 +2036,33 @@ UNKNOWN_C07DA2:
     0x7E9D: UNKNOWN6
     0x7EA9: UNKNOWN7
   Offset: 0xC07DA2
-UNKNOWN_C07EAB:
-  Type: assembly
+UNKNOWN_C07EAB: !assembly
   Size: 47
   labels:
     0x7EBF: UNKNOWN0
     0x7ED3: UNKNOWN1
     0x7ED8: UNKNOWN2
   Offset: 0xC07EAB
-UNKNOWN_C07EDA:
-  Type: empty
+UNKNOWN_C07EDA: !empty
   Size: 294
   Offset: 0xC07EDA
-RESET:
+RESET: !assembly
   Description: SNES Initialization
   accumSize: 8
   indexSize: 8
   Size: 321
-  Type: assembly
   Offset: 0xC08000
-RESET_VECTOR:
+RESET_VECTOR: !assembly
   Size: 6
-  Type: assembly
   Offset: 0xC08141
-NMI_VECTOR:
+NMI_VECTOR: !assembly
   Size: 4
-  Type: assembly
   Offset: 0xC08147
-IRQ_VECTOR:
+IRQ_VECTOR: !assembly
   Size: 4
-  Type: assembly
   Offset: 0xC0814B
-IRQ:
+IRQ: !assembly
   Description: IRQ Handler
-  Type: assembly
   Size: 578
   labels:
     0x8183: UNKNOWN0
@@ -2213,10 +2083,9 @@ IRQ:
     0x8377: UNKNOWN15
     0x838A: UNKNOWN16
   Offset: 0xC0814F
-NMI:
+NMI: !assembly
   Description: NMI Handler
   ignore: true
-  Type: assembly
   Size: 545
   labels:
     0x81B5: UNKNOWN0
@@ -2236,44 +2105,37 @@ NMI:
     0x8377: UNKNOWN14
     0x838A: UNKNOWN15
   Offset: 0xC08170
-UNKNOWN_C08391:
-  Type: assembly
+UNKNOWN_C08391: !assembly
   Size: 39
   labels:
     0x83B2: UNKNOWN0
   Offset: 0xC08391
-UNKNOWN_C083B8:
-  Type: assembly
+UNKNOWN_C083B8: !assembly
   Size: 9
   Offset: 0xC083B8
-UNKNOWN_C083C1:
-  Type: assembly
+UNKNOWN_C083C1: !assembly
   Size: 34
   Offset: 0xC083C1
-UNKNOWN_C083E3:
-  Type: assembly
+UNKNOWN_C083E3: !assembly
   Size: 56
   labels:
     0x83B8: UNKNOWN0
     0x841A: UNKNOWN1
   Offset: 0xC083E3
-UNKNOWN_C0841B:
-  Type: assembly
+UNKNOWN_C0841B: !assembly
   Size: 59
   labels:
     0x8444: UNKNOWN0
     0x844B: UNKNOWN1
     0x8455: UNKNOWN2
   Offset: 0xC0841B
-UNKNOWN_C08456:
-  Type: assembly
+UNKNOWN_C08456: !assembly
   Size: 64
   labels:
     0x8471: UNKNOWN0
     0x8495: UNKNOWN1
   Offset: 0xC08456
-UNKNOWN_C08496:
-  Type: assembly
+UNKNOWN_C08496: !assembly
   Size: 107
   labels:
     0x8498: UNKNOWN0
@@ -2284,44 +2146,36 @@ UNKNOWN_C08496:
     0x84F9: UNKNOWN5
     0x8500: UNKNOWN6
   Offset: 0xC08496
-UNKNOWN_C08501:
-  Type: assembly
+UNKNOWN_C08501: !assembly
   Size: 23
   labels:
     0x8515: UNKNOWN0
   Offset: 0xC08501
-UNKNOWN_C08518:
-  Type: assembly
+UNKNOWN_C08518: !assembly
   Size: 4
   Offset: 0xC08518
-UNKNOWN_C0851C:
-  Type: assembly
+UNKNOWN_C0851C: !assembly
   Size: 6
   Offset: 0xC0851C
-UNKNOWN_C08522:
-  Type: assembly
+UNKNOWN_C08522: !assembly
   Size: 7
   Offset: 0xC08522
-UNKNOWN_C08529:
-  Type: assembly
+UNKNOWN_C08529: !assembly
   Size: 66
   labels:
     0x854E: UNKNOWN0
     0x8555: UNKNOWN1
   Offset: 0xC08529
-UNKNOWN_C0856B:
-  Type: assembly
+UNKNOWN_C0856B: !assembly
   Size: 8
   Offset: 0xC0856B
-UNKNOWN_C08573:
-  Type: assembly
+UNKNOWN_C08573: !assembly
   Size: 68
   labels:
     0x8590: UNKNOWN0
     0x85A7: UNKNOWN1
   Offset: 0xC08573
-UNKNOWN_C085B7:
-  Type: assembly
+UNKNOWN_C085B7: !assembly
   Size: 95
   labels:
     0x85BC: UNKNOWN0
@@ -2331,19 +2185,16 @@ UNKNOWN_C085B7:
     0x8607: UNKNOWN4
     0x8610: UNKNOWN5
   Offset: 0xC085B7
-UNKNOWN_C08616:
-  Type: assembly
+UNKNOWN_C08616: !assembly
   Size: 69
   labels:
     0x8643: UNKNOWN0
   Offset: 0xC08616
-UNKNOWN_C0865B:
-  Type: assembly
+UNKNOWN_C0865B: !assembly
   Size: 4
   Offset: 0xC0865B
-DECOMP_VRAM:
+DECOMP_VRAM: !assembly
   Description: Decompress to VRAM
-  Type: assembly
   Size: 120
   labels:
     0x8671: UNKNOWN0
@@ -2353,27 +2204,23 @@ DECOMP_VRAM:
     0x86A5: UNKNOWN4
     0x86D2: UNKNOWN5
   Offset: 0xC0865F
-UNKNOWN_C086D7:
-  Type: assembly
+UNKNOWN_C086D7: !assembly
   Size: 55
   labels:
     0x86DA: UNKNOWN0
     0x86F3: UNKNOWN1
   Offset: 0xC086D7
-ENABLE_NMI_JOYPAD:
+ENABLE_NMI_JOYPAD: !assembly
   Description: Enable NMI+Joypad
-  Type: assembly
   Size: 17
   Offset: 0xC0870E
-UNKNOWN_C0871F:
-  Type: assembly
+UNKNOWN_C0871F: !assembly
   Size: 27
   labels:
     0x872C: UNKNOWN0
   Offset: 0xC0871F
-READ_JOYPAD:
+READ_JOYPAD: !assembly
   Description: Reads gamepad state into memory
-  Type: assembly
   Size: 53
   labels:
     0x8755: UNKNOWN0
@@ -2381,19 +2228,18 @@ READ_JOYPAD:
     0x8765: UNKNOWN2
     0x876B: UNKNOWN3
   Offset: 0xC0874C
-MEMSET:
+MEMSET: !assembly
   Description: Overwrite Memory
   arguments:
     A: Destination
     X: Size*2
     $0E: Value to overwrite data with
-  Type: assembly
   Size: 25
   labels:
     0x8EFD: UNKNOWN0
     0x8F02: UNKNOWN1
   Offset: 0xC08EED
-MEMSET8:
+MEMSET8: !assembly
   Description: Overwrite Memory (8-bit)
   arguments:
     A: Value
@@ -2402,37 +2248,32 @@ MEMSET8:
   final processor state:
     accum: 16
     index: 16
-  Type: assembly
   Size: 13
   labels:
     0x8F09: UNKNOWN0
     0x8F10: UNKNOWN1
   Offset: 0xC08F06
-EIGHT_BIT_MULT_YxA:
+EIGHT_BIT_MULT_YxA: !assembly
   Description: Multiply low byte of Y by A
   final processor state:
     accum: 16
     index: 16
   Size: 57
-  Type: assembly
   labels:
     0x9022: UNKNOWN0
   Offset: 0xC08FDB
-MULT_YxA:
+MULT_YxA: !assembly
   Description: Multiply Y by A
-  Type: assembly
   Size: 84
   Offset: 0xC09014
-CHECK_HARDWARE:
+CHECK_HARDWARE: !assembly
   Description: Check if the game is running on an NTSC SNES
-  Type: assembly
   Size: 54
   labels:
     0xA11A: UNKNOWN0
   Offset: 0xC0A0FB
-LOAD_SPC700_DATA:
+LOAD_SPC700_DATA: !assembly
   Description: Send Music Data to SPC-700
-  Type: assembly
   Size: 162
   labels:
     0xAB06: UNKNOWN0
@@ -2448,20 +2289,17 @@ LOAD_SPC700_DATA:
     0xAB66: UNKNOWN10
     0xAB6F: UNKNOWN11
   Offset: 0xC0AAE5
-FILE_SELECT_INIT:
+FILE_SELECT_INIT: !assembly
   Description: File Select Screen Initialization
-  Type: assembly
   Size: 171
   labels:
     0xB550: UNKNOWN0
   Offset: 0xC0B504
-UNKNOWN_C0B652:
-  Type: assembly
+UNKNOWN_C0B652: !assembly
   Size: 197
   Offset: 0xC0B652
-BATTLE_INIT:
+BATTLE_INIT: !assembly
   Description: Battle Initialization
-  Type: assembly
   Size: 167
   labels:
     0xB727: UNKNOWN0
@@ -2474,9 +2312,8 @@ BATTLE_INIT:
     0xB7A4: UNKNOWN7
     0xB7BC: UNKNOWN8
   Offset: 0xC0B717
-MAIN_LOOP:
+MAIN_LOOP: !assembly
   Description: Main Loop
-  Type: assembly
   Size: 439
   labels:
     0xB825: UNKNOWN0
@@ -2504,20 +2341,17 @@ MAIN_LOOP:
     0xB968: UNKNOWN22
     0xB973: UNKNOWN23
   Offset: 0xC0B7BE
-GAME_INIT:
+GAME_INIT: !assembly
   Description: Game initialization?
-  Type: assembly
   Size: 34
   Offset: 0xC0B975
-UNKNOWN_C0B997:
-  Type: assembly
+UNKNOWN_C0B997: !assembly
   Size: 125
   labels:
     0xB9B2: UNKNOWN0
     0xBA0C: UNKNOWN1
   Offset: 0xC0B997
-UNKNOWN_C0BA14:
-  Type: assembly
+UNKNOWN_C0BA14: !assembly
   Size: 575
   labels:
     0xBA4E: UNKNOWN0
@@ -2544,23 +2378,19 @@ UNKNOWN_C0BA14:
     0xBC46: UNKNOWN21
     0xBC51: UNKNOWN22
   Offset: 0xC0BA14
-UNKNOWN_C0BC53:
-  Type: assembly
+UNKNOWN_C0BC53: !assembly
   Size: 293
   Offset: 0xC0BC53
-UNKNOWN_C0BD78:
-  Type: assembly
+UNKNOWN_C0BD78: !assembly
   Size: 476
   labels:
     0xBEB6: UNKNOWN0
     0xBF52: UNKNOWN1
   Offset: 0xC0BD78
-UNKNOWN_C0BF54:
-  Type: assembly
+UNKNOWN_C0BF54: !assembly
   Size: 322
   Offset: 0xC0BF54
-UNKNOWN_C0C096:
-  Type: assembly
+UNKNOWN_C0C096: !assembly
   Size: 231
   labels:
     0xC0C1: UNKNOWN0
@@ -2572,8 +2402,7 @@ UNKNOWN_C0C096:
     0xC178: UNKNOWN6
     0xC17B: UNKNOWN7
   Offset: 0xC0C096
-UNKNOWN_C0C17D:
-  Type: assembly
+UNKNOWN_C0C17D: !assembly
   Size: 182
   labels:
     0xC1A8: UNKNOWN0
@@ -2583,8 +2412,7 @@ UNKNOWN_C0C17D:
     0xC22E: UNKNOWN4
     0xC231: UNKNOWN5
   Offset: 0xC0C17D
-UNKNOWN_C0C233:
-  Type: assembly
+UNKNOWN_C0C233: !assembly
   Size: 187
   labels:
     0xC25E: UNKNOWN0
@@ -2594,23 +2422,19 @@ UNKNOWN_C0C233:
     0xC2E9: UNKNOWN4
     0xC2EC: UNKNOWN5
   Offset: 0xC0C233
-UNKNOWN_C0C2EE:
-  Type: assembly
+UNKNOWN_C0C2EE: !assembly
   Size: 71
   labels:
     0xC324: UNKNOWN0
     0xC32C: UNKNOWN1
   Offset: 0xC0C2EE
-UNKNOWN_C0C335:
-  Type: assembly
+UNKNOWN_C0C335: !assembly
   Size: 10
   Offset: 0xC0C335
-UNKNOWN_C0C33F:
-  Type: assembly
+UNKNOWN_C0C33F: !assembly
   Size: 6
   Offset: 0xC0C33F
-UNKNOWN_C0C345:
-  Type: assembly
+UNKNOWN_C0C345: !assembly
   Size: 150
   labels:
     0xC372: UNKNOWN0
@@ -2632,8 +2456,7 @@ UNKNOWN_C0C345:
     0xC3D6: UNKNOWN16
     0xC3D9: UNKNOWN17
   Offset: 0xC0C345
-UNKNOWN_C0C3DB:
-  Type: assembly
+UNKNOWN_C0C3DB: !assembly
   Size: 150
   labels:
     0xC408: UNKNOWN0
@@ -2655,28 +2478,24 @@ UNKNOWN_C0C3DB:
     0xC46C: UNKNOWN16
     0xC46F: UNKNOWN17
   Offset: 0xC0C3DB
-UNKNOWN_C0C471:
-  Type: assembly
+UNKNOWN_C0C471: !assembly
   Size: 32
   labels:
     0xC482: UNKNOWN0
     0xC48D: UNKNOWN1
     0xC490: UNKNOWN2
   Offset: 0xC0C471
-UNKNOWN_C0C491:
-  Type: assembly
+UNKNOWN_C0C491: !assembly
   Size: 32
   labels:
     0xC4A2: UNKNOWN0
     0xC4AD: UNKNOWN1
     0xC4B0: UNKNOWN2
   Offset: 0xC0C491
-UNKNOWN_C0C4D9:
-  Type: assembly
+UNKNOWN_C0C4D9: !assembly
   Size: 45
   Offset: 0xC0C4D9
-UNKNOWN_C0C506:
-  Type: assembly
+UNKNOWN_C0C506: !assembly
   Size: 228
   labels:
     0xC568: UNKNOWN0
@@ -2685,36 +2504,30 @@ UNKNOWN_C0C506:
     0xC5E5: UNKNOWN3
     0xC5E8: UNKNOWN4
   Offset: 0xC0C506
-UNKNOWN_C0C5EA:
-  Type: assembly
+UNKNOWN_C0C5EA: !assembly
   Size: 13
   Offset: 0xC0C5EA
-UNKNOWN_C0C5F7:
-  Type: assembly
+UNKNOWN_C0C5F7: !assembly
   Size: 22
   labels:
     0xC608: UNKNOWN0
     0xC60C: UNKNOWN1
   Offset: 0xC0C5F7
-UNKNOWN_C0C60D:
-  Type: assembly
+UNKNOWN_C0C60D: !assembly
   Size: 87
   labels:
     0xC63A: UNKNOWN0
   Offset: 0xC0C60D
-UNKNOWN_C0C664:
-  Type: assembly
+UNKNOWN_C0C664: !assembly
   Size: 28
   Offset: 0xC0C664
-UNKNOWN_C0C680:
-  Type: assembly
+UNKNOWN_C0C680: !assembly
   Size: 24
   labels:
     0xC690: UNKNOWN0
     0xC693: UNKNOWN1
   Offset: 0xC0C680
-UNKNOWN_C0C698:
-  Type: assembly
+UNKNOWN_C0C698: !assembly
   Size: 91
   labels:
     0xC6AD: UNKNOWN0
@@ -2723,36 +2536,30 @@ UNKNOWN_C0C698:
     0xC6EE: UNKNOWN3
     0xC6F1: UNKNOWN4
   Offset: 0xC0C698
-UNKNOWN_C0C6F3:
-  Type: assembly
+UNKNOWN_C0C6F3: !assembly
   Size: 79
   labels:
     0xC73D: UNKNOWN0
     0xC740: UNKNOWN1
   Offset: 0xC0C6F3
-UNKNOWN_C0C742:
-  Type: assembly
+UNKNOWN_C0C742: !assembly
   Size: 76
   labels:
     0xC789: UNKNOWN0
     0xC78C: UNKNOWN1
   Offset: 0xC0C742
-UNKNOWN_C0C78E:
-  Type: assembly
+UNKNOWN_C0C78E: !assembly
   Size: 47
   labels:
     0xC7BB: UNKNOWN0
   Offset: 0xC0C78E
-UNKNOWN_C0C7BD:
-  Type: assembly
+UNKNOWN_C0C7BD: !assembly
   Size: 45
   Offset: 0xC0C7BD
-UNKNOWN_C0C7EA:
-  Type: assembly
+UNKNOWN_C0C7EA: !assembly
   Size: 51
   Offset: 0xC0C7EA
-UNKNOWN_C0C81D:
-  Type: assembly
+UNKNOWN_C0C81D: !assembly
   Size: 531
   labels:
     0xC860: UNKNOWN0
@@ -2775,8 +2582,7 @@ UNKNOWN_C0C81D:
     0xC9EE: UNKNOWN17
     0xCA15: UNKNOWN18
   Offset: 0xC0C81D
-UNKNOWN_C0CA30:
-  Type: assembly
+UNKNOWN_C0CA30: !assembly
   Size: 389
   labels:
     0xCA75: UNKNOWN0
@@ -2798,12 +2604,10 @@ UNKNOWN_C0CA30:
     0xCB87: UNKNOWN16
     0xCB8F: UNKNOWN17
   Offset: 0xC0CA30
-UNKNOWN_C0CBB5:
-  Type: assembly
+UNKNOWN_C0CBB5: !assembly
   Size: 62
   Offset: 0xC0CBB5
-UNKNOWN_C0CBF3:
-  Type: assembly
+UNKNOWN_C0CBF3: !assembly
   Size: 187
   labels:
     0xCC19: UNKNOWN0
@@ -2818,8 +2622,7 @@ UNKNOWN_C0CBF3:
     0xCC7B: UNKNOWN9
     0xCCA2: UNKNOWN10
   Offset: 0xC0CBF3
-UNKNOWN_C0CCAE:
-  Type: assembly
+UNKNOWN_C0CCAE: !assembly
   Size: 132
   labels:
     0xCD0A: UNKNOWN0
@@ -2827,8 +2630,7 @@ UNKNOWN_C0CCAE:
     0xCD24: UNKNOWN2
     0xCD2A: UNKNOWN3
   Offset: 0xC0CCAE
-UNKNOWN_C0CD32:
-  Type: assembly
+UNKNOWN_C0CD32: !assembly
   Size: 342
   labels:
     0xCD53: UNKNOWN0
@@ -2838,8 +2640,7 @@ UNKNOWN_C0CD32:
     0xCE80: UNKNOWN4
     0xCE86: UNKNOWN5
   Offset: 0xC0CD32
-UNKNOWN_C0CE88:
-  Type: assembly
+UNKNOWN_C0CE88: !assembly
   Size: 154
   labels:
     0xCEBB: UNKNOWN0
@@ -2851,8 +2652,7 @@ UNKNOWN_C0CE88:
     0xCF00: UNKNOWN6
     0xCF1E: UNKNOWN7
   Offset: 0xC0CE88
-UNKNOWN_C0CF61:
-  Type: assembly
+UNKNOWN_C0CF61: !assembly
   Size: 322
   labels:
     0xCFD8: UNKNOWN0
@@ -2867,20 +2667,17 @@ UNKNOWN_C0CF61:
     0xD069: UNKNOWN9
     0xD0A1: UNKNOWN10
   Offset: 0xC0CF61
-UNKNOWN_C0D0A3:
-  Type: assembly
+UNKNOWN_C0D0A3: !assembly
   Size: 13
   Offset: 0xC0D0A3
-UNKNOWN_C0D0B0:
-  Type: assembly
+UNKNOWN_C0D0B0: !assembly
   Size: 118
   labels:
     0xD0E0: UNKNOWN0
     0xD111: UNKNOWN1
     0xD124: UNKNOWN2
   Offset: 0xC0D0B0
-UNKNOWN_C0D126:
-  Type: assembly
+UNKNOWN_C0D126: !assembly
   Size: 57
   labels:
     0xD135: UNKNOWN0
@@ -2890,12 +2687,10 @@ UNKNOWN_C0D126:
     0xD15B: UNKNOWN4
     0xD15E: UNKNOWN5
   Offset: 0xC0D126
-UNKNOWN_C0D15F:
-  Type: assembly
+UNKNOWN_C0D15F: !assembly
   Size: 6
   Offset: 0xC0D15F
-UNKNOWN_C0D165:
-  Type: assembly
+UNKNOWN_C0D165: !assembly
   Size: 833
   labels:
     0xD192: UNKNOWN0
@@ -2939,24 +2734,21 @@ UNKNOWN_C0D165:
     0xD484: UNKNOWN38
     0xD489: UNKNOWN39
   Offset: 0xC0D165
-UNKNOWN_C0D4A6:
-  Type: assembly
+UNKNOWN_C0D4A6: !assembly
   Size: 189
   labels:
     0xD4DD: UNKNOWN0
     0xD54E: UNKNOWN1
     0xD55A: UNKNOWN2
   Offset: 0xC0D4A6
-UNKNOWN_C0D563:
-  Type: assembly
+UNKNOWN_C0D563: !assembly
   Size: 21
   labels:
     0xD56F: UNKNOWN0
     0xD574: UNKNOWN1
     0xD577: UNKNOWN2
   Offset: 0xC0D563
-UNKNOWN_C0D578:
-  Type: assembly
+UNKNOWN_C0D578: !assembly
   Size: 463
   labels:
     0xD58B: UNKNOWN0
@@ -2986,30 +2778,25 @@ UNKNOWN_C0D578:
     0xD743: UNKNOWN24
     0xD745: UNKNOWN25
   Offset: 0xC0D578
-UNKNOWN_C0D747:
-  Type: assembly
+UNKNOWN_C0D747: !assembly
   Size: 52
   labels:
     0xD756: UNKNOWN0
     0xD76F: UNKNOWN1
     0xD774: UNKNOWN2
   Offset: 0xC0D747
-UNKNOWN_C0D77B:
-  Type: assembly
+UNKNOWN_C0D77B: !assembly
   Size: 20
   Offset: 0xC0D77B
-UNKNOWN_C0D78F:
-  Type: assembly
+UNKNOWN_C0D78F: !assembly
   Size: 25
   Offset: 0xC0D78F
-UNKNOWN_C0D7A8:
-  Type: assembly
+UNKNOWN_C0D7A8: !assembly
   Size: 23
   labels:
     0xD7BE: UNKNOWN0
   Offset: 0xC0D7A8
-UNKNOWN_C0D7BF:
-  Type: assembly
+UNKNOWN_C0D7BF: !assembly
   Size: 408
   labels:
     0xD7D9: UNKNOWN0
@@ -3029,15 +2816,13 @@ UNKNOWN_C0D7BF:
     0xD940: UNKNOWN14
     0xD955: UNKNOWN15
   Offset: 0xC0D7BF
-UNKNOWN_C0D957:
-  Type: assembly
+UNKNOWN_C0D957: !assembly
   Size: 162
   labels:
     0xD977: UNKNOWN0
     0xD9F7: UNKNOWN1
   Offset: 0xC0D957
-UNKNOWN_C0D9F9:
-  Type: assembly
+UNKNOWN_C0D9F9: !assembly
   Size: 222
   labels:
     0xDA0A: UNKNOWN0
@@ -3053,8 +2838,7 @@ UNKNOWN_C0D9F9:
     0xDAC5: UNKNOWN10
     0xDAD5: UNKNOWN11
   Offset: 0xC0D9F9
-UNKNOWN_C0DAD7:
-  Type: assembly
+UNKNOWN_C0DAD7: !assembly
   Size: 215
   labels:
     0xDAED: UNKNOWN0
@@ -3072,20 +2856,17 @@ UNKNOWN_C0DAD7:
     0xDBA7: UNKNOWN12
     0xDBAC: UNKNOWN13
   Offset: 0xC0DAD7
-UNKNOWN_C0DBAE:
-  Type: assembly
+UNKNOWN_C0DBAE: !assembly
   Size: 82
   labels:
     0xDBCD: UNKNOWN0
     0xDBE0: UNKNOWN1
     0xDBE5: UNKNOWN2
   Offset: 0xC0DBAE
-UNKNOWN_C0DC00:
-  Type: assembly
+UNKNOWN_C0DC00: !assembly
   Size: 22
   Offset: 0xC0DC00
-UNKNOWN_C0DC16:
-  Type: assembly
+UNKNOWN_C0DC16: !assembly
   Size: 120
   labels:
     0xDC2E: UNKNOWN0
@@ -3094,35 +2875,30 @@ UNKNOWN_C0DC16:
     0xDC85: UNKNOWN3
     0xDC8C: UNKNOWN4
   Offset: 0xC0DC16
-UNKNOWN_C0DC8E:
-  Type: assembly
+UNKNOWN_C0DC8E: !assembly
   Size: 73
   labels:
     0xDCD5: UNKNOWN0
   Offset: 0xC0DC8E
-UNKNOWN_C0DCD7:
-  Type: assembly
+UNKNOWN_C0DCD7: !assembly
   Size: 29
   labels:
     0xDCDB: UNKNOWN0
     0xDCEB: UNKNOWN1
   Offset: 0xC0DCD7
-UNKNOWN_C0DCF4:
-  Type: assembly
+UNKNOWN_C0DCF4: !assembly
   Size: 39
   labels:
     0xDD02: UNKNOWN0
     0xDD17: UNKNOWN1
   Offset: 0xC0DCF4
-UNKNOWN_C0DD1B:
+UNKNOWN_C0DD1B: !assembly
   final processor state:
     accum: 16
   Size: 38
-  Type: assembly
   Offset: 0xC0DD1B
-LOGO_SCREEN:
+LOGO_SCREEN: !assembly
   Description: Loads and displays logo screen specified by A
-  Type: assembly
   Size: 377
   labels:
     0xEF69: UNKNOWN0
@@ -3131,49 +2907,42 @@ LOGO_SCREEN:
     0xF010: UNKNOWN3
     0xF070: UNKNOWN4
   Offset: 0xC0EF31
-GAS_STATION:
+GAS_STATION: !assembly
   Description: Loads and displays the gas station screen
-  Type: assembly
   Size: 260
   Offset: 0xC0F19B
-UNKNOWN_C0F5BF:
-  Type: assembly
+UNKNOWN_C0F5BF: !assembly
   Size: 31
   labels:
     0xF5CE: UNKNOWN0
     0xF5D7: UNKNOWN1
   Offset: 0xC0F5BF
-LOAD_SAVE:
+LOAD_SAVE: !assembly
   Size: 310
-  Type: assembly
   Description: Loads data from SRAM into memory
   Offset: 0xC0F97D
-CHECK_SRAM_INTEGRITY:
+CHECK_SRAM_INTEGRITY: !assembly
   Description: SRAM Integrity Check
-  Type: assembly
   Size: 92
   labels:
     0xFAD8: GOOD_SRAM
     0xFAE7: LOOP_BEGINNING
     0xFAF2: LOOP_ENTRY
   Offset: 0xC0FAA4
-ENABLE_BLINKING_TRIANGLE:
+ENABLE_BLINKING_TRIANGLE: !assembly
   Description: Set blinking triangle prompt to A
   Size: 6
-  Type: assembly
   Offset: 0xC10032
-GET_ACTIVE_WINDOW_ADDRESS:
+GET_ACTIVE_WINDOW_ADDRESS: !assembly
   Description: |
     Get the root address of the current active window
-  Type: assembly
   Size: 35
   labels:
     0x0513: UNKNOWN0
     0x0526: UNKNOWN1
   Offset: 0xC10504
-CREATE_WINDOW:
+CREATE_WINDOW: !assembly
   Description: Create Window
-  Type: assembly
   Size: 656
   labels:
     0x0725: UNKNOWN0
@@ -3188,9 +2957,8 @@ CREATE_WINDOW:
     0x0940: UNKNOWN9
     0x0959: UNKNOWN10
   Offset: 0xC106E4
-OPEN_MENU_BUTTON:
+OPEN_MENU_BUTTON: !assembly
   Description: (A) Open Menu
-  Type: assembly
   Size: 1561
   labels:
     0x3AB8: UNKNOWN0
@@ -3243,9 +3011,8 @@ OPEN_MENU_BUTTON:
     0x4083: UNKNOWN47
     0x408C: UNKNOWN48
   Offset: 0xC13A85
-CHECKTALK_BUTTON:
+CHECKTALK_BUTTON: !assembly
   Description: (L) Talk/Check
-  Type: assembly
   Size: 110
   labels:
     0x40C9: UNKNOWN0
@@ -3253,25 +3020,22 @@ CHECKTALK_BUTTON:
     0x40E5: UNKNOWN2
     0x40FA: UNKNOWN3
   Offset: 0xC1409E
-OPEN_HPPP_DISPLAY:
+OPEN_HPPP_DISPLAY: !assembly
   Description: (B/Select) Open HP/PP Display
-  Type: assembly
   Size: 67
   labels:
     0x411C: UNKNOWN0
     0x412E: UNKNOWN1
     0x414E: UNKNOWN2
   Offset: 0xC1410C
-SHOW_TOWN_MAP:
+SHOW_TOWN_MAP: !assembly
   Description: (X) Display Town Map
-  Type: assembly
   Size: 30
   labels:
     0x416C: UNKNOWN0
   Offset: 0xC1414F
-DISPLAY_TEXT:
+DISPLAY_TEXT: !assembly
   Description: Display Text at ($0E+10)
-  Type: assembly
   labels:
     0x893C: UNKNOWN0
     0x8949: UNKNOWN1
@@ -3310,32 +3074,28 @@ DISPLAY_TEXT:
     0x8ABA: UNKNOWN34
   Size: 696
   Offset: 0xC18913
-DISPLAY_IN_BATTLE_TEXT:
+DISPLAY_IN_BATTLE_TEXT: !assembly
   Description: Display In-Battle Text at ($0E+10)
   Size: 74
-  Type: assembly
   labels:
     0xDA2D: UNKNOWN
     0xDA38: UNKNOWN2
   Offset: 0xC1D9FF
-DISPLAY_TEXT_WAIT:
+DISPLAY_TEXT_WAIT: !assembly
   Description: Display text and wait
-  Type: assembly
   Size: 93
   labels:
     0xDA7F: UNKNOWN0
     0xDA95: UNKNOWN1
   Offset: 0xC1DA49
-REDIRECT_C1ABB4:
+REDIRECT_C1ABB4: !assembly
   Description: Redirect to C1ABB4
   final processor state:
     accum: 16
     index: 16
   Size: 6
-  Type: assembly
   Offset: 0xC1DB59
-UNKNOWN_C1DC06:
-  Type: assembly
+UNKNOWN_C1DC06: !assembly
   Size: 461
   labels:
     0xDC34: UNKNOWN0
@@ -3344,19 +3104,17 @@ UNKNOWN_C1DC06:
     0xDD7C: UNKNOWN3
     0xDDCE: UNKNOWN4
   Offset: 0xC1DC06
-CHKEVENT:
+CHKEVENT: !assembly
   Description: Check Event Flag, return result
   arguments:
     A: Event Flag ID
   Size: 54
-  Type: assembly
   labels:
     0x1501: UNKNOWN0
     0x1504: UNKNOWN1
   Offset: 0xC214D0
-BATTLE_ROUTINE:
+BATTLE_ROUTINE: !assembly
   Description: Handles Mother 2's Battles
-  Type: assembly
   Size: 6599
   labels:
     0x4761: UNKNOWN0
@@ -3574,9 +3332,8 @@ BATTLE_ROUTINE:
     0x6091: UNKNOWN212
     0x6099: UNKNOWN213
   Offset: 0xC246EE
-INSTANT_WIN_HANDLER:
+INSTANT_WIN_HANDLER: !assembly
   Description: Instant Win Handler
-  Type: assembly
   Size: 919
   labels:
     0x6106: UNKNOWN0
@@ -3608,9 +3365,8 @@ INSTANT_WIN_HANDLER:
     0x6476: UNKNOWN26
     0x647A: UNKNOWN27
   Offset: 0xC260E9
-INSTANT_WIN_CHECK:
+INSTANT_WIN_CHECK: !assembly
   Description: Instant Win Check
-  Type: assembly
   Size: 861
   labels:
     0x6583: UNKNOWN0
@@ -3649,21 +3405,18 @@ INSTANT_WIN_CHECK:
     0x68C1: UNKNOWN33
     0x68C8: UNKNOWN34
   Offset: 0xC2656D
-PSI_SHIELD_NULLIFY:
+PSI_SHIELD_NULLIFY: !assembly
   Description: PSI Shield Handler
-  Type: assembly
   Size: 177
   Offset: 0xC293C6
-PSI_STARSTORM_COMMON:
+PSI_STARSTORM_COMMON: !assembly
   Description: PSI Starstorm General
-  Type: assembly
   Size: 38
   labels:
     0x9A4D: RETURN
   Offset: 0xC29A29
-BOSS_BATTLE_CHECK:
+BOSS_BATTLE_CHECK: !assembly
   Description: Checks if a boss is currently in the battle
-  Type: assembly
   Size: 93
   labels:
     0xAADB: NEXT_ENEMY
@@ -3671,9 +3424,8 @@ BOSS_BATTLE_CHECK:
     0xAB1A: BEGIN_LOOP
     0xAB22: RETURN
   Offset: 0xC2AAC7
-BTLACT_TELEPORT_BOX:
+BTLACT_TELEPORT_BOX: !assembly
   Description: 'Battle Action: Teleport Box'
-  Type: assembly
   Size: 186
   labels:
     0xAB3E: UNKNOWN0
@@ -3681,8 +3433,7 @@ BTLACT_TELEPORT_BOX:
     0xABBE: TELEPORT_BOX_FAILURE
     0xABDC: RETURN
   Offset: 0xC2AB24
-UNKNOWN_C2ABDE:
-  Type: assembly
+UNKNOWN_C2ABDE: !assembly
   Size: 20
   Offset: 0xC2ABDE
 PLAYABLE_CHAR_GFX_TABLE:
@@ -3707,9 +3458,8 @@ PLAYABLE_CHAR_GFX_TABLE:
   - Name: Unknown
     Size: 2
   Offset: 0xC3F02E
-DECOMP:
+DECOMP: !assembly
   Description: Decompress ($0E+10) to ($12+14)
-  Type: assembly
   Size: 792
   labels:
     0x1A17: UNKNOWN0
@@ -3743,9 +3493,8 @@ DECOMP:
     0x1C88: UNKNOWN28
     0x1CC5: UNKNOWN29
   Offset: 0xC419EA
-LOAD_WINDOW_GFX:
+LOAD_WINDOW_GFX: !assembly
   Description: Loads window graphics
-  Type: assembly
   Size: 623
   labels:
     0x5981: UNKNOWN0
@@ -3767,9 +3516,8 @@ LOAD_WINDOW_GFX:
     0x5C11: UNKNOWN16
     0x5C18: UNKNOWN17
   Offset: 0xC459AB
-INIT_INTRO:
+INIT_INTRO: !assembly
   Description: Initializes Intro
-  Type: assembly
   Size: 341
   labels:
     0xAE04: UNKNOWN0
@@ -3819,14 +3567,12 @@ MUSIC_PACK_POINTER_TABLE:
     Size: 3
     base: 14811136
   Offset: 0xC4CCE2
-INITIALIZE_SPC700:
+INITIALIZE_SPC700: !assembly
   Description: Initialize SPC-700
-  Type: assembly
   Size: 101
   Offset: 0xC4CEF7
-CHANGE_MUSIC:
+CHANGE_MUSIC: !assembly
   Description: Change music to A
-  Type: assembly
   Size: 347
   labels:
     0xCF71: UNKNOWN0
@@ -3837,17 +3583,14 @@ CHANGE_MUSIC:
     0xD052: UNKNOWN5
     0xD0AD: UNKNOWN6
   Offset: 0xC4CF5C
-TEXT_DATA:
+TEXT_DATA: !array
   Description: Text Data
   Type: data
   Size: 320144
-  Entries:
-  - Name: Text
-    Type: standardtext
-    terminator: 2
+  Item Type: !script
+    Terminator: 2
   Offset: 0xC50284
-UNKNOWN_C9E514:
-  Type: empty
+UNKNOWN_C9E514: !empty
   Size: 6892
   Offset: 0xC9E514
 BATTLEBG_PRIMARY_DATA_GROUP:
@@ -3981,8 +3724,7 @@ BG_DISTORTION_TABLE:
   - Name: Unknown D
     Size: 2
   Offset: 0xCAF708
-UNKNOWN_CAFFFF:
-  Type: empty
+UNKNOWN_CAFFFF: !empty
   Size: 1
   Offset: 0xCAFFFF
 BATTLEBGS_SECONDARY_DATA:
@@ -4000,8 +3742,7 @@ GROUP_BATTLEBG_TABLE:
   - Name: Unknown2
     Size: 2
   Offset: 0xCBD89A
-UNKNOWN_CBE02A:
-  Type: empty
+UNKNOWN_CBE02A: !empty
   Size: 8150
   Offset: 0xCBE02A
 ANIMATIONDATA_CARPAINTER_LIGHTNING_REFLECT:
@@ -4281,8 +4022,7 @@ PSI_ANIM_POINTERS:
     Type: pointer
     Size: 4
   Offset: 0xCCF6A6
-UNKNOWN_CCF72E:
-  Type: empty
+UNKNOWN_CCF72E: !empty
   Size: 2258
   Offset: 0xCCF72E
 BATTLE_SPRITES:
@@ -4352,27 +4092,24 @@ SOUND_STONE_PALETTE:
     Size: 32
     Type: palette
   Offset: 0xCEF80A
-UNKNOWN_CEF8CA:
-  Type: empty
+UNKNOWN_CEF8CA: !empty
   Size: 1846
   Offset: 0xCEF8CA
-DOOR_DEST_TABLE_1:
-  Type: data
+DOOR_DEST_TABLE_1: !array
   Size: 1408
   Description: Door Destinations Table (1)
-  Entries:
-  - Name: Pointer
-    Size: 4
-    Type: pointer
-  - Name: Event Flag
-    Size: 2
-    Type: hexint
-  - Name: "Y"
-    Size: 2
-  - Name: X
-    Size: 2
-  - Name: Style
-    Size: 1
+  Item Type: !struct &DOOR_DEST
+    Entries:
+      POINTER: !pointer
+        Size: 4
+      EVENT_FLAG: !int
+        Size: 2
+      "Y": !int
+        Size: 2
+      X: !int
+        Size: 2
+      STYLE: !int
+        Size: 1
   Offset: 0xCF0000
 SIGN_POINTERS_1:
   Type: data
@@ -4383,23 +4120,10 @@ SIGN_POINTERS_1:
     Type: pointer
     Size: 4
   Offset: 0xCF0580
-DOOR_DEST_TABLE_2:
-  Type: data
+DOOR_DEST_TABLE_2: !array
   Size: 44
   Description: Door Destinations Table (2)
-  Entries:
-  - Name: Pointer
-    Size: 4
-    Type: pointer
-  - Name: Event Flag
-    Size: 2
-    Type: hexint
-  - Name: "Y"
-    Size: 2
-  - Name: X
-    Size: 2
-  - Name: Style
-    Size: 1
+  Item Type: *DOOR_DEST
   Offset: 0xCF05AC
 SIGN_POINTERS_2:
   Type: data
@@ -4410,23 +4134,10 @@ SIGN_POINTERS_2:
     Type: pointer
     Size: 4
   Offset: 0xCF05D8
-DOOR_DEST_TABLE_3:
-  Type: data
+DOOR_DEST_TABLE_3: !array
   Size: 44
   Description: Door Destinations Table (3)
-  Entries:
-  - Name: Pointer
-    Size: 4
-    Type: pointer
-  - Name: Event Flag
-    Size: 2
-    Type: hexint
-  - Name: "Y"
-    Size: 2
-  - Name: X
-    Size: 2
-  - Name: Style
-    Size: 1
+  Item Type: *DOOR_DEST
   Offset: 0xCF05F8
 UNKNOWN_DPOINTERS_1:
   Type: data
@@ -4437,23 +4148,10 @@ UNKNOWN_DPOINTERS_1:
     Type: pointer
     Size: 4
   Offset: 0xCF0624
-DOOR_DEST_TABLE_4:
-  Type: data
+DOOR_DEST_TABLE_4: !array
   Size: 847
   Description: Door Destinations Table (4)
-  Entries:
-  - Name: Pointer
-    Size: 4
-    Type: pointer
-  - Name: Event Flag
-    Size: 2
-    Type: hexint
-  - Name: "Y"
-    Size: 2
-  - Name: X
-    Size: 2
-  - Name: Style
-    Size: 1
+  Item Type: *DOOR_DEST
   Offset: 0xCF0648
 UNKNOWN_DPOINTERS_2:
   Type: data
@@ -4464,23 +4162,10 @@ UNKNOWN_DPOINTERS_2:
     Type: pointer
     Size: 4
   Offset: 0xCF0997
-DOOR_DEST_TABLE_5:
-  Type: data
+DOOR_DEST_TABLE_5: !array
   Size: 275
   Description: Door Destinations Table (5)
-  Entries:
-  - Name: Pointer
-    Size: 4
-    Type: pointer
-  - Name: Event Flag
-    Size: 2
-    Type: hexint
-  - Name: "Y"
-    Size: 2
-  - Name: X
-    Size: 2
-  - Name: Style
-    Size: 1
+  Item Type: *DOOR_DEST
   Offset: 0xCF09B7
 UNKNOWN_DPOINTERS_3:
   Type: data
@@ -4491,23 +4176,10 @@ UNKNOWN_DPOINTERS_3:
     Type: pointer
     Size: 4
   Offset: 0xCF0ACA
-DOOR_DEST_TABLE_6:
-  Type: data
+DOOR_DEST_TABLE_6: !array
   Size: 781
   Description: Door Destinations Table (6)
-  Entries:
-  - Name: Pointer
-    Size: 4
-    Type: pointer
-  - Name: Event Flag
-    Size: 2
-    Type: hexint
-  - Name: "Y"
-    Size: 2
-  - Name: X
-    Size: 2
-  - Name: Style
-    Size: 1
+  Item Type: *DOOR_DEST
   Offset: 0xCF0AD2
 UNKNOWN_DPOINTERS_4:
   Type: data
@@ -4518,23 +4190,10 @@ UNKNOWN_DPOINTERS_4:
     Type: pointer
     Size: 4
   Offset: 0xCF0DDF
-DOOR_DEST_TABLE_7:
-  Type: data
+DOOR_DEST_TABLE_7: !array
   Size: 77
   Description: Door Destinations Table (7)
-  Entries:
-  - Name: Pointer
-    Size: 4
-    Type: pointer
-  - Name: Event Flag
-    Size: 2
-    Type: hexint
-  - Name: "Y"
-    Size: 2
-  - Name: X
-    Size: 2
-  - Name: Style
-    Size: 1
+  Item Type: *DOOR_DEST
   Offset: 0xCF0DE7
 UNKNOWN_DPOINTERS_5:
   Type: data
@@ -4545,23 +4204,10 @@ UNKNOWN_DPOINTERS_5:
     Type: pointer
     Size: 4
   Offset: 0xCF0E34
-DOOR_DEST_TABLE_8:
-  Type: data
+DOOR_DEST_TABLE_8: !array
   Size: 154
   Description: Door Destinations Table (8)
-  Entries:
-  - Name: Pointer
-    Size: 4
-    Type: pointer
-  - Name: Event Flag
-    Size: 2
-    Type: hexint
-  - Name: "Y"
-    Size: 2
-  - Name: X
-    Size: 2
-  - Name: Style
-    Size: 1
+  Item Type: *DOOR_DEST
   Offset: 0xCF0E94
 UNKNOWN_DPOINTERS_6:
   Type: data
@@ -4572,23 +4218,10 @@ UNKNOWN_DPOINTERS_6:
     Type: pointer
     Size: 4
   Offset: 0xCF0F2E
-DOOR_DEST_TABLE_9:
-  Type: data
+DOOR_DEST_TABLE_9: !array
   Size: 891
   Description: Door Destinations Table (9)
-  Entries:
-  - Name: Pointer
-    Size: 4
-    Type: pointer
-  - Name: Event Flag
-    Size: 2
-    Type: hexint
-  - Name: "Y"
-    Size: 2
-  - Name: X
-    Size: 2
-  - Name: Style
-    Size: 1
+  Item Type: *DOOR_DEST
   Offset: 0xCF0F32
 UNKNOWN_DPOINTERS_7:
   Type: data
@@ -4603,23 +4236,10 @@ UNKNOWN_CF12B1:
   Type: data
   Size: 11
   Offset: 0xCF12B1
-DOOR_DEST_TABLE_10:
-  Type: data
+DOOR_DEST_TABLE_10: !array
   Size: 297
   Description: Door Destinations Table (10)
-  Entries:
-  - Name: Pointer
-    Size: 4
-    Type: pointer
-  - Name: Event Flag
-    Size: 2
-    Type: hexint
-  - Name: "Y"
-    Size: 2
-  - Name: X
-    Size: 2
-  - Name: Style
-    Size: 1
+  Item Type: *DOOR_DEST
   Offset: 0xCF12BC
 UNKNOWN_DPOINTERS_8:
   Type: data
@@ -4630,23 +4250,10 @@ UNKNOWN_DPOINTERS_8:
     Type: pointer
     Size: 4
   Offset: 0xCF13E5
-DOOR_DEST_TABLE_11:
-  Type: data
+DOOR_DEST_TABLE_11: !array
   Size: 1991
   Description: Door Destinations Table (11)
-  Entries:
-  - Name: Pointer
-    Size: 4
-    Type: pointer
-  - Name: Event Flag
-    Size: 2
-    Type: hexint
-  - Name: "Y"
-    Size: 2
-  - Name: X
-    Size: 2
-  - Name: Style
-    Size: 1
+  Item Type: *DOOR_DEST
   Offset: 0xCF13E9
 UNKNOWN_DPOINTERS_9:
   Type: data
@@ -4657,23 +4264,10 @@ UNKNOWN_DPOINTERS_9:
     Type: pointer
     Size: 4
   Offset: 0xCF1BB0
-DOOR_DEST_TABLE_12:
-  Type: data
+DOOR_DEST_TABLE_12: !array
   Size: 11
   Description: Door Destinations Table (12)
-  Entries:
-  - Name: Pointer
-    Size: 4
-    Type: pointer
-  - Name: Event Flag
-    Size: 2
-    Type: hexint
-  - Name: "Y"
-    Size: 2
-  - Name: X
-    Size: 2
-  - Name: Style
-    Size: 1
+  Item Type: *DOOR_DEST
   Offset: 0xCF1BBC
 UNKNOWN_DPOINTERS_10:
   Type: data
@@ -4684,23 +4278,10 @@ UNKNOWN_DPOINTERS_10:
     Type: pointer
     Size: 4
   Offset: 0xCF1BC7
-DOOR_DEST_TABLE_13:
-  Type: data
+DOOR_DEST_TABLE_13: !array
   Size: 528
   Description: Door Destinations Table (13)
-  Entries:
-  - Name: Pointer
-    Size: 4
-    Type: pointer
-  - Name: Event Flag
-    Size: 2
-    Type: hexint
-  - Name: "Y"
-    Size: 2
-  - Name: X
-    Size: 2
-  - Name: Style
-    Size: 1
+  Item Type: *DOOR_DEST
   Offset: 0xCF1BDF
 UNKNOWN_DPOINTERS_11:
   Type: data
@@ -4711,23 +4292,10 @@ UNKNOWN_DPOINTERS_11:
     Type: pointer
     Size: 4
   Offset: 0xCF1DEF
-DOOR_DEST_TABLE_14:
-  Type: data
+DOOR_DEST_TABLE_14: !array
   Size: 22
   Description: Door Destinations Table (14)
-  Entries:
-  - Name: Pointer
-    Size: 4
-    Type: pointer
-  - Name: Event Flag
-    Size: 2
-    Type: hexint
-  - Name: "Y"
-    Size: 2
-  - Name: X
-    Size: 2
-  - Name: Style
-    Size: 1
+  Item Type: *DOOR_DEST
   Offset: 0xCF1E0F
 UNKNOWN_DPOINTERS_12:
   Type: data
@@ -4738,69 +4306,30 @@ UNKNOWN_DPOINTERS_12:
     Type: pointer
     Size: 4
   Offset: 0xCF1E25
-DOOR_DEST_TABLE_15:
-  Type: data
+DOOR_DEST_TABLE_15: !array
   Size: 341
   Description: Door Destinations Table (15)
-  Entries:
-  - Name: Pointer
-    Size: 4
-    Type: pointer
-  - Name: Event Flag
-    Size: 2
-    Type: hexint
-  - Name: "Y"
-    Size: 2
-  - Name: X
-    Size: 2
-  - Name: Style
-    Size: 1
+  Item Type: *DOOR_DEST
   Offset: 0xCF1E31
 UNKNOWN_DPOINTERS_13:
   Type: data
   Size: 34
   Description: Unknown Pointers (13)
   Offset: 0xCF1F86
-DOOR_DEST_TABLE_16:
-  Type: data
+DOOR_DEST_TABLE_16: !array
   Size: 374
   Description: Door Destinations Table (16)
-  Entries:
-  - Name: Pointer
-    Size: 4
-    Type: pointer
-  - Name: Event Flag
-    Size: 2
-    Type: hexint
-  - Name: "Y"
-    Size: 2
-  - Name: X
-    Size: 2
-  - Name: Style
-    Size: 1
+  Item Type: *DOOR_DEST
   Offset: 0xCF1FA8
 UNKNOWN_DPOINTERS_14:
   Type: data
   Size: 21
   Description: Unknown Pointers (14)
   Offset: 0xCF211E
-DOOR_DEST_TABLE_17:
-  Type: data
+DOOR_DEST_TABLE_17: !array
   Size: 242
   Description: Door Destinations Table (17)
-  Entries:
-  - Name: Pointer
-    Size: 4
-    Type: pointer
-  - Name: Event Flag
-    Size: 2
-    Type: hexint
-  - Name: "Y"
-    Size: 2
-  - Name: X
-    Size: 2
-  - Name: Style
-    Size: 1
+  Item Type: *DOOR_DEST
   Offset: 0xCF2133
 DUNGEON_MAN_SIGN_POINTERS:
   Type: data
@@ -4811,23 +4340,10 @@ DUNGEON_MAN_SIGN_POINTERS:
     Type: pointer
     Size: 4
   Offset: 0xCF2225
-DOOR_DEST_TABLE_18:
-  Type: data
+DOOR_DEST_TABLE_18: !array
   Size: 286
   Description: Door Destinations Table (18)
-  Entries:
-  - Name: Pointer
-    Size: 4
-    Type: pointer
-  - Name: Event Flag
-    Size: 2
-    Type: hexint
-  - Name: "Y"
-    Size: 2
-  - Name: X
-    Size: 2
-  - Name: Style
-    Size: 1
+  Item Type: *DOOR_DEST
   Offset: 0xCF22D5
 UNKNOWN_DPOINTERS_15:
   Type: data
@@ -4838,23 +4354,10 @@ UNKNOWN_DPOINTERS_15:
     Type: pointer
     Size: 4
   Offset: 0xCF23F3
-DOOR_DEST_TABLE_19:
-  Type: data
+DOOR_DEST_TABLE_19: !array
   Size: 484
   Description: Door Destinations Table (19)
-  Entries:
-  - Name: Pointer
-    Size: 4
-    Type: pointer
-  - Name: Event Flag
-    Size: 2
-    Type: hexint
-  - Name: "Y"
-    Size: 2
-  - Name: X
-    Size: 2
-  - Name: Style
-    Size: 1
+  Item Type: *DOOR_DEST
   Offset: 0xCF23FF
 UNKNOWN_DPOINTERS_16:
   Type: data
@@ -4865,23 +4368,10 @@ UNKNOWN_DPOINTERS_16:
     Type: pointer
     Size: 4
   Offset: 0xCF25E3
-DOOR_DEST_TABLE_20:
-  Type: data
+DOOR_DEST_TABLE_20: !array
   Size: 143
   Description: Door Destinations Table (20)
-  Entries:
-  - Name: Pointer
-    Size: 4
-    Type: pointer
-  - Name: Event Flag
-    Size: 2
-    Type: hexint
-  - Name: "Y"
-    Size: 2
-  - Name: X
-    Size: 2
-  - Name: Style
-    Size: 1
+  Item Type: *DOOR_DEST
   Offset: 0xCF25FB
 UNKNOWN_CF268A:
   Type: data
@@ -4965,8 +4455,7 @@ NPC_CONFIG_TABLE:
     Size: 4
     Type: pointer
   Offset: 0xCF89C1
-UNKNOWN_CFF2F1:
-  Type: empty
+UNKNOWN_CFF2F1: !empty
   Size: 3343
   Offset: 0xCFF2F1
 DOOR_POINTER_TABLE:
@@ -5069,8 +4558,7 @@ ENEMY_BATTLE_GROUPS_TABLE:
   Description: Enemy Battle Groups Table
   Size: 2695
   Offset: 0xD0D52D
-UNKNOWN_D0DFB4:
-  Type: empty
+UNKNOWN_D0DFB4: !empty
   Size: 8268
   Offset: 0xD0DFB4
 OVERWORLD_SPRITES:
@@ -5142,7 +4630,7 @@ PSI_TELEPORT_DEST_TABLE:
   Description: PSI Teleport Destination Table
   Entries:
   - Name: Name
-    Type: standardtext
+    Type: script
     Size: 10
   - Name: Event Flag
     Type: hexint
@@ -5152,107 +4640,120 @@ PSI_TELEPORT_DEST_TABLE:
   - Name: true
     Size: 2
   Offset: 0xD5899E
-UNKNOWN_D58A9E:
-  Type: data
+UNKNOWN_D58A9E: !unknown
   Size: 32
   Offset: 0xD58A9E
-TELEPHONE_CONTACTS_TABLE:
-  Type: data
+TELEPHONE_CONTACTS_TABLE: !array
   Size: 96
   Description: Telephone Contacts Table
-  Entries:
-  - Name: Name
-    Size: 10
-    Type: standardtext
-  - Name: Event Flag
-    Size: 2
-    Type: hexint
-  - Name: Text Pointer
-    Size: 4
-    Type: pointer
+  Item Type: !struct
+    Entries:
+      NAME: !script
+        Pretty Name: Name
+        Size: 10
+      EVENTFLAG: !int
+        Pretty Name: Event Flag
+        Size: 2
+        Base: 16
+      TEXTPOINTER: !pointer
+        Pretty Name: Text Pointer
+        Size: 4
   Offset: 0xD58ABE
-BATTLE_ACTION_TABLE:
-  Type: data
+BATTLE_ACTION_TABLE: !array
   Description: Battle Action Table
   Size: 3816
-  Entries:
-  - Name: Direction
-    Size: 1
-    values:
-    - party
-    - enemy
-  - Name: Target
-    Size: 1
-    values:
-    - none
-    - one
-    - random
-    - row
-    - all
-  - Name: Action type
-    Size: 1
-    values:
-    - nothing
-    - physical (affected by shields and defending)
-    - physical (unaffected by shields and defending)
-    - PSI
-    - item
-    - other
-  - Name: PP Cost
-    Size: 1
-  - Name: Text Address
-    Size: 4
-    Type: pointer
-  - Name: Code Address
-    Size: 4
-    Type: pointer
+  Item Type: !struct
+    Entries:
+      DIRECTION: !int
+        Pretty Name: Direction
+        Size: 1
+        Values:
+        - enemy
+        - party
+      TARGET: !int
+        Pretty Name: Target
+        Size: 1
+        Values:
+        - none
+        - one
+        - random
+        - row
+        - all
+      ACTIONTYPE: !int
+        Pretty Name: Action type
+        Size: 1
+        Values:
+        - nothing
+        - physical (affected by shields and defending)
+        - physical (unaffected by shields and defending)
+        - PSI
+        - item
+        - other
+      PPCOST: !int
+        Pretty Name: PP Cost
+        Size: 1
+      TEXTADDRESS: !pointer
+        Pretty Name: Text Address
+        Size: 4
+      CODEADDRESS: !pointer
+        Pretty Name: Code Address
+        Size: 4
   Offset: 0xD58B1E
-PSI_ABILITY_TABLE:
-  Type: data
+PSI_ABILITY_TABLE: !array
   Description: PSI Ability Table
   Size: 810
-  Entries:
-  - Name: PSI Name
-    Size: 1
-    substtable: PSI_NAME_TABLE
-  - Name: Strength
-    Size: 1
-    values:
-    - "": ~
-    - α
-    - β
-    - γ
-    - Σ
-    - Ω
-  - Name: Type
-    Size: 1
-    bitvalues:
-    - Offense
-    - Recovery
-    - Assist
-    - Other
-  - Name: Target
-    Size: 1
-    values:
-    - ???
-    - Nobody
-    - Enemies
-    - Allies
-  - Name: Effect
-    Size: 2
-  - Name: Level learned by Ness
-    Size: 1
-  - Name: Level learned by Paula
-    Size: 1
-  - Name: Level learned by Poo
-    Size: 1
-  - Name: PSI Menu position (X)
-    Size: 1
-  - Name: PSI Menu position (Y)
-    Size: 1
-  - Name: Text Address
-    Size: 4
-    Type: pointer
+  Item Type: !struct
+    Entries:
+      PSINAME: !int
+        Pretty Name: PSI Name
+        Size: 1
+        References: PSI_NAME_TABLE
+      STRENGTH: !int
+        Pretty Name: Strength
+        Size: 1
+        Values:
+        - ""
+        - α
+        - β
+        - γ
+        - Σ
+        - Ω
+      TYPE: !int
+        Pretty Name: Type
+        Size: 1
+        Bit Values:
+        - Offense
+        - Recovery
+        - Assist
+        - Other
+      OUTOFBATTLEUSABILITY: !int
+        Pretty Name: Usability Outside of Battle
+        Size: 1
+        Values:
+        - ???
+        - Other
+        - Unusable
+        - Usable
+      ACTION: !int
+        Size: 2
+      NESSLEVEL: !int
+        Pretty Name: Level learned by Ness
+        Size: 1
+      PAULALEVEL: !int
+        Pretty Name: Level learned by Paula
+        Size: 1
+      POOLEVEL: !int
+        Pretty Name: Level learned by Poo
+        Size: 1
+      PSIMENUPOSITIONX: !int
+        Pretty Name: PSI Menu position (X)
+        Size: 1
+      PSIMENUPOSITIONY: !int
+        Pretty Name: PSI Menu position (Y)
+        Size: 1
+      TEXTADDRESS: !pointer
+        Pretty Name: Text Address
+        Size: 4
   Offset: 0xD59A06
 PSI_NAME_TABLE:
   Type: data
@@ -5261,360 +4762,202 @@ PSI_NAME_TABLE:
   Entries:
   - Name: Name
     Size: 10
-    Type: standardtext
+    Type: script
   Offset: 0xD59D30
-NPC_AI_TABLE:
-  Type: data
+NPC_AI_TABLE: !unknown
   Description: NPC AI Table
   Size: 38
   Offset: 0xD59DDA
 EXP_TABLE:
-  Type: data
   Description: Level-up EXP Table
   Size: 1600
-  Entries:
-  - Name: Level 00 EXP
-    Size: 4
-  - Name: Level 01 EXP
-    Size: 4
-  - Name: Level 02 EXP
-    Size: 4
-  - Name: Level 03 EXP
-    Size: 4
-  - Name: Level 04 EXP
-    Size: 4
-  - Name: Level 05 EXP
-    Size: 4
-  - Name: Level 06 EXP
-    Size: 4
-  - Name: Level 07 EXP
-    Size: 4
-  - Name: Level 08 EXP
-    Size: 4
-  - Name: Level 09 EXP
-    Size: 4
-  - Name: Level 10 EXP
-    Size: 4
-  - Name: Level 11 EXP
-    Size: 4
-  - Name: Level 12 EXP
-    Size: 4
-  - Name: Level 13 EXP
-    Size: 4
-  - Name: Level 14 EXP
-    Size: 4
-  - Name: Level 15 EXP
-    Size: 4
-  - Name: Level 16 EXP
-    Size: 4
-  - Name: Level 17 EXP
-    Size: 4
-  - Name: Level 18 EXP
-    Size: 4
-  - Name: Level 19 EXP
-    Size: 4
-  - Name: Level 20 EXP
-    Size: 4
-  - Name: Level 21 EXP
-    Size: 4
-  - Name: Level 22 EXP
-    Size: 4
-  - Name: Level 23 EXP
-    Size: 4
-  - Name: Level 24 EXP
-    Size: 4
-  - Name: Level 25 EXP
-    Size: 4
-  - Name: Level 26 EXP
-    Size: 4
-  - Name: Level 27 EXP
-    Size: 4
-  - Name: Level 28 EXP
-    Size: 4
-  - Name: Level 29 EXP
-    Size: 4
-  - Name: Level 30 EXP
-    Size: 4
-  - Name: Level 31 EXP
-    Size: 4
-  - Name: Level 32 EXP
-    Size: 4
-  - Name: Level 33 EXP
-    Size: 4
-  - Name: Level 34 EXP
-    Size: 4
-  - Name: Level 35 EXP
-    Size: 4
-  - Name: Level 36 EXP
-    Size: 4
-  - Name: Level 37 EXP
-    Size: 4
-  - Name: Level 38 EXP
-    Size: 4
-  - Name: Level 39 EXP
-    Size: 4
-  - Name: Level 40 EXP
-    Size: 4
-  - Name: Level 41 EXP
-    Size: 4
-  - Name: Level 42 EXP
-    Size: 4
-  - Name: Level 43 EXP
-    Size: 4
-  - Name: Level 44 EXP
-    Size: 4
-  - Name: Level 45 EXP
-    Size: 4
-  - Name: Level 46 EXP
-    Size: 4
-  - Name: Level 47 EXP
-    Size: 4
-  - Name: Level 48 EXP
-    Size: 4
-  - Name: Level 49 EXP
-    Size: 4
-  - Name: Level 50 EXP
-    Size: 4
-  - Name: Level 51 EXP
-    Size: 4
-  - Name: Level 52 EXP
-    Size: 4
-  - Name: Level 53 EXP
-    Size: 4
-  - Name: Level 54 EXP
-    Size: 4
-  - Name: Level 55 EXP
-    Size: 4
-  - Name: Level 56 EXP
-    Size: 4
-  - Name: Level 57 EXP
-    Size: 4
-  - Name: Level 58 EXP
-    Size: 4
-  - Name: Level 59 EXP
-    Size: 4
-  - Name: Level 60 EXP
-    Size: 4
-  - Name: Level 61 EXP
-    Size: 4
-  - Name: Level 62 EXP
-    Size: 4
-  - Name: Level 63 EXP
-    Size: 4
-  - Name: Level 64 EXP
-    Size: 4
-  - Name: Level 65 EXP
-    Size: 4
-  - Name: Level 66 EXP
-    Size: 4
-  - Name: Level 67 EXP
-    Size: 4
-  - Name: Level 68 EXP
-    Size: 4
-  - Name: Level 69 EXP
-    Size: 4
-  - Name: Level 70 EXP
-    Size: 4
-  - Name: Level 71 EXP
-    Size: 4
-  - Name: Level 72 EXP
-    Size: 4
-  - Name: Level 73 EXP
-    Size: 4
-  - Name: Level 74 EXP
-    Size: 4
-  - Name: Level 75 EXP
-    Size: 4
-  - Name: Level 76 EXP
-    Size: 4
-  - Name: Level 77 EXP
-    Size: 4
-  - Name: Level 78 EXP
-    Size: 4
-  - Name: Level 79 EXP
-    Size: 4
-  - Name: Level 80 EXP
-    Size: 4
-  - Name: Level 81 EXP
-    Size: 4
-  - Name: Level 82 EXP
-    Size: 4
-  - Name: Level 83 EXP
-    Size: 4
-  - Name: Level 84 EXP
-    Size: 4
-  - Name: Level 85 EXP
-    Size: 4
-  - Name: Level 86 EXP
-    Size: 4
-  - Name: Level 87 EXP
-    Size: 4
-  - Name: Level 88 EXP
-    Size: 4
-  - Name: Level 89 EXP
-    Size: 4
-  - Name: Level 90 EXP
-    Size: 4
-  - Name: Level 91 EXP
-    Size: 4
-  - Name: Level 92 EXP
-    Size: 4
-  - Name: Level 93 EXP
-    Size: 4
-  - Name: Level 94 EXP
-    Size: 4
-  - Name: Level 95 EXP
-    Size: 4
-  - Name: Level 96 EXP
-    Size: 4
-  - Name: Level 97 EXP
-    Size: 4
-  - Name: Level 98 EXP
-    Size: 4
-  - Name: Level 99 EXP
-    Size: 4
+  Item Type: !array
+    Size: 400
+    Item Type: !int
+      Size: 4
   Offset: 0xD59E00
-ENEMY_CONFIGURATION_TABLE:
-  Type: data
+ENEMY_CONFIGURATION_TABLE: !array
   Description: Enemy Configuration Table
   Size: 17787
-  Entries:
-  - Name: Name
-    Size: 10
-    Type: standardtext
-  - Name: Type
-    Size: 1
-    values:
-    - Normal
-    - Insect
-    - Metal
-  - Name: Battle Sprite
-    Size: 2
-  - Name: Overworld Sprite
-    Size: 2
-  - Name: Run Flag
-    Size: 1
-  - Name: HP
-    Size: 2
-  - Name: PP
-    Size: 2
-  - Name: Experience points
-    Size: 4
-  - Name: Money
-    Size: 2
-  - Name: Movement pattern
-    Size: 2
-  - Name: Encounter Text Pointer
-    Size: 4
-    Type: pointer
-  - Name: Death Text Pointer
-    Size: 4
-    Type: pointer
-  - Name: Battle Sprite Palette
-    Size: 1
-  - Name: Level
-    Size: 1
-  - Name: Music
-    Size: 1
-  - Name: Offense
-    Size: 2
-  - Name: Defense
-    Size: 2
-  - Name: Speed
-    Size: 1
-  - Name: Guts
-    Size: 1
-  - Name: Luck
-    Size: 1
-  - Name: Fire vulnerability
-    Size: 1
-    values:
-    - 100%
-    - 70%
-    - 40%
-    - 5%
-  - Name: Freeze vulnerability
-    Size: 1
-    values:
-    - 100%
-    - 70%
-    - 40%
-    - 5%
-  - Name: Flash vulnerability
-    Size: 1
-    values:
-    - 100%
-    - 70%
-    - 40%
-    - 5%
-  - Name: Paralysis vulnerability
-    Size: 1
-    values:
-    - 100%
-    - 70%
-    - 40%
-    - 5%
-  - Name: Hypnosis/Brainshock vulnerability
-    Size: 1
-    values:
-    - 100%
-    - 70%
-    - 40%
-    - 5%
-  - Name: Miss Rate
-    Size: 1
-  - Name: Action Order
-    Size: 1
-  - Name: Action 1
-    Size: 2
-  - Name: Action 2
-    Size: 2
-  - Name: Action 3
-    Size: 2
-  - Name: Action 4
-    Size: 2
-  - Name: Final Action
-    Size: 2
-  - Name: Action 1 Argument
-    Size: 1
-  - Name: Action 2 Argument
-    Size: 1
-  - Name: Action 3 Argument
-    Size: 1
-  - Name: Action 4 Argument
-    Size: 1
-  - Name: Final Action Argument
-    Size: 1
-  - Name: Unknown
-    Size: 1
-  - Name: Boss Flag
-    Size: 1
-  - Name: Item Rarity
-    Size: 1
-  - Name: Item Dropped
-    Size: 1
-  - Name: Initial Status
-    Size: 1
-    values:
-    - Normal
-    - PSI Shield Alpha
-    - PSI Shield Beta
-    - Shield Alpha
-    - Shield Beta
-    - Asleep
-    - Cannot Concentrate
-    - Feeling Strange
-  - Name: Death Sound
-    Size: 1
-    values:
-    - Normal
-    - Boss
-  - Name: Row
-    Size: 1
-  - Name: Max Call
-    Size: 1
-  - Name: Mirror Success Rate
-    Size: 1
+  Item Type: !struct
+    Entries:
+      NAME: !script
+        Size: 10
+      TYPE: !int
+        Pretty Name: Type
+        Size: 1
+        Values:
+        - Normal
+        - Insect
+        - Metal
+      BATTLESPRITE: !int
+        Pretty Name: Battle Sprite
+        Size: 2
+      OVERWORLDSPRITE: !int
+        Pretty Name: Overworld Sprite
+        Size: 2
+      RUNFLAG: !int
+        Pretty Name: Run Flag
+        Size: 1
+        Values:
+        - 0
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - Unknown
+        - True
+        - False
+      HP: !int
+        Size: 2
+      PP: !int
+        Size: 2
+      EXP: !int
+        Pretty Name: Experience points
+        Size: 4
+      MONEY: !int
+        Pretty Name: Money
+        Size: 2
+      MOVEMENTPATTERN: !int
+        Pretty Name: Movement pattern
+        Size: 2
+      ENCOUNTERTEXTPTR: !pointer
+        Pretty Name: Encounter Text Pointer
+        Size: 4
+      DEATHTEXTPTR: !pointer
+        Pretty Name: Death Text Pointer
+        Size: 4
+      BATTLESPRITEPALETTE: !int
+        Pretty Name: Battle Sprite Palette
+        Size: 1
+      LEVEL: !int
+        Pretty Name: Level
+        Size: 1
+      MUSIC: !int
+        Pretty Name: Music
+        Size: 1
+      OFFENSE: !int
+        Pretty Name: Offense
+        Size: 2
+      DEFENSE: !int
+        Pretty Name: Defense
+        Size: 2
+      SPEED: !int
+        Pretty Name: Speed
+        Size: 1
+      GUTS: !int
+        Pretty Name: Guts
+        Size: 1
+      LUCK: !int
+        Pretty Name: Luck
+        Size: 1
+      FIREVULNERABILITY: !int
+        Pretty Name: Fire vulnerability
+        Size: 1
+        Values: *RESISTANCES
+      FREEZEVULNERABILITY: !int
+        Pretty Name: Freeze vulnerability
+        Size: 1
+        Values: *RESISTANCES
+      FLASHVULNERABILITY: !int
+        Pretty Name: Flash vulnerability
+        Size: 1
+        Values: *RESISTANCES
+      PARALYSISVULNERABILITY: !int
+        Pretty Name: Paralysis vulnerability
+        Size: 1
+        Values: *RESISTANCES
+      HYPNOSHOCKVULNERABILITY: !int
+        Pretty Name: Hypnosis/Brainshock vulnerability
+        Size: 1
+        Values: *RESISTANCES
+      MISSRATE: !int
+        Pretty Name: Miss Rate
+        Size: 1
+      ACTIONORDER: !int
+        Pretty Name: Action Order
+        Size: 1
+      ACTION1: !int
+        Pretty Name: Action 1
+        Size: 2
+      ACTION2: !int
+        Pretty Name: Action 2
+        Size: 2
+      ACTION3: !int
+        Pretty Name: Action 3
+        Size: 2
+      ACTION4: !int
+        Pretty Name: Action 4
+        Size: 2
+      FINALACTION: !int
+        Pretty Name: Final Action
+        Size: 2
+      ACTION1ARG: !int
+        Pretty Name: Action 1 Argument
+        Size: 1
+      ACTION2ARG: !int
+        Pretty Name: Action 2 Argument
+        Size: 1
+      ACTION3ARG: !int
+        Pretty Name: Action 3 Argument
+        Size: 1
+      ACTION4ARG: !int
+        Pretty Name: Action 4 Argument
+        Size: 1
+      FINALACTIONARG: !int
+        Pretty Name: Final Action Argument
+        Size: 1
+      IQ: !int
+        Size: 1
+      BOSS: !int
+        Pretty Name: Boss Flag
+        Size: 1
+        Values:
+        - False
+        - True
+      ITEMDROPRATE: !int
+        Pretty Name: Item Rarity
+        Size: 1
+        Values:
+        - 1/128
+        - 2/128
+        - 4/128
+        - 8/128
+        - 16/128
+        - 32/128
+        - 64/128
+        - 128/128
+      ITEMDROPPED: !int
+        Pretty Name: Item Dropped
+        Size: 1
+      INITIALSTATUS: !int
+        Pretty Name: Initial Status
+        Size: 1
+        Values:
+        - Normal
+        - PSI Shield Alpha
+        - PSI Shield Beta
+        - Shield Alpha
+        - Shield Beta
+        - Asleep
+        - Cannot Concentrate
+        - Feeling Strange
+      DEATHTYPE: !int
+        Pretty Name: Death Sound
+        Size: 1
+        Values:
+        - Normal
+        - Boss
+      ROW: !int
+        Pretty Name: Row
+        Size: 1
+      MAXCALLED: !int
+        Pretty Name: Max Call
+        Size: 1
+      MIRRORSUCCESS: !int
+        Pretty Name: Mirror Success Rate
+        Size: 1
   Offset: 0xD5A440
 STATS_GROWTH_VARS:
   Type: data
@@ -5719,25 +5062,25 @@ DONT_CARE_NAMES:
   Description: Don't Care Preset Character Names
   Entries:
   - Name: Name 1
-    Type: standardtext
+    Type: script
     Size: 6
   - Name: Name 2
-    Type: standardtext
+    Type: script
     Size: 6
   - Name: Name 3
-    Type: standardtext
+    Type: script
     Size: 6
   - Name: Name 4
-    Type: standardtext
+    Type: script
     Size: 6
   - Name: Name 5
-    Type: standardtext
+    Type: script
     Size: 6
   - Name: Name 6
-    Type: standardtext
+    Type: script
     Size: 6
   - Name: Name 7
-    Type: standardtext
+    Type: script
     Size: 6
   Offset: 0xD5F42F
 INITIAL_STATS:
@@ -5872,8 +5215,7 @@ FAULTY_GAME_PAK_GRAPHICS:
   Size: 243
   Description: Faulty Game Pak Notice Screen Graphics
   Offset: 0xD8FAD4
-UNKNOWN_D8FBC7:
-  Type: empty
+UNKNOWN_D8FBC7: !empty
   Size: 1081
   Offset: 0xD8FBC7
 MAP_DATA_TILE_ARRANGEMENT_BLOCK_2:
@@ -5886,8 +5228,7 @@ MAP_DATA_TILE_GRAPHICS_BLOCK_1:
   Size: 11718
   Description: 'Map Data: Tile Graphics Block 1'
   Offset: 0xD9CE51
-UNKNOWN_D9FC17:
-  Type: empty
+UNKNOWN_D9FC17: !empty
   Size: 1001
   Offset: 0xD9FC17
 MAP_DATA_TILE_ARRANGEMENT_BLOCK_3:
@@ -5913,8 +5254,7 @@ MAP_DATA_UNKNOWN_PALETTE_PTR_TABLE:
     Size: 3
     Type: pointer
   Offset: 0xDAFAAE
-UNKNOWN_DAFB0E:
-  Type: empty
+UNKNOWN_DAFB0E: !empty
   Size: 1266
   Offset: 0xDAFB0E
 MAP_DATA_TILE_ARRANGEMENT_BLOCK_4:
@@ -5922,8 +5262,7 @@ MAP_DATA_TILE_ARRANGEMENT_BLOCK_4:
   Description: 'Map Data: Tile Arrangement Block 4'
   Size: 62164
   Offset: 0xDB0000
-UNKNOWN_DBF2D4:
-  Type: empty
+UNKNOWN_DBF2D4: !empty
   Size: 3372
   Offset: 0xDBF2D4
 MAP_DATA_TILE_ARRANGEMENT_BLOCK_5:
@@ -5944,8 +5283,7 @@ MAP_DATA_PER-SECTOR_MUSIC:
   - Name: Music
     Size: 1
   Offset: 0xDCD634
-UNKNOWN_DCE034:
-  Type: empty
+UNKNOWN_DCE034: !empty
   Size: 8140
   Offset: 0xDCE034
 MAP_DATA_TILE_GRAPHICS_BLOCK_3:
@@ -5953,8 +5291,7 @@ MAP_DATA_TILE_GRAPHICS_BLOCK_3:
   Size: 65321
   Description: 'Map Data: Tile Graphics Block 3'
   Offset: 0xDD0000
-UNKNOWN_DDFF29:
-  Type: empty
+UNKNOWN_DDFF29: !empty
   Size: 215
   Offset: 0xDDFF29
 MAP_DATA_TILE_GRAPHICS_BLOCK_4:
@@ -5967,8 +5304,7 @@ MAP_DATA_ANIMATED_TILE_GFX_BLOCK_1:
   Size: 3062
   Description: 'Map Data: Graphics for Animated Tiles Block 1'
   Offset: 0xDEF08A
-UNKNOWN_DEFC80:
-  Type: empty
+UNKNOWN_DEFC80: !empty
   Size: 896
   Offset: 0xDEFC80
 MAP_DATA_TILE_GRAPHICS_BLOCK_5:
@@ -6000,162 +5336,151 @@ MAP_DATA_PALETTE_ANIM_TABLE:
   Size: 1579
   Description: 'Map Data: Palette Animation Table'
   Offset: 0xDFE5E6
-UNKNOWN_DFEC11:
-  Type: empty
+UNKNOWN_DFEC11: !empty
   Size: 5103
   Offset: 0xDFEC11
-TEXT_WINDOW_GFX:
-  Type: data
+TEXT_WINDOW_GFX: !unknown
   Size: 4290
   Description: Text Window Graphics
   Offset: 0xE00000
-FLAVOURED_TEXT_GFX:
-  Type: data
+FLAVOURED_TEXT_GFX: !unknown
   Size: 76
   Description: Flavored Text Window Graphics
   Offset: 0xE010C2
-NORMAL_FONT:
-  Type: data
+NORMAL_FONT: !array
   Description: Normal font
   Size: 3584
-  Entries:
-  - Name: Tile
+  Item Type: !tile
     Size: 16
-    bpp: 2
-    Type: tile
+    BPP: 2
   Offset: 0xE0110E
-TEXT_WINDOW_PROPERTIES:
-  Type: data
+TEXT_WINDOW_PROPERTIES: !unknown
   Description: Text window properties table
   Size: 15
   Offset: 0xE01F0E
-TEXT_WINDOW_FLAVOUR_PALETTES:
-  Type: data
+TEXT_WINDOW_FLAVOUR_PALETTES: !array
   Description: Text window flavor palettes
   Size: 384
-  Entries:
-  - Name: Text Palette
-    Size: 8
-    Type: palette
-  - Name: Cursor, Box, Number Palette
-    Size: 8
-    Type: palette
-  - Name: Unknown Palette
-    Size: 8
-    Type: palette
-  - Name: Special Text Palette
-    Size: 8
-    Type: palette
-  - Name: HP/PP Palette
-    Size: 8
-    Type: palette
-  - Name: Darkened Palette
-    Size: 8
-    Type: palette
-  - Name: AUTO, affliction Palette
-    Size: 8
-    Type: palette
-  - Name: Non-battle text Palette
-    Size: 8
-    Type: palette
+  Item Type: !struct
+    Entries:
+      TEXTPALETTE: !array
+        Pretty Name: Text Palette
+        Item Type: !color
+          Size: 2
+        Size: 8
+      CURSORBOXNUMPALETTE: !array
+        Pretty Name: Cursor, Box, Number Palette
+        Item Type: !color
+          Size: 2
+        Size: 8
+      UNKNOWNPALETTE: !array
+        Pretty Name: Unknown Palette
+        Item Type: !color
+          Size: 2
+        Size: 8
+      SPECIALTEXTPALETTE: !array
+        Pretty Name: Special Text Palette
+        Item Type: !color
+          Size: 2
+        Size: 8
+      HPPPPALETTE: !array
+        Pretty Name: HP/PP Palette
+        Item Type: !color
+          Size: 2
+        Size: 8
+      DARKENEDPALETTE: !array
+        Pretty Name: Darkened Palette
+        Item Type: !color
+          Size: 2
+        Size: 8
+      AUTOAFFLICTIONPALETTE: !array
+        Pretty Name: AUTO, affliction Palette
+        Item Type: !color
+          Size: 2
+        Size: 8
+      NONBATTLETEXTPALETTE: !array
+        Pretty Name: Non-battle text Palette
+        Item Type: !color
+          Size: 2
+        Size: 8
   Offset: 0xE01F1D
-BIG_FONT:
-  Type: data
+BIG_FONT: !array
   Description: Big font
   Size: 4096
-  Entries:
-  - Name: Tile
+  Item Type: !tile
     Size: 16
-    bpp: 2
-    Type: tile
+    BPP: 2
   Offset: 0xE0209D
-UNKNOWN_E0309D:
-  Type: data
+UNKNOWN_E0309D: !unknown
   Size: 72
   Offset: 0xE0309D
-TOWN_MAP_GFX_POINTER_TABLE:
-  Type: data
+TOWN_MAP_GFX_POINTER_TABLE: !array
   Size: 24
   Description: Town Map Graphics Pointer Table
-  Entries:
-  - Name: Pointer
+  Item Type: !pointer
     Size: 4
-    Type: pointer
   Offset: 0xE030E5
-TOWN_MAP_ONETT:
-  Type: data
+TOWN_MAP_ONETT: !unknown
   Size: 10104
   Description: Onett Town Map Data
   Offset: 0xE030FD
-TOWN_MAP_TWOSON:
-  Type: data
+TOWN_MAP_TWOSON: !unknown
   Size: 7681
   Description: Twoson Town Map Data
   Offset: 0xE05875
-TOWN_MAP_THREED:
-  Type: data
+TOWN_MAP_THREED: !unknown
   Size: 7266
   Description: Threed Town Map Data
   Offset: 0xE07676
-TOWN_MAP_FOURSIDE:
-  Type: data
+TOWN_MAP_FOURSIDE: !unknown
   Size: 10811
   Description: Fourside Town Map Data
   Offset: 0xE092D8
-TOWN_MAP_SCARABA:
-  Type: data
+TOWN_MAP_SCARABA: !unknown
   Size: 6755
   Description: Scaraba Town Map Data
   Offset: 0xE0BD13
-TOWN_MAP_SUMMERS:
-  Type: data
+TOWN_MAP_SUMMERS: !unknown
   Size: 9490
   Description: Summers Town Map Data
   Offset: 0xE0D776
-UNKNOWN_E0FC88:
-  Type: empty
+UNKNOWN_E0FC88: !empty
   Size: 888
   Offset: 0xE0FC88
-UNKNOWN_E10000:
-  Type: data
+UNKNOWN_E10000: !unknown
   Size: 9185
   Offset: 0xE10000
-PHOTOGRAPHER_CFG_TABLE:
-  Type: data
+PHOTOGRAPHER_CFG_TABLE: !array
   Description: Wandering Photographer Configuration Table
   Size: 1984
-  Entries:
-  - Name: Event Flag
-    Size: 2
-    Type: hexint
-  - Name: ???
-    Size: 3
-    Type: bytearray
-  - Name: ????
-    Size: 2
-  - Name: ?????
-    Size: 1
-    Type: hexint
-  - Name: ??????
-    Size: 54
-    Type: bytearray
+  Item Type: !struct
+    Entries:
+      EVENTFLAG: !int
+        Pretty Name: Event Flag
+        Size: 2
+        Base: 16
+      UNKNOWNA: !unknown
+        Size: 3
+      UNKNOWNB: !int
+        Size: 2
+      UNKNOWNC: !int
+        Size: 1
+        Base: 16
+      UNKNOWND: !unknown
+        Size: 54
   Offset: 0xE123E1
-COMPRESSED_PALETTE_UNKNOWN:
-  Type: data
+COMPRESSED_PALETTE_UNKNOWN: !unknown
   Size: 2549
   Description: Compressed Palette Data - Indeterminate Use
   Offset: 0xE12BA1
-STAFF_TEXT:
-  Type: data
+STAFF_TEXT: !array
   Size: 3251
   Description: Staff Credits Sequence Text
-  Entries:
-  - Name: Text
-    terminator: 0
-    Type: stafftext
+  Item Type: !script
+    Terminator: 0
+    Charset: stafftext
   Offset: 0xE13596
-UNKNOWN_E14249:
-  Type: assembly
+UNKNOWN_E14249: !assembly
   Size: 206
   labels:
     0x4252: UNKNOWN0
@@ -6177,1221 +5502,756 @@ UNKNOWN_E14249:
     0x430E: UNKNOWN16
     0x4315: UNKNOWN17
   Offset: 0xE14249
-APE_ARRANGEMENT:
-  Type: data
+APE_ARRANGEMENT: !unknown
   Size: 105
   Description: '"APE" Logo Arrangement'
   Offset: 0xE14317
-APE_GRAPHICS:
-  Type: data
+APE_GRAPHICS: !unknown
   Size: 518
   Description: '"APE" Logo Graphics'
   Offset: 0xE14380
-APE_PALETTE:
-  Type: data
+APE_PALETTE: !unknown
   Size: 68
   Description: '"APE" Logo Palette'
   Offset: 0xE14586
-HALKEN_ARRANGEMENT:
-  Type: data
+HALKEN_ARRANGEMENT: !unknown
   Size: 116
   Description: '"HALKEN" Logo Arrangement'
   Offset: 0xE145CA
-HALKEN_GRAPHICS:
-  Type: data
+HALKEN_GRAPHICS: !unknown
   Size: 464
   Description: '"HALKEN" Logo Graphics'
   Offset: 0xE1463E
-HALKEN_PALETTE:
-  Type: data
+HALKEN_PALETTE: !unknown
   Size: 157
   Description: '"HALKEN" Logo Palette'
   Offset: 0xE1480E
-NINTENDO_ARRANGEMENT:
-  Type: data
+NINTENDO_ARRANGEMENT: !unknown
   Size: 73
   Description: '"Nintendo" Logo Arrangement'
   Offset: 0xE148AB
-NINTENDO_GRAPHICS:
-  Type: data
+NINTENDO_GRAPHICS: !unknown
   Size: 241
   Description: '"Nintendo" Logo Graphics'
   Offset: 0xE148F4
-NINTENDO_PALETTE:
-  Type: data
+NINTENDO_PALETTE: !unknown
   Size: 23
   Description: '"Nintendo" Logo Palette'
   Offset: 0xE149E5
-GAS_STATION_ARRANGEMENT:
-  Type: data
+GAS_STATION_ARRANGEMENT: !unknown
   Size: 1362
   Description: Gas Station Intro Arrangement
   Offset: 0xE149FC
-GAS_STATION_GRAPHICS:
-  Type: data
+GAS_STATION_GRAPHICS: !unknown
   Size: 19819
   Description: Gas Station Intro Graphics
   Offset: 0xE14F4E
-GAS_STATION_PALETTE:
-  Type: data
+GAS_STATION_PALETTE: !unknown
   Size: 166
   Description: Gas Station Intro Palette
   Offset: 0xE19CB9
-GAS_STATION_PALETTE2:
-  Type: data
+GAS_STATION_PALETTE2: !unknown
   Size: 130
   Description: Gas Station Intro Palette 2
   Offset: 0xE19D5F
-UNKNOWN_E19DE1:
-  Type: data
+UNKNOWN_E19DE1: !unknown
   Size: 25119
   Offset: 0xE19DE1
-AUDIO_PACK_108:
-  Type: data
+AUDIO_PACK_108: !struct
   Size: 30704
-  Description: Audio Block
+  Entries: &AUDIO_PACK
+    SIZE: !int
+      Size: 2
+    BASEADDRESS: !int
+      Base: 16
+      Size: 2
+    DATA: !unknown
+      Size: SIZE-4
   Offset: 0xE20000
-AUDIO_PACK_0:
-  Type: data
+AUDIO_PACK_0: !unknown
   Size: 30012
-  Description: Audio Block
   Offset: 0xE277F0
-AUDIO_PACK_110:
-  Type: data
+AUDIO_PACK_110: !unknown
   Size: 4062
-  Description: Audio Block
   Offset: 0xE2ED2C
-AUDIO_PACK_6:
-  Type: data
+AUDIO_PACK_6: !unknown
   Size: 758
-  Description: Audio Block
   Offset: 0xE2FD0A
-AUDIO_PACK_3:
-  Type: data
+AUDIO_PACK_3: !unknown
   Size: 24420
-  Description: Audio Block
   Offset: 0xE30000
-AUDIO_PACK_70:
-  Type: data
+AUDIO_PACK_70: !unknown
   Size: 20886
-  Description: Audio Block
   Offset: 0xE35F64
-AUDIO_PACK_37:
-  Type: data
+AUDIO_PACK_37: !unknown
   Size: 19666
-  Description: Audio Block
   Offset: 0xE3B0FA
-AUDIO_PACK_32:
-  Type: data
+AUDIO_PACK_32: !unknown
   Size: 564
-  Description: Audio Block
   Offset: 0xE3FDCC
-AUDIO_PACK_64:
-  Type: data
+AUDIO_PACK_64: !unknown
   Size: 20810
-  Description: Audio Block
   Offset: 0xE40000
-AUDIO_PACK_42:
-  Type: data
+AUDIO_PACK_42: !unknown
   Size: 20712
-  Description: Audio Block
   Offset: 0xE4514A
-AUDIO_PACK_126:
-  Type: data
+AUDIO_PACK_126: !unknown
   Size: 19614
-  Description: Audio Block
   Offset: 0xE4A232
-AUDIO_PACK_36:
-  Type: data
+AUDIO_PACK_36: !unknown
   Size: 3932
-  Description: Audio Block
   Offset: 0xE4EED0
-AUDIO_PACK_128:
-  Type: data
+AUDIO_PACK_128: !unknown
   Size: 466
-  Description: Audio Block
   Offset: 0xE4FE2C
-UNKNOWN_E4FFFE:
-  Type: empty
+UNKNOWN_E4FFFE: !empty
   Size: 2
   Offset: 0xE4FFFE
-AUDIO_PACK_50:
-  Type: data
+AUDIO_PACK_50: !unknown
   Size: 19530
-  Description: Audio Block
   Offset: 0xE50000
-AUDIO_PACK_92:
-  Type: data
+AUDIO_PACK_92: !unknown
   Size: 18692
-  Description: Audio Block
   Offset: 0xE54C4A
-AUDIO_PACK_56:
-  Type: data
+AUDIO_PACK_56: !unknown
   Size: 18404
-  Description: Audio Block
   Offset: 0xE5954E
-AUDIO_PACK_122:
-  Type: data
+AUDIO_PACK_122: !unknown
   Size: 8710
-  Description: Audio Block
   Offset: 0xE5DD32
-AUDIO_PACK_96:
-  Type: data
+AUDIO_PACK_96: !unknown
   Size: 200
-  Description: Audio Block
   Offset: 0xE5FF38
-AUDIO_PACK_1:
-  Type: data
+AUDIO_PACK_1: !unknown
   Size: 17880
-  Description: Audio Block
-  terminator: 0
-  Entries:
-  - Name: Size
-    Type: int
-    Size: 2
-  - Name: Base Address
-    Type: hexint
-    Size: 2
-  - Name: Data
-    Type: bytearray
-    Size: Size
   Offset: 0xE60000
-AUDIO_PACK_74:
-  Type: data
+AUDIO_PACK_74: !unknown
   Size: 17858
-  Description: Audio Block
   Offset: 0xE645D8
-AUDIO_PACK_76:
-  Type: data
+AUDIO_PACK_76: !unknown
   Size: 17262
-  Description: Audio Block
   Offset: 0xE68B9A
-AUDIO_PACK_47:
-  Type: data
+AUDIO_PACK_47: !unknown
   Size: 12304
-  Description: Audio Block
   Offset: 0xE6CF08
-AUDIO_PACK_73:
-  Type: data
+AUDIO_PACK_73: !unknown
   Size: 232
-  Description: Audio Block
   Offset: 0xE6FF18
-AUDIO_PACK_78:
-  Type: data
+AUDIO_PACK_78: !unknown
   Size: 17172
-  Description: Audio Block
   Offset: 0xE70000
-AUDIO_PACK_82:
-  Type: data
+AUDIO_PACK_82: !unknown
   Size: 16776
-  Description: Audio Block
   Offset: 0xE74314
-AUDIO_PACK_8:
-  Type: data
+AUDIO_PACK_8: !unknown
   Size: 16684
-  Description: Audio Block
   Offset: 0xE7849C
-AUDIO_PACK_24:
-  Type: data
+AUDIO_PACK_24: !unknown
   Size: 14904
-  Description: Audio Block
   Offset: 0xE7C5C8
-AUDIO_PACK_84:
-  Type: data
+AUDIO_PACK_84: !unknown
   Size: 16486
-  Description: Audio Block
   Offset: 0xE80000
-AUDIO_PACK_60:
-  Type: data
+AUDIO_PACK_60: !unknown
   Size: 15936
-  Description: Audio Block
   Offset: 0xE84066
-AUDIO_PACK_153:
-  Type: data
+AUDIO_PACK_153: !unknown
   Size: 15842
-  Description: Audio Block
   Offset: 0xE87EA6
-AUDIO_PACK_124:
-  Type: data
+AUDIO_PACK_124: !unknown
   Size: 15338
-  Description: Audio Block
   Offset: 0xE8BC88
-AUDIO_PACK_102:
-  Type: data
+AUDIO_PACK_102: !unknown
   Size: 1764
-  Description: Audio Block
   Offset: 0xE8F872
-AUDIO_PACK_166:
-  Type: data
+AUDIO_PACK_166: !unknown
   Size: 170
-  Description: Audio Block
   Offset: 0xE8FF56
-AUDIO_PACK_27:
-  Type: data
+AUDIO_PACK_27: !unknown
   Size: 14964
-  Description: Audio Block
   Offset: 0xE90000
-AUDIO_PACK_80:
-  Type: data
+AUDIO_PACK_80: !unknown
   Size: 14562
-  Description: Audio Block
   Offset: 0xE93A74
-AUDIO_PACK_118:
-  Type: data
+AUDIO_PACK_118: !unknown
   Size: 14544
-  Description: Audio Block
   Offset: 0xE97356
-AUDIO_PACK_131:
-  Type: data
+AUDIO_PACK_131: !unknown
   Size: 13406
-  Description: Audio Block
   Offset: 0xE9AC26
-AUDIO_PACK_66:
-  Type: data
+AUDIO_PACK_66: !unknown
   Size: 7864
-  Description: Audio Block
   Offset: 0xE9E084
-UNKNOWN_E9FF3C:
-  Type: empty
+UNKNOWN_E9FF3C: !empty
   Size: 196
   Offset: 0xE9FF3C
-AUDIO_PACK_54:
-  Type: data
+AUDIO_PACK_54: !unknown
   Size: 13178
-  Description: Audio Block
   Offset: 0xEA0000
-AUDIO_PACK_52:
-  Type: data
+AUDIO_PACK_52: !unknown
   Size: 12826
-  Description: Audio Block
   Offset: 0xEA337A
-AUDIO_PACK_72:
-  Type: data
+AUDIO_PACK_72: !unknown
   Size: 12642
-  Description: Audio Block
   Offset: 0xEA6594
-AUDIO_PACK_89:
-  Type: data
+AUDIO_PACK_89: !unknown
   Size: 11930
-  Description: Audio Block
   Offset: 0xEA96F6
-AUDIO_PACK_35:
-  Type: data
+AUDIO_PACK_35: !unknown
   Size: 11156
-  Description: Audio Block
   Offset: 0xEAC590
-AUDIO_PACK_125:
-  Type: data
+AUDIO_PACK_125: !unknown
   Size: 3778
-  Description: Audio Block
   Offset: 0xEAF124
-UNKNOWN_EAFFE6:
-  Type: empty
+UNKNOWN_EAFFE6: !empty
   Size: 26
   Offset: 0xEAFFE6
-AUDIO_PACK_44:
-  Type: data
+AUDIO_PACK_44: !unknown
   Size: 10728
-  Description: Audio Block
   Offset: 0xEB0000
-AUDIO_PACK_21:
-  Type: data
+AUDIO_PACK_21: !unknown
   Size: 10276
-  Description: Audio Block
   Offset: 0xEB29E8
-AUDIO_PACK_5:
-  Type: data
+AUDIO_PACK_5: !unknown
   Size: 9930
-  Description: Audio Block
   Offset: 0xEB520C
-AUDIO_PACK_40:
-  Type: data
+AUDIO_PACK_40: !unknown
   Size: 9912
-  Description: Audio Block
   Offset: 0xEB78D6
-AUDIO_PACK_33:
-  Type: data
+AUDIO_PACK_33: !unknown
   Size: 9562
-  Description: Audio Block
   Offset: 0xEB9F8E
-AUDIO_PACK_105:
-  Type: data
+AUDIO_PACK_105: !unknown
   Size: 9468
-  Description: Audio Block
   Offset: 0xEBC4E8
-AUDIO_PACK_154:
-  Type: data
+AUDIO_PACK_154: !unknown
   Size: 5182
-  Description: Audio Block
   Offset: 0xEBE9E4
-AUDIO_PACK_13:
-  Type: data
+AUDIO_PACK_13: !unknown
   Size: 478
-  Description: Audio Block
   Offset: 0xEBFE22
-AUDIO_PACK_114:
-  Type: data
+AUDIO_PACK_114: !unknown
   Size: 9196
-  Description: Audio Block
   Offset: 0xEC0000
-AUDIO_PACK_109:
-  Type: data
+AUDIO_PACK_109: !unknown
   Size: 8614
-  Description: Audio Block
   Offset: 0xEC23EC
-AUDIO_PACK_107:
-  Type: data
+AUDIO_PACK_107: !unknown
   Size: 8558
-  Description: Audio Block
   Offset: 0xEC4592
-AUDIO_PACK_98:
-  Type: data
+AUDIO_PACK_98: !unknown
   Size: 8548
-  Description: Audio Block
   Offset: 0xEC6700
-AUDIO_PACK_139:
-  Type: data
-  Description: Audio Block
+AUDIO_PACK_139: !unknown
   Size: 8180
   Offset: 0xEC8864
-AUDIO_PACK_156:
-  Type: data
+AUDIO_PACK_156: !unknown
   Size: 6280
-  Description: Audio Block
   Offset: 0xECA858
-AUDIO_PACK_2:
-  Type: data
+AUDIO_PACK_2: !struct
   Size: 6152
-  Description: Audio Block
-  terminator: 0
-  Entries:
-  - Name: Size
-    Type: int
-    Size: 2
-  - Name: Base Address
-    Type: hexint
-    Size: 2
-  - Name: Data
-    Type: bytearray
-    Size: Size
+  Entries: *AUDIO_PACK
   Offset: 0xECC0E0
-AUDIO_PACK_UNUSED:
-  Type: data
+AUDIO_PACK_UNUSED: !struct
   Size: 60
   Description: Unused? audio pack
-  terminator: 0
-  Entries:
-  - Name: Size
-    Type: int
-    Size: 2
-  - Name: Base Address
-    Type: hexint
-    Size: 2
-  - Name: Data
-    Type: table
-    Entries:
-    - Name: Unknown
-      Size: 6
-      Type: bytearray
-    Size: Size
+  Entries: *AUDIO_PACK
   Offset: 0xECD8E8
-AUDIO_PACK_4:
-  Type: data
+AUDIO_PACK_4: !struct
   Size: 5032
   Description: Audio Block
-  terminator: 0
-  Entries:
-  - Name: Size
-    Type: int
-    Size: 2
-  - Name: Base Address
-    Type: hexint
-    Size: 2
-  - Name: Data
-    Type: bytearray
-    Size: Size
+  Entries: *AUDIO_PACK
   Offset: 0xECD924
-AUDIO_PACK_165:
-  Type: data
+AUDIO_PACK_165: !unknown
   Size: 4882
-  Description: Audio Block
   Offset: 0xECECCC
-UNKNOWN_ECFFDE:
-  Type: empty
+UNKNOWN_ECFFDE: !empty
   Size: 34
   Offset: 0xECFFDE
-AUDIO_PACK_140:
-  Type: data
+AUDIO_PACK_140: !unknown
   Size: 3431
-  Description: Audio Block
   Offset: 0xED0000
-AUDIO_PACK_94:
-  Type: data
-  Description: Audio Block
+AUDIO_PACK_94: !unknown
   Size: 3203
   Offset: 0xED0D67
-AUDIO_PACK_65:
-  Type: data
+AUDIO_PACK_65: !unknown
   Size: 3193
-  Description: Audio Block
   Offset: 0xED19EA
-AUDIO_PACK_62:
-  Type: data
+AUDIO_PACK_62: !unknown
   Size: 3170
-  Description: Audio Block
   Offset: 0xED2663
-AUDIO_PACK_58:
-  Type: data
+AUDIO_PACK_58: !unknown
   Size: 2994
-  Description: Audio Block
   Offset: 0xED32C5
-AUDIO_PACK_133:
-  Type: data
+AUDIO_PACK_133: !unknown
   Size: 2974
-  Description: Audio Block
   Offset: 0xED3E77
-AUDIO_PACK_97:
-  Type: data
+AUDIO_PACK_97: !unknown
   Size: 2937
-  Description: Audio Block
   Offset: 0xED4A15
-AUDIO_PACK_55:
-  Type: data
+AUDIO_PACK_55: !unknown
   Size: 2871
-  Description: Audio Block
   Offset: 0xED558E
-AUDIO_PACK_106:
-  Type: data
+AUDIO_PACK_106: !unknown
   Size: 2857
-  Description: Audio Block
   Offset: 0xED60C5
-AUDIO_PACK_123:
-  Type: data
+AUDIO_PACK_123: !unknown
   Size: 2673
-  Description: Audio Block
   Offset: 0xED6BEE
-AUDIO_PACK_25:
-  Type: data
+AUDIO_PACK_25: !unknown
   Size: 2640
-  Description: Audio Block
   Offset: 0xED765F
-AUDIO_PACK_15:
-  Type: data
+AUDIO_PACK_15: !unknown
   Size: 2599
-  Description: Audio Block
   Offset: 0xED80AF
-AUDIO_PACK_157:
-  Type: data
+AUDIO_PACK_157: !unknown
   Size: 2588
-  Description: Audio Block
   Offset: 0xED8AD6
-AUDIO_PACK_121:
-  Type: data
+AUDIO_PACK_121: !unknown
   Size: 2567
-  Description: Audio Block
   Offset: 0xED94F2
-AUDIO_PACK_87:
-  Type: data
+AUDIO_PACK_87: !unknown
   Size: 2559
-  Description: Audio Block
   Offset: 0xED9EF9
-AUDIO_PACK_132:
-  Type: data
+AUDIO_PACK_132: !unknown
   Size: 2553
-  Description: Audio Block
   Offset: 0xEDA8F8
-AUDIO_PACK_116:
-  Type: data
+AUDIO_PACK_116: !unknown
   Size: 2552
-  Description: Audio Block
   Offset: 0xEDB2F1
-AUDIO_PACK_71:
-  Type: data
+AUDIO_PACK_71: !struct
   Size: 2500
-  Description: Audio Block
-  terminator: 0
-  Entries:
-  - Name: Size
-    Type: int
-    Size: 2
-  - Name: Base Address
-    Type: hexint
-    Size: 2
-  - Name: Data
-    Type: bytearray
-    Size: Size
+  Entries: *AUDIO_PACK
   Offset: 0xEDBCE9
-AUDIO_PACK_34:
-  Type: data
+AUDIO_PACK_34: !unknown
   Size: 2462
-  Description: Audio Block
   Offset: 0xEDC6AD
-AUDIO_PACK_61:
-  Type: data
+AUDIO_PACK_61: !unknown
   Size: 2354
-  Description: Audio Block
   Offset: 0xEDD04B
-AUDIO_PACK_119:
-  Type: data
+AUDIO_PACK_119: !unknown
   Size: 2311
-  Description: Audio Block
   Offset: 0xEDD97D
-AUDIO_PACK_141:
-  Type: data
+AUDIO_PACK_141: !unknown
   Size: 2255
-  Description: Audio Block
   Offset: 0xEDE284
-AUDIO_PACK_48:
-  Type: data
+AUDIO_PACK_48: !unknown
   Size: 2108
-  Description: Audio Block
   Offset: 0xEDEB53
-AUDIO_PACK_39:
-  Type: data
+AUDIO_PACK_39: !unknown
   Size: 2104
-  Description: Audio Block
   Offset: 0xEDF38F
-AUDIO_PACK_127:
-  Type: data
+AUDIO_PACK_127: !unknown
   Size: 1063
-  Description: Audio Block
   Offset: 0xEDFBC7
-UNKNOWN_EDFFEE:
-  Type: empty
+UNKNOWN_EDFFEE: !empty
   Size: 18
   Offset: 0xEDFFEE
-AUDIO_PACK_150:
-  Type: data
+AUDIO_PACK_150: !unknown
   Size: 2082
-  Description: Audio Block
   Offset: 0xEE0000
-AUDIO_PACK_120:
-  Type: data
+AUDIO_PACK_120: !unknown
   Size: 2056
-  Description: Audio Block
   Offset: 0xEE0822
-AUDIO_PACK_38:
-  Type: data
+AUDIO_PACK_38: !unknown
   Size: 2045
-  Description: Audio Block
   Offset: 0xEE102A
-AUDIO_PACK_161:
-  Type: data
+AUDIO_PACK_161: !unknown
   Size: 2012
-  Description: Audio Block
   Offset: 0xEE1827
-AUDIO_PACK_68:
-  Type: data
+AUDIO_PACK_68: !unknown
   Size: 2004
-  Description: Audio Block
   Offset: 0xEE2003
-AUDIO_PACK_104:
-  Type: data
+AUDIO_PACK_104: !unknown
   Size: 2003
-  Description: Audio Block
   Offset: 0xEE27D7
-AUDIO_PACK_90:
-  Type: data
+AUDIO_PACK_90: !unknown
   Size: 1944
-  Description: Audio Block
   Offset: 0xEE2FAA
-AUDIO_PACK_79:
-  Type: data
+AUDIO_PACK_79: !unknown
   Size: 1747
-  Description: Audio Block
   Offset: 0xEE3742
-AUDIO_PACK_46:
-  Type: data
+AUDIO_PACK_46: !unknown
   Size: 1705
-  Description: Audio Block
   Offset: 0xEE3E15
-AUDIO_PACK_149:
-  Type: data
+AUDIO_PACK_149: !unknown
   Size: 1693
-  Description: Audio Block
   Offset: 0xEE44BE
-AUDIO_PACK_86:
-  Type: data
+AUDIO_PACK_86: !unknown
   Size: 1678
-  Description: Audio Block
   Offset: 0xEE4B5B
-AUDIO_PACK_100:
-  Type: data
+AUDIO_PACK_100: !unknown
   Size: 1653
-  Description: Audio Block
   Offset: 0xEE51E9
-AUDIO_PACK_26:
-  Type: data
+AUDIO_PACK_26: !unknown
   Size: 1647
-  Description: Audio Block
   Offset: 0xEE585E
-AUDIO_PACK_43:
-  Type: data
+AUDIO_PACK_43: !unknown
   Size: 1604
-  Description: Audio Block
   Offset: 0xEE5ECD
-AUDIO_PACK_162:
-  Type: data
+AUDIO_PACK_162: !unknown
   Size: 1595
-  Description: Audio Block
   Offset: 0xEE6511
-AUDIO_PACK_85:
-  Type: data
+AUDIO_PACK_85: !unknown
   Size: 1572
-  Description: Audio Block
   Offset: 0xEE6B4C
-AUDIO_PACK_99:
-  Type: data
+AUDIO_PACK_99: !unknown
   Size: 1565
-  Description: Audio Block
   Offset: 0xEE7170
-AUDIO_PACK_28:
-  Type: data
+AUDIO_PACK_28: !unknown
   Size: 1549
-  Description: Audio Block
   Offset: 0xEE778D
-AUDIO_PACK_10:
-  Type: data
+AUDIO_PACK_10: !unknown
   Size: 1548
-  Description: Audio Block
   Offset: 0xEE7D9A
-AUDIO_PACK_117:
-  Type: data
+AUDIO_PACK_117: !unknown
   Size: 1538
-  Description: Audio Block
   Offset: 0xEE83A6
-AUDIO_PACK_77:
-  Type: data
+AUDIO_PACK_77: !unknown
   Size: 1511
-  Description: Audio Block
   Offset: 0xEE89A8
-AUDIO_PACK_19:
-  Type: data
+AUDIO_PACK_19: !unknown
   Size: 1508
-  Description: Audio Block
   Offset: 0xEE8F8F
-AUDIO_PACK_57:
-  Type: data
+AUDIO_PACK_57: !unknown
   Size: 1476
-  Description: Audio Block
   Offset: 0xEE9573
-AUDIO_PACK_14:
-  Type: data
+AUDIO_PACK_14: !unknown
   Size: 1457
-  Description: Audio Block
   Offset: 0xEE9B37
-AUDIO_PACK_158:
-  Type: data
+AUDIO_PACK_158: !unknown
   Size: 1454
-  Description: Audio Block
   Offset: 0xEEA0E8
-AUDIO_PACK_30:
-  Type: data
+AUDIO_PACK_30: !unknown
   Size: 1432
-  Description: Audio Block
   Offset: 0xEEA696
-AUDIO_PACK_134:
-  Type: data
+AUDIO_PACK_134: !unknown
   Size: 1423
-  Description: Audio Block
   Offset: 0xEEAC2E
-AUDIO_PACK_113:
-  Type: data
+AUDIO_PACK_113: !unknown
   Size: 1421
-  Description: Audio Block
   Offset: 0xEEB1BD
-AUDIO_PACK_146:
-  Type: data
+AUDIO_PACK_146: !unknown
   Size: 1420
-  Description: Audio Block
   Offset: 0xEEB74A
-AUDIO_PACK_136:
-  Type: data
+AUDIO_PACK_136: !unknown
   Size: 1364
-  Description: Audio Block
   Offset: 0xEEBCD6
-AUDIO_PACK_112:
-  Type: data
+AUDIO_PACK_112: !unknown
   Size: 1335
-  Description: Audio Block
   Offset: 0xEEC22A
-AUDIO_PACK_163:
-  Type: data
+AUDIO_PACK_163: !unknown
   Size: 1319
-  Description: Audio Block
   Offset: 0xEEC761
-AUDIO_PACK_115:
-  Type: data
+AUDIO_PACK_115: !unknown
   Size: 1314
-  Description: Audio Block
   Offset: 0xEECC88
-AUDIO_PACK_53:
-  Type: data
+AUDIO_PACK_53: !unknown
   Size: 1306
-  Description: Audio Block
   Offset: 0xEED1AA
-AUDIO_PACK_67:
-  Type: data
+AUDIO_PACK_67: !unknown
   Size: 1296
-  Description: Audio Block
   Offset: 0xEED6C4
-AUDIO_PACK_20:
-  Type: data
+AUDIO_PACK_20: !unknown
   Size: 1283
-  Description: Audio Block
   Offset: 0xEEDBD4
-AUDIO_PACK_144:
-  Type: data
+AUDIO_PACK_144: !unknown
   Size: 1277
-  Description: Audio Block
   Offset: 0xEEE0D7
-AUDIO_PACK_111:
-  Type: data
+AUDIO_PACK_111: !unknown
   Size: 1255
-  Description: Audio Block
   Offset: 0xEEE5D4
-AUDIO_PACK_63:
-  Type: data
+AUDIO_PACK_63: !unknown
   Size: 1231
-  Description: Audio Block
   Offset: 0xEEEABB
-AUDIO_PACK_138:
-  Type: data
+AUDIO_PACK_138: !unknown
   Size: 1129
-  Description: Audio Block
   Offset: 0xEEEF8A
-AUDIO_PACK_16:
-  Type: data
+AUDIO_PACK_16: !unknown
   Size: 1056
-  Description: Audio Block
   Offset: 0xEEF3F3
-AUDIO_PACK_148:
-  Type: data
+AUDIO_PACK_148: !unknown
   Size: 1055
-  Description: Audio Block
   Offset: 0xEEF813
-AUDIO_PACK_45:
-  Type: data
+AUDIO_PACK_45: !unknown
   Size: 974
-  Description: Audio Block
   Offset: 0xEEFC32
-AUDIO_PACK_23:
-  Type: data
+AUDIO_PACK_23: !unknown
   Size: 1055
-  Description: Audio Block
   Offset: 0xEF0000
-AUDIO_PACK_11:
-  Type: data
+AUDIO_PACK_11: !unknown
   Size: 1043
-  Description: Audio Block
   Offset: 0xEF041F
-AUDIO_PACK_142:
-  Type: data
+AUDIO_PACK_142: !unknown
   Size: 1041
-  Description: Audio Block
   Offset: 0xEF0832
-AUDIO_PACK_160:
-  Type: data
+AUDIO_PACK_160: !unknown
   Size: 1035
-  Description: Audio Block
   Offset: 0xEF0C43
-AUDIO_PACK_101:
-  Type: data
+AUDIO_PACK_101: !unknown
   Size: 1020
-  Description: Audio Block
   Offset: 0xEF104E
-AUDIO_PACK_103:
-  Type: data
+AUDIO_PACK_103: !struct
   Size: 1017
-  terminator: 0
   Description: Sequence data for tracks "Return to your body", "Boarding School",
     and "Phase distorter"
-  Entries:
-  - Name: Size
-    Type: int
-    Size: 2
-  - Name: Base Address
-    Type: hexint
-    Size: 2
-  - Name: Data
-    Type: bytearray
-    Size: Size
+  Entries: *AUDIO_PACK
   Offset: 0xEF144A
-AUDIO_PACK_51:
-  Type: data
+AUDIO_PACK_51: !unknown
   Size: 954
-  Description: Audio Block
   Offset: 0xEF1843
-AUDIO_PACK_18:
-  Type: data
+AUDIO_PACK_18: !unknown
   Size: 885
-  Description: Audio Block
   Offset: 0xEF1BFD
-AUDIO_PACK_29:
-  Type: data
+AUDIO_PACK_29: !unknown
   Size: 866
-  Description: Audio Block
   Offset: 0xEF1F72
-AUDIO_PACK_93:
-  Type: data
+AUDIO_PACK_93: !unknown
   Size: 865
-  Description: Audio Block
   Offset: 0xEF22D4
-AUDIO_PACK_95:
-  Type: data
+AUDIO_PACK_95: !unknown
   Size: 850
-  Description: Audio Block
   Offset: 0xEF2635
-AUDIO_PACK_164:
-  Type: data
+AUDIO_PACK_164: !unknown
   Size: 832
-  Description: Audio Block
   Offset: 0xEF2987
-AUDIO_PACK_151:
-  Type: data
+AUDIO_PACK_151: !unknown
   Size: 811
-  Description: Audio Block
   Offset: 0xEF2CC7
-AUDIO_PACK_143:
-  Type: data
+AUDIO_PACK_143: !unknown
   Size: 759
-  Description: Audio Block
   Offset: 0xEF2FF2
-AUDIO_PACK_12:
-  Type: data
+AUDIO_PACK_12: !unknown
   Size: 718
-  Description: Audio Block
   Offset: 0xEF32E9
-AUDIO_PACK_135:
-  Type: data
+AUDIO_PACK_135: !unknown
   Size: 689
-  Description: Audio Block
   Offset: 0xEF35B7
-AUDIO_PACK_83:
-  Type: data
+AUDIO_PACK_83: !unknown
   Size: 679
-  Description: Audio Block
   Offset: 0xEF3868
-AUDIO_PACK_88:
-  Type: data
+AUDIO_PACK_88: !unknown
   Size: 663
-  Description: Audio Block
   Offset: 0xEF3B0F
-AUDIO_PACK_155:
-  Type: data
+AUDIO_PACK_155: !unknown
   Size: 615
-  Description: Audio Block
   Offset: 0xEF3DA6
-AUDIO_PACK_31:
-  Type: data
+AUDIO_PACK_31: !unknown
   Size: 611
-  Description: Audio Block
   Offset: 0xEF400D
-AUDIO_PACK_129:
-  Type: data
+AUDIO_PACK_129: !unknown
   Size: 608
-  Description: Audio Block
   Offset: 0xEF4270
-AUDIO_PACK_22:
-  Type: data
+AUDIO_PACK_22: !unknown
   Size: 599
-  Description: Audio Block
   Offset: 0xEF44D0
-AUDIO_PACK_17:
-  Type: data
+AUDIO_PACK_17: !unknown
   Size: 593
-  Description: Audio Block
   Offset: 0xEF4727
-AUDIO_PACK_91:
-  Type: data
+AUDIO_PACK_91: !unknown
   Size: 586
-  Description: Audio Block
   Offset: 0xEF4978
-AUDIO_PACK_81:
-  Type: data
+AUDIO_PACK_81: !unknown
   Size: 548
-  Description: Audio Block
   Offset: 0xEF4BC2
-AUDIO_PACK_147:
-  Type: data
+AUDIO_PACK_147: !unknown
   Size: 543
-  Description: Audio Block
   Offset: 0xEF4DE6
-AUDIO_PACK_152:
-  Type: data
+AUDIO_PACK_152: !unknown
   Size: 506
-  Description: Audio Block
   Offset: 0xEF5005
-AUDIO_PACK_159:
-  Type: data
+AUDIO_PACK_159: !unknown
   Size: 403
-  Description: Audio Block
   Offset: 0xEF51FF
-AUDIO_PACK_49:
-  Type: data
+AUDIO_PACK_49: !unknown
   Size: 388
-  Description: Audio Block
   Offset: 0xEF5392
-AUDIO_PACK_9:
-  Type: data
+AUDIO_PACK_9: !unknown
   Size: 379
-  Description: Audio Block
   Offset: 0xEF5516
-AUDIO_PACK_145:
-  Type: data
+AUDIO_PACK_145: !struct
   Size: 343
   Description: Hidden track sequence data
-  Entries:
-  - Name: Size
-    Type: int
-    Size: 2
-  - Name: Base Address
-    Type: hexint
-    Size: 2
-  - Name: Data
-    Type: bytearray
-    Size: Size
+  Entries: *AUDIO_PACK
   Offset: 0xEF5691
-AUDIO_PACK_69:
-  Type: data
+AUDIO_PACK_69: !unknown
   Size: 340
-  Description: Audio Block
   Offset: 0xEF57E8
-AUDIO_PACK_167:
-  Type: data
+AUDIO_PACK_167: !unknown
   Size: 327
-  Description: Audio Block
   Offset: 0xEF593C
-AUDIO_PACK_130:
-  Type: data
+AUDIO_PACK_130: !unknown
   Size: 317
-  Description: Audio Block
   Offset: 0xEF5A83
-AUDIO_PACK_168:
-  Type: data
+AUDIO_PACK_168: !unknown
   Size: 308
-  Description: Audio Block
   Offset: 0xEF5BC0
-AUDIO_PACK_75:
-  Type: data
+AUDIO_PACK_75: !unknown
   Size: 298
-  Description: Audio Block
   Offset: 0xEF5CF4
-AUDIO_PACK_137:
-  Type: data
+AUDIO_PACK_137: !unknown
   Size: 297
-  Description: Audio Block
   Offset: 0xEF5E1E
-AUDIO_PACK_59:
-  Type: data
+AUDIO_PACK_59: !unknown
   Size: 258
-  Description: Audio Block
   Offset: 0xEF5F47
-AUDIO_PACK_41:
-  Type: data
+AUDIO_PACK_41: !unknown
   Size: 258
-  Description: Audio Block
   Offset: 0xEF6049
-AUDIO_PACK_7:
-  Type: data
+AUDIO_PACK_7: !unknown
   Size: 210
-  Description: Audio Block
   Offset: 0xEF614B
-TILESET_TABLE:
-  Type: data
+TILESET_TABLE: !array
   Description: 'Map Data: Tileset Table'
   Size: 64
-  Entries:
-  - Name: Tileset
+  Item Type: !int
     Size: 2
-    Type: hexint
   Offset: 0xEF621D
-MAP_DATA_TILESET_PTR_TABLE:
+MAP_DATA_TILESET_PTR_TABLE: !array
   Type: data
   Description: 'Map Data: Tileset Pointer Table'
   Size: 80
-  Entries:
-  - Name: Pointer
+  Item Type: !pointer
     Size: 4
-    Type: pointer
   Offset: 0xEF625D
-MAP_DATA_TILE_ARRANGEMENT_PTR_TABLE:
+MAP_DATA_TILE_ARRANGEMENT_PTR_TABLE: !array
   Type: data
   Description: 'Map Data: Tile Arrangement Pointer Table'
   Size: 80
-  Entries:
-  - Name: Pointer
+  Item Type: !pointer
     Size: 4
-    Type: pointer
   Offset: 0xEF62AD
-MAP_PALETTE_PTR_TABLE:
-  Type: data
+MAP_PALETTE_PTR_TABLE: !array
   Description: 'Map Data: Palette Pointer Table'
   Size: 128
-  Entries:
-  - Name: Pointer
+  Item Type: !pointer
     Size: 4
-    Type: pointer
   Offset: 0xEF62FD
-MAP_DATA_TILE_COLLISION_PTR_TABLE:
-  Type: data
+MAP_DATA_TILE_COLLISION_PTR_TABLE: !array
   Description: 'Map Data: Tile Collision Pointer Table'
   Size: 80
-  Entries:
-  - Name: Pointer
+  Item Type: !pointer
     Size: 4
-    Type: pointer
   Offset: 0xEF637D
-MAP_DATA_TILE_ANIMATION_PTR_TABLE:
+MAP_DATA_TILE_ANIMATION_PTR_TABLE: !array
   Type: data
   Description: 'Map Data: Tile Animation Pointer Table'
   Size: 80
-  Entries:
-  - Name: Pointer
+  Item Type: !pointer
     Size: 4
-    Type: pointer
   Offset: 0xEF63CD
-MAP_DATA_WEIRD_TILE_ANIMATION_PTR_TABLE:
-  Type: data
+MAP_DATA_WEIRD_TILE_ANIMATION_PTR_TABLE: !array
   Description: 'Map Data: Freakish Tile Animation Pointer Table'
   Size: 80
-  Entries:
-  - Name: Pointer
+  Item Type: !pointer
     Size: 4
-    Type: pointer
   Offset: 0xEF641D
-MAP_DATA_WEIRD_TILE_ANIMATION_TABLE:
-  Type: data
+MAP_DATA_WEIRD_TILE_ANIMATION_TABLE: !unknown
   Description: 'Map Data: Freakish Tile Animation Table'
   Size: 212
   Offset: 0xEF646D
-SPRITE_GROUPING_PTR_TABLE:
-  Type: data
+SPRITE_GROUPING_PTR_TABLE: !array
   Description: Sprite Grouping Pointer Table
   Size: 1856
-  Entries:
-  - Name: Pointer
+  Item Type: !pointer
     Size: 4
-    Type: pointer
   Offset: 0xEF6541
-SPRITE_GROUPING_DATA:
-  Type: data
+SPRITE_GROUPING_DATA: !unknown
   Description: Sprite Grouping Table
   Size: 12225
   Offset: 0xEF6C81
-UNKNOWN_EF9C42:
-  Type: data
+UNKNOWN_EF9C42: !unknown
   Size: 8768
   Offset: 0xEF9C42
-UNKNOWN_EFBE82:
-  Type: assembly
+UNKNOWN_EFBE82: !assembly
   Size: 106
   Offset: 0xEFBE82
-UNKNOWN_EFBEEC:
-  Type: assembly
+UNKNOWN_EFBEEC: !assembly
   Size: 0xF3
   Offset: 0xEFBEEC
-UNKNOWN_EFCE79:
-  Type: assembly
+UNKNOWN_EFCE79: !assembly
   Offset: 0xEFCE79
   Size: 0x22
-DEBUG_HANDLE_CURSOR_MOVEMENT:
+DEBUG_HANDLE_CURSOR_MOVEMENT: !assembly
   Description: Handle Debug Menu Cursor Movement
-  Type: assembly
   Offset: 0xEFCE9B
   Size: 0x5B
-DEBUG_PROCESS_COMMAND_SELECTION:
+DEBUG_PROCESS_COMMAND_SELECTION: !assembly
   Description: Process Debug Command Selection
-  Type: assembly
   Offset: 0xEFCEF6
   Size: 0xB6
-DEBUG_MENU_LOAD:
-  Type: assembly
+DEBUG_MENU_LOAD: !assembly
   Size: 89
   Offset: 0xEFCFAC
-UNKNOWN_EFD005:
-  Type: assembly
+UNKNOWN_EFD005: !assembly
   Size: 38
   Offset: 0xEFD005
-UNKNOWN_EFD02B:
-  Type: assembly
+UNKNOWN_EFD02B: !assembly
   Size: 62
-  labels:
-    0xD042: UNKNOWN0
-    0xD046: UNKNOWN1
-    0xD058: UNKNOWN2
-    0xD065: UNKNOWN3
+  Labels:
+    0x17: UNKNOWN0
+    0x1B: UNKNOWN1
+    0x2D: UNKNOWN2
+    0x3A: UNKNOWN3
   Offset: 0xEFD02B
-DEBUG_CHECK_VIEW_CHARACTER_MODE:
+DEBUG_CHECK_VIEW_CHARACTER_MODE: !assembly
   Description: Check if in view character mode
-  Type: assembly
   Size: 19
-  labels:
-    0xD078: UNKNOWN0
-    0xD07B: UNKNOWN1
+  Labels:
+    0x0F: UNKNOWN0
+    0x12: UNKNOWN1
   Offset: 0xEFD069
-UNKNOWN_EFD07C:
-  Type: assembly
+UNKNOWN_EFD07C: !assembly
   Size: 24
-  labels:
-    0xD090: UNKNOWN0
-    0xD093: UNKNOWN1
+  Labels:
+    0x14: UNKNOWN0
+    0x17: UNKNOWN1
   Offset: 0xEFD07C
-UNKNOWN_EFD094:
-  Type: assembly
+UNKNOWN_EFD094: !assembly
   Size: 258
-  labels:
-    0xD0A8: UNKNOWN0
-    0xD194: UNKNOWN1
+  Labels:
+    0x014: UNKNOWN0
+    0x100: UNKNOWN1
   Offset: 0xEFD094
-UNKNOWN_EFD196:
-  Type: assembly
+UNKNOWN_EFD196: !assembly
   Size: 34
-  labels:
-    0xD1B5: UNKNOWN0
+  Labels:
+    0x1F: UNKNOWN0
   Offset: 0xEFD196
-UNKNOWN_EFD1B8:
-  Type: assembly
+UNKNOWN_EFD1B8: !assembly
   Size: 50
-  labels:
-    0xD1E8: UNKNOWN0
+  Labels:
+    0x30: UNKNOWN0
   Offset: 0xEFD1B8
-UNKNOWN_EFD1EA:
-  Type: assembly
+UNKNOWN_EFD1EA: !assembly
   Size: 356
-  labels:
-    0xD1FE: UNKNOWN0
-    0xD34C: UNKNOWN1
+  Labels:
+    0x014: UNKNOWN0
+    0x162: UNKNOWN1
   Offset: 0xEFD1EA
-UNKNOWN_EFD34E:
-  Type: assembly
+UNKNOWN_EFD34E: !assembly
   Size: 39
-  labels:
-    0xD370: UNKNOWN0
-    0xD374: UNKNOWN1
+  Labels:
+    0x22: UNKNOWN0
+    0x26: UNKNOWN1
   Offset: 0xEFD34E
-UNKNOWN_EFD375:
-  Type: assembly
+UNKNOWN_EFD375: !assembly
   Size: 84
-  labels:
-    0xD3C7: UNKNOWN0
+  Labels:
+    0x4B: UNKNOWN0
   Offset: 0xEFD375
-UNKNOWN_EFD3C9:
-  Type: assembly
+UNKNOWN_EFD3C9: !assembly
   Size: 6
   Offset: 0xEFD3C9
-UNKNOWN_EFD3CF:
-  Type: assembly
+UNKNOWN_EFD3CF: !assembly
   Size: 36
-  labels:
-    0xD3E1: UNKNOWN0
+  Labels:
+    0x12: UNKNOWN0
   Offset: 0xEFD3CF
-UNKNOWN_EFD3F3:
-  Type: assembly
+UNKNOWN_EFD3F3: !assembly
   Size: 85
   Offset: 0xEFD3F3
-UNKNOWN_EFD448:
-  Type: data
+UNKNOWN_EFD448: !unknown
   Size: 11192
   Offset: 0xEFD448
 ...
